@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in — Decode Age</title>
+    <meta name="description" content="Log in">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" crossorigin="anonymous"
+        href="https://cdn.shopify.com/shopifycloud/identity/assets/customer-public-fc963647f30b545c3e48728476dea03386466e1b0b1701da1e9cc1d59a86250e.css">
+</head>
+<body>
+    <style>
+        html,
+        body {
+            background-color: rgb(195, 195, 203);
+            color: rgb(35, 38, 40);
+        }
+    </style>
+    <div class="page-main">
+        <div class="page-content">
+            <div class="main-content">
+                <div class="login-card ">
+                    <div class="login-card-header ">
+                        <header class="login-card__header">
+                            <h1 class="login-card__logo">
+                                <a href="https://decodeage.com">
+                                    <img alt="logo" src="Decode-Age-Logo_With-Tagline.webp">
+                                </a>
+                            </h1>
+                        </header>
+                    </div>
+                    <div class="login-card__content">
+                        <div class="main-card-section">
+                            <div class="headings-container">
+                                <div>
+                                    <h1 class="ui-heading">Log in</h1>
+                                    <h3 class="ui-subheading ui-subheading--subdued">Enter your email and we'll
+                                        send you a login code</h3>
+                                </div>
+                            </div>
+                            <div class="captcha-element captcha-error">
+                                <div class="ui-banner ui-banner--status-warning ui-banner--within-page">
+                                    <div class="ui-banner__ribbon"><svg
+                                            class="next-icon next-icon--size-20 next-icon--no-nudge" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="#CircleAlertMajor"></use>
+                                        </svg></div>
+                                    <div class="ui-banner__content-container">
+                                        <div class="ui-banner__content">
+                                            <div class="ui-type-container ui-type-container--spacing-tight">
+                                                <p>Something prevented the captcha from loading. Try disabling
+                                                    your ad blocker or reload the page.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui-form__section">
+                                <div class="ui-form__group type-ahead-wrapper polaris-uplift-input-wrapper">
+                                    <div class="next-input-wrapper type-ahead-hint" aria-hidden="true">
+                                        <label class="next-label" for="email_type_ahead">Email type
+                                            ahead</label><input type="text" name="email type ahead"
+                                            id="email_type_ahead" value=""
+                                            class="next-input next-input--disabled next-input--readonly type-ahead-hint-field"
+                                            tabindex="-1" readonly="readonly" autocomplete="off" disabled="disabled">
+                                    </div>
+                                    <div class="next-input-wrapper email-input-wrapper"><label class="next-label"
+                                            for="account_email">Email</label><input
+                                            class="next-input type-ahead-input email-typo-input" type="email"
+                                            autocomplete="username" aria-required="true" aria-invalid="false" value=""
+                                            autofocus="autofocus">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="captcha-element captcha-loading--spinner captcha-v2-loaded">
+                                <span role="img" class="ui-spinner"></span>
+                            </div>
+                            <div class="hidden" id="js__auth-data" data-rid="b44a854f-3293-4542-b3c0-e8fe8150c8cf"
+                                data-url="/60534456508/auth/browser_feedback/submit">
+                            </div>
+
+                            <div data-define="{showShopLoader: false}" data-bind-show="!showShopLoader">
+                                <button
+                                    class="ui-button ui-button--primary ui-button--full-width ui-button--size-large login-button ui-button--has-hover-icon captcha__submit"
+                                    type="submit" name="commit" data-disable="true" data-bind-disabled="captchaDisabled"
+                                    define="{localClass: new CaptchaStateHandler($context, {
+                            v2Completed: true,
+                            v3EnterpriseCompleted: false,
+                            formCompleted: true,
+                          })}" enable_submit_onload="true" fdprocessedid="yfl4am">
+                                    <span class="content">
+                                        <span class="ui-button__text">Continue</span>
+                                        <span class="ui-button__hover-icon"><svg width="20" height="20"
+                                                viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.49951 10C3.49951 9.58579 3.8353 9.25 4.24951 9.25L13.9391 9.25L11.2192 6.53036C10.9263 6.23748 10.9263 5.7626 11.2192 5.4697C11.512 5.17679 11.9869 5.17676 12.2798 5.46964L16.2802 9.46964C16.4209 9.6103 16.4999 9.80107 16.4999 10C16.4999 10.1989 16.4209 10.3897 16.2802 10.5304L12.2798 14.5304C11.9869 14.8232 11.512 14.8232 11.2192 14.5303C10.9263 14.2374 10.9263 13.7625 11.2192 13.4696L13.9391 10.75L4.24951 10.75C3.8353 10.75 3.49951 10.4142 3.49951 10Z"
+                                                    fill="currentColor"></path>
+                                            </svg></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="login-footer">
+                    <a class="login-footer__link" target="_blank"
+                        href="https://decodeage.com/60534456508/policies/25471713468.html?locale=en"
+                        title="Privacy Policy">Privacy</a>
+                </footer>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

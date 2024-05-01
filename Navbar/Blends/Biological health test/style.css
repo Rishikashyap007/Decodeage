@@ -1,0 +1,107 @@
+.containers {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.image {
+    float: left;
+    width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.container {
+    float: right;
+    height: 500px;
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.heading {
+    margin-block: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.table-container1 {
+    border: 1px solid blue;
+}
+
+.table {
+    display: table;
+    font-weight: bold;
+}
+
+.cancel {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.table-cell {
+    vertical-align: middle;
+    padding: 5px;
+    display: table-cell;
+}
+
+.sub-container {
+    text-align: center;
+    padding: 8px;
+}
+
+.link {
+    display: block;
+    padding-block: 10px;
+}
+
+.flexbox {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.order-text {
+    margin-block: 25px;
+}
+
+.buttons {
+    display: inline-block;
+    padding-block: 15px;
+    padding-inline: 20px;
+    border: 1px solid orange;
+    text-decoration: none;
+}
+
+.buttons:hover {
+    background-color: orange;
+    color: white;
+}
+
+.buttons:first-child {
+    margin-right: 20px;
+}
+
+.free-shipping {
+    margin-block: 10px;
+}
+
+.border {
+    border: 1px solid blue;
+}

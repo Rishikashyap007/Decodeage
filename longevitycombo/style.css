@@ -1,0 +1,688 @@
+#navigation-promo-03d11049-9a03-4d81-adb2-4391462f2394-drawer-2- {
+  --navigation-promo-grid: auto /
+    repeat(
+      0,
+      minmax(
+        var(--mega-menu-promo-grid-image-min-width),
+        var(--mega-menu-promo-grid-image-max-width)
+      )
+    );
+  --mega-menu-promo-grid-image-max-width: 300px;
+  --mega-menu-promo-grid-image-min-width: 172px;
+  --promo-heading-font-size: var(--text-h5);
+  --content-over-media-row-gap: var(--spacing-3);
+  --content-over-media-column-gap: var(--spacing-4);
+  --navigation-promo-gap: var(--spacing-2);
+  --panel-wrapper-justify-content: flex-start;
+}
+
+#navigation-promo-03d11049-9a03-4d81-adb2-4391462f2394-drawer-2-
+  .navigation-promo__carousel-controls {
+  inset-block-end: var(--content-over-media-column-gap);
+}
+
+@media screen and (min-width: 700px) {
+  #navigation-promo-03d11049-9a03-4d81-adb2-4391462f2394-drawer-2- {
+    --promo-heading-font-size: var(--text-h6);
+    --mega-menu-promo-grid-image-min-width: 192px;
+    --content-over-media-row-gap: var(--spacing-4);
+    --content-over-media-column-gap: var(--spacing-5);
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  #navigation-promo-03d11049-9a03-4d81-adb2-4391462f2394-drawer-2- {
+    --promo-heading-font-size: var(--text-h5);
+    --content-over-media-row-gap: var(--spacing-5);
+    --content-over-media-column-gap: var(--spacing-7);
+    --mega-menu-promo-grid-image-min-width: 220px;
+  }
+}
+/* Typography (heading) */
+@font-face {
+  font-family: Nunito;
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+  src: url("//decodeage.com/cdn/fonts/nunito/nunito_n4.eeda324bc2f350e5c92cf5ef4a0712035386bd19.woff2?h1=bGlmZWVsZW1lbnRzLmlu&h2=ZGVjb2RlYWdlLmNvbQ&h3=ZGVjb2RlLWFnZS5teXNob3BpZnkuY29t&h4=bGlmZWVsZW1lbnRzLXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h5=YWNjb3VudC5kZWNvZGVhZ2UuY29t&hmac=a27a6e1b4f9850cfd1bd2af23363515a4e5a36135f4b4de808793b3dda2648f2")
+      format("woff2"),
+    url("//decodeage.com/cdn/fonts/nunito/nunito_n4.510d96f4fbdd1b53fb60bf060c2e23e85d391444.woff?h1=bGlmZWVsZW1lbnRzLmlu&h2=ZGVjb2RlYWdlLmNvbQ&h3=ZGVjb2RlLWFnZS5teXNob3BpZnkuY29t&h4=bGlmZWVsZW1lbnRzLXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h5=YWNjb3VudC5kZWNvZGVhZ2UuY29t&hmac=c24670c604bb4f108f85bbdf29107dd884b1d4f3fcdddfdef896d7592fcdf17e")
+      format("woff");
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 400;
+  font-style: italic;
+  font-display: fallback;
+  src: url("//decodeage.com/cdn/fonts/nunito/nunito_i4.dbaca638c505ec148af97f053d848593eba2f0b4.woff2?h1=bGlmZWVsZW1lbnRzLmlu&h2=ZGVjb2RlYWdlLmNvbQ&h3=ZGVjb2RlLWFnZS5teXNob3BpZnkuY29t&h4=bGlmZWVsZW1lbnRzLXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h5=YWNjb3VudC5kZWNvZGVhZ2UuY29t&hmac=8682a9cdf438004fd5e79ffd2b61e36270e71addda5858f2afbb9c23befb37f5")
+      format("woff2"),
+    url("//decodeage.com/cdn/fonts/nunito/nunito_i4.30fd4764a73b8d42cc49848e358ad40d27278c54.woff?h1=bGlmZWVsZW1lbnRzLmlu&h2=ZGVjb2RlYWdlLmNvbQ&h3=ZGVjb2RlLWFnZS5teXNob3BpZnkuY29t&h4=bGlmZWVsZW1lbnRzLXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h5=YWNjb3VudC5kZWNvZGVhZ2UuY29t&hmac=ab1b2e50e8acfc2c2fb894fd95ed43dfc3e556993de909640b3377dcf22d3e67")
+      format("woff");
+}
+
+/* Typography (body) */
+@font-face {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+  src: url("//decodeage.com/cdn/fonts/nunito_sans/nunitosans_n4.2b61d9dcf54d8ac8282cfd1ebb6964c79a7efcd1.woff2?h1=bGlmZWVsZW1lbnRzLmlu&h2=ZGVjb2RlYWdlLmNvbQ&h3=ZGVjb2RlLWFnZS5teXNob3BpZnkuY29t&h4=bGlmZWVsZW1lbnRzLXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h5=YWNjb3VudC5kZWNvZGVhZ2UuY29t&hmac=8ccfa07c5cfb1832ce843ae6d40bcac7fbe6e6408a9eff1d21239c05ae2ddb66")
+      format("woff2"),
+    url("//decodeage.com/cdn/fonts/nunito_sans/nunitosans_n4.420cbf408f643f8ff8fd948b99c10dade8b6af79.woff?h1=bGlmZWVsZW1lbnRzLmlu&h2=ZGVjb2RlYWdlLmNvbQ&h3=ZGVjb2RlLWFnZS5teXNob3BpZnkuY29t&h4=bGlmZWVsZW1lbnRzLXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h5=YWNjb3VudC5kZWNvZGVhZ2UuY29t&hmac=552c1daa4afd746409d925587fd2494aa7f4feb48d2978b46287fe96f1d7ce04")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-style: italic;
+  font-display: fallback;
+  src: url("//decodeage.com/cdn/fonts/nunito_sans/nunitosans_i4.e88a2041a6cfbeacffb96db0e8efdfaaa38ddc5c.woff2?h1=bGlmZWVsZW1lbnRzLmlu&h2=ZGVjb2RlYWdlLmNvbQ&h3=ZGVjb2RlLWFnZS5teXNob3BpZnkuY29t&h4=bGlmZWVsZW1lbnRzLXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h5=YWNjb3VudC5kZWNvZGVhZ2UuY29t&hmac=04b78e6a2ddbe6a4f1c1eb3d0c7c6c2a8f464595a4b6a5e9abaf23ad8a0faf50")
+      format("woff2"),
+    url("//decodeage.com/cdn/fonts/nunito_sans/nunitosans_i4.2c3733ccdf579e6e89e929a950e6a93484fdf6b4.woff?h1=bGlmZWVsZW1lbnRzLmlu&h2=ZGVjb2RlYWdlLmNvbQ&h3=ZGVjb2RlLWFnZS5teXNob3BpZnkuY29t&h4=bGlmZWVsZW1lbnRzLXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h5=YWNjb3VudC5kZWNvZGVhZ2UuY29t&hmac=77eddd85e9e0e406a7561cfe96b6278516591901f0ca2622874847a4421c8bfc")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+  src: url("//decodeage.com/cdn/fonts/nunito_sans/nunitosans_n7.5bd4fb9346d13afb61b3d78f8a1e9f31b128b3d9.woff2?h1=bGlmZWVsZW1lbnRzLmlu&h2=ZGVjb2RlYWdlLmNvbQ&h3=ZGVjb2RlLWFnZS5teXNob3BpZnkuY29t&h4=bGlmZWVsZW1lbnRzLXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h5=YWNjb3VudC5kZWNvZGVhZ2UuY29t&hmac=0f020b762ac61153c4e1404175d1424669ff0bb9cab0c0ea2a1062db6a53dd8b")
+      format("woff2"),
+    url("//decodeage.com/cdn/fonts/nunito_sans/nunitosans_n7.2bcf0f11aa6af91c784a857ef004bcca8c2d324d.woff?h1=bGlmZWVsZW1lbnRzLmlu&h2=ZGVjb2RlYWdlLmNvbQ&h3=ZGVjb2RlLWFnZS5teXNob3BpZnkuY29t&h4=bGlmZWVsZW1lbnRzLXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h5=YWNjb3VudC5kZWNvZGVhZ2UuY29t&hmac=0329d13940c7b78ac378d003f1b276a9960e1b37e5f98472f0dcb8f776816a58")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  font-style: italic;
+  font-display: fallback;
+  src: url("//decodeage.com/cdn/fonts/nunito_sans/nunitosans_i7.975ea93f521412ef99ca1e2e434d8ca6a5cf77e7.woff2?h1=bGlmZWVsZW1lbnRzLmlu&h2=ZGVjb2RlYWdlLmNvbQ&h3=ZGVjb2RlLWFnZS5teXNob3BpZnkuY29t&h4=bGlmZWVsZW1lbnRzLXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h5=YWNjb3VudC5kZWNvZGVhZ2UuY29t&hmac=cf48e2dcdff98b3f1c61ae35f117fe3981cf24b0c95c85adc02726b2c6ab6bdb")
+      format("woff2"),
+    url("//decodeage.com/cdn/fonts/nunito_sans/nunitosans_i7.83b70272d04b71e88f25fc6834dc9b88e4ba4e95.woff?h1=bGlmZWVsZW1lbnRzLmlu&h2=ZGVjb2RlYWdlLmNvbQ&h3=ZGVjb2RlLWFnZS5teXNob3BpZnkuY29t&h4=bGlmZWVsZW1lbnRzLXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h5=YWNjb3VudC5kZWNvZGVhZ2UuY29t&hmac=ecfb62ea7842fdc94bd99d196079c1a2628df02f803a97694f98055c08825393")
+      format("woff");
+}
+
+:root {
+  /**
+* ---------------------------------------------------------------------
+* SPACING VARIABLES
+*
+* We are using a spacing inspired from frameworks like Tailwind CSS.
+* ---------------------------------------------------------------------
+*/
+  --spacing-0-5: 0.125rem;
+  /* 2px */
+  --spacing-1: 0.25rem;
+  /* 4px */
+  --spacing-1-5: 0.375rem;
+  /* 6px */
+  --spacing-2: 0.5rem;
+  /* 8px */
+  --spacing-2-5: 0.625rem;
+  /* 10px */
+  --spacing-3: 0.75rem;
+  /* 12px */
+  --spacing-3-5: 0.875rem;
+  /* 14px */
+  --spacing-4: 1rem;
+  /* 16px */
+  --spacing-4-5: 1.125rem;
+  /* 18px */
+  --spacing-5: 1.25rem;
+  /* 20px */
+  --spacing-5-5: 1.375rem;
+  /* 22px */
+  --spacing-6: 1.5rem;
+  /* 24px */
+  --spacing-6-5: 1.625rem;
+  /* 26px */
+  --spacing-7: 1.75rem;
+  /* 28px */
+  --spacing-7-5: 1.875rem;
+  /* 30px */
+  --spacing-8: 2rem;
+  /* 32px */
+  --spacing-8-5: 2.125rem;
+  /* 34px */
+  --spacing-9: 2.25rem;
+  /* 36px */
+  --spacing-9-5: 2.375rem;
+  /* 38px */
+  --spacing-10: 2.5rem;
+  /* 40px */
+  --spacing-11: 2.75rem;
+  /* 44px */
+  --spacing-12: 3rem;
+  /* 48px */
+  --spacing-14: 3.5rem;
+  /* 56px */
+  --spacing-16: 4rem;
+  /* 64px */
+  --spacing-18: 4.5rem;
+  /* 72px */
+  --spacing-20: 5rem;
+  /* 80px */
+  --spacing-24: 6rem;
+  /* 96px */
+  --spacing-28: 7rem;
+  /* 112px */
+  --spacing-32: 8rem;
+  /* 128px */
+  --spacing-36: 9rem;
+  /* 144px */
+  --spacing-40: 10rem;
+  /* 160px */
+  --spacing-44: 11rem;
+  /* 176px */
+  --spacing-48: 12rem;
+  /* 192px */
+  --spacing-52: 13rem;
+  /* 208px */
+  --spacing-56: 14rem;
+  /* 224px */
+  --spacing-60: 15rem;
+  /* 240px */
+  --spacing-64: 16rem;
+  /* 256px */
+  --spacing-72: 18rem;
+  /* 288px */
+  --spacing-80: 20rem;
+  /* 320px */
+  --spacing-96: 24rem;
+  /* 384px */
+
+  /* Container */
+  --container-max-width: 1520px;
+  --container-narrow-max-width: 1270px;
+  --container-gutter: var(--spacing-5);
+  --section-outer-spacing-block: var(--spacing-12);
+  --section-inner-max-spacing-block: var(--spacing-10);
+  --section-inner-spacing-inline: var(--container-gutter);
+  --section-stack-spacing-block: var(--spacing-8);
+
+  /* Grid gutter */
+  --grid-gutter: var(--spacing-5);
+
+  /* Product list settings */
+  --product-list-row-gap: var(--spacing-8);
+  --product-list-column-gap: var(--grid-gutter);
+
+  /* Form settings */
+  --input-gap: var(--spacing-2);
+  --input-height: 2.625rem;
+  --input-padding-inline: var(--spacing-4);
+
+  /* Other sizes */
+  --sticky-area-height: calc(
+    var(--sticky-announcement-bar-enabled, 0) *
+      var(--announcement-bar-height, 0px) + var(--sticky-header-enabled, 0) *
+      var(--header-height, 0px)
+  );
+
+  /* RTL support */
+  --transform-logical-flip: 1;
+  --transform-origin-start: left;
+  --transform-origin-end: right;
+
+  /**
+* ---------------------------------------------------------------------
+* TYPOGRAPHY
+* ---------------------------------------------------------------------
+*/
+
+  /* Font properties */
+  --heading-font-family: Nunito, sans-serif;
+  --heading-font-weight: 400;
+  --heading-font-style: normal;
+  --heading-text-transform: normal;
+  --heading-letter-spacing: -0.02em;
+  --text-font-family: "Nunito Sans", sans-serif;
+  --text-font-weight: 400;
+  --text-font-style: normal;
+  --text-letter-spacing: 0em;
+
+  /* Font sizes */
+  --text-h0: 2.5rem;
+  --text-h1: 1.75rem;
+  --text-h2: 1.5rem;
+  --text-h3: 1.375rem;
+  --text-h4: 1.125rem;
+  --text-h5: 1.125rem;
+  --text-h6: 1rem;
+  --text-xs: 0.6875rem;
+  --text-sm: 0.75rem;
+  --text-base: 0.875rem;
+  --text-lg: 1.125rem;
+
+  /**
+* ---------------------------------------------------------------------
+* COLORS
+* ---------------------------------------------------------------------
+*/
+
+  /* Color settings */
+  --accent: 26 26 26;
+  --text-primary: 26 26 26;
+  --background-primary: 243 243 246;
+  --dialog-background: 255 255 255;
+  --border-color: var(--text-color, var(--text-primary)) / 0.12;
+
+  /* Button colors */
+  --button-background-primary: 26 26 26;
+  --button-text-primary: 255 255 255;
+  --button-background-secondary: 240 196 23;
+  --button-text-secondary: 26 26 26;
+
+  /* Status colors */
+  --success-background: 224 244 232;
+  --success-text: 0 163 65;
+  --warning-background: 255 246 233;
+  --warning-text: 255 183 74;
+  --error-background: 254 231 231;
+  --error-text: 248 58 58;
+
+  /* Product colors */
+  --on-sale-text: 58 112 248;
+  --on-sale-badge-background: 58 112 248;
+  --on-sale-badge-text: 255 255 255;
+  --sold-out-badge-background: 0 0 0;
+  --sold-out-badge-text: 255 255 255;
+  --primary-badge-background: 128 60 238;
+  --primary-badge-text: 255 255 255;
+  --star-color: 255 183 74;
+  --product-card-background: 255 255 255;
+  --product-card-text: 26 26 26;
+
+  /* Header colors */
+  --header-background: 240 240 240;
+  --header-text: 26 26 26;
+
+  /* Footer colors */
+  --footer-background: 255 255 255;
+  --footer-text: 26 26 26;
+
+  /* Rounded variables (used for border radius) */
+  --rounded-xs: 0.25rem;
+  --rounded-sm: 0.375rem;
+  --rounded: 0.75rem;
+  --rounded-lg: 1.5rem;
+  --rounded-full: 9999px;
+
+  --rounded-button: 3.75rem;
+  --rounded-input: 0.5rem;
+
+  /* Box shadow */
+  --shadow-sm: 0 2px 8px rgb(var(--text-primary) / 0.1);
+  --shadow: 0 5px 15px rgb(var(--text-primary) / 0.1);
+  --shadow-md: 0 5px 30px rgb(var(--text-primary) / 0.1);
+  --shadow-block: 0px 30px 50px rgb(var(--text-primary) / 0.1);
+
+  /**
+* ---------------------------------------------------------------------
+* OTHER
+* ---------------------------------------------------------------------
+*/
+
+  --cursor-close-svg-url: url(//decodeage.com/cdn/shop/t/21/assets/cursor-close.svg?v=147174565022153725511699087093);
+  --cursor-zoom-in-svg-url: url(//decodeage.com/cdn/shop/t/21/assets/cursor-zoom-in.svg?v=154953035094101115921699087093);
+  --cursor-zoom-out-svg-url: url(//decodeage.com/cdn/shop/t/21/assets/cursor-zoom-out.svg?v=16155520337305705181699087093);
+  --checkmark-svg-url: url(//decodeage.com/cdn/shop/t/21/assets/checkmark.svg?v=77552481021870063511699087093);
+}
+
+[dir="rtl"]:root {
+  /* RTL support */
+  --transform-logical-flip: -1;
+  --transform-origin-start: right;
+  --transform-origin-end: left;
+}
+
+@media screen and (min-width: 700px) {
+  :root {
+    /* Typography (font size) */
+    --text-h0: 3.25rem;
+    --text-h1: 2.25rem;
+    --text-h1: 56px;
+    --text-h2: 1.75rem;
+    --text-h2: 32px;
+    --text-h3: 1.625rem;
+    --text-h4: 1.25rem;
+    --text-h5: 1.25rem;
+    --text-h6: 1.125rem;
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.25rem;
+
+    /* Spacing */
+    --container-gutter: 2rem;
+    --section-outer-spacing-block: var(--spacing-16);
+    --section-inner-max-spacing-block: var(--spacing-12);
+    --section-inner-spacing-inline: var(--spacing-12);
+    --section-stack-spacing-block: var(--spacing-12);
+
+    /* Grid gutter */
+    --grid-gutter: var(--spacing-6);
+
+    /* Product list settings */
+    --product-list-row-gap: var(--spacing-12);
+
+    /* Form settings */
+    --input-gap: 1rem;
+    --input-height: 3.125rem;
+    --input-padding-inline: var(--spacing-5);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  :root {
+    /* Spacing settings */
+    --container-gutter: var(--spacing-12);
+    --section-outer-spacing-block: var(--spacing-18);
+    --section-inner-max-spacing-block: var(--spacing-16);
+    --section-inner-spacing-inline: var(--spacing-16);
+    --section-stack-spacing-block: var(--spacing-12);
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  :root {
+    /* Spacing settings */
+    --container-gutter: var(--spacing-12);
+    --section-outer-spacing-block: var(--spacing-20);
+    --section-inner-max-spacing-block: var(--spacing-16);
+    --section-inner-spacing-inline: var(--spacing-16);
+    --section-stack-spacing-block: var(--spacing-12);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  :root {
+    /* Typography (font size) */
+    --text-h0: 4rem;
+    --text-h1: 3rem;
+    --text-h2: 2.5rem;
+    --text-h3: 1.75rem;
+    --text-h4: 1.5rem;
+    --text-h5: 1.25rem;
+    --text-h6: 1.25rem;
+
+    --section-outer-spacing-block: var(--spacing-24);
+    --section-inner-max-spacing-block: var(--spacing-18);
+    --section-inner-spacing-inline: var(--spacing-18);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  :root {
+    --section-outer-spacing-block: var(--spacing-24);
+    --section-inner-max-spacing-block: var(--spacing-20);
+    --section-inner-spacing-inline: var(--spacing-20);
+  }
+}
+@media screen and (pointer: fine) {
+  .button:not([disabled]):hover,
+  .btn:not([disabled]):hover,
+  .shopify-payment-button__button--unbranded:not([disabled]):hover {
+    --button-background-opacity: 0.85;
+  }
+
+  .button--subdued:not([disabled]):hover {
+    --button-background: var(--text-color) / 0.05 !important;
+  }
+}
+.shopify-payment-button__button {
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 0 0 transparent;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  width: 100%;
+  height: 44px;
+  transition: background 0.2s ease-in-out;
+}
+
+.shopify-payment-button__button[disabled] {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.shopify-payment-button__button--unbranded {
+  background-color: #1990c6;
+  padding: 1em 2em;
+}
+
+.shopify-payment-button__button--unbranded:hover:not([disabled]) {
+  background-color: #136f99;
+}
+
+.shopify-payment-button__more-options {
+  background: transparent;
+  border: 0 none;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  margin-top: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.shopify-payment-button__more-options:hover:not([disabled]) {
+  text-decoration: underline;
+}
+
+.shopify-payment-button__more-options[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.shopify-payment-button__button--branded {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.shopify-payment-button__button--branded .shopify-cleanslate {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.shopify-payment-button__button.button.loading {
+  position: relative;
+  color: transparent;
+}
+
+.shopify-payment-button__button.button.loading > .loading-overlay__spinner {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.shopify-payment-button__button.button.loading
+  > .loading-overlay__spinner
+  .spinner {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+
+.button.loading > .loading-overlay__spinner .path {
+  stroke: white;
+}
+
+.shopify-payment-button__button .loading-overlay__spinner {
+  width: 1.8rem;
+  display: inline-block;
+}
+
+.shopify-payment-button__button .spinner {
+  animation: shopify-rotator 1.4s linear infinite;
+}
+
+@keyframes shopify-rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(270deg);
+  }
+}
+#shopify-section-template--16207621849276__main {
+  --section-background-hash: 0;
+}
+
+#shopify-section-template--16207621849276__main + * {
+  --previous-section-background-hash: 0;
+}
+
+#shopify-section-template--16207621849276__main {
+  --product-grid: auto / minmax(0, 1fr);
+  --product-gallery-media-list-grid: auto / auto-flow 100%;
+  --product-gallery-media-list-gap: var(--spacing-0-5);
+}
+
+@media screen and (max-width: 999px) {
+  #shopify-section-template--16207621849276__main {
+    --section-spacing-block-start: 0px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #shopify-section-template--16207621849276__main {
+    --product-grid: auto / minmax(0, 1fr) minmax(0, 1fr);
+    --product-gallery-media-list-grid: auto / auto-flow 100%;
+    --product-gallery-media-list-gap: calc(var(--grid-gutter) / 2);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #shopify-section-template--16207621849276__main {
+    --product-gallery-media-list-gap: var(--grid-gutter);
+  }
+}
+.shopify-payment-button__button .path {
+  stroke-dasharray: 280;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  stroke: rgb(18, 18, 18);
+  animation: shopify-dash 1.4s ease-in-out infinite;
+}
+
+@media screen and (forced-colors: active) {
+  .shopify-payment-button__button .path {
+    stroke: CanvasText;
+  }
+}
+
+@keyframes shopify-dash {
+  0% {
+    stroke-dashoffset: 280;
+  }
+
+  50% {
+    stroke-dashoffset: 75;
+    transform: rotate(135deg);
+  }
+
+  100% {
+    stroke-dashoffset: 280;
+    transform: rotate(450deg);
+  }
+}
+@media screen and (max-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 60px;
+  }
+}
+:root {
+  --sticky-announcement-bar-enabled: 0;
+}
+#navigation-promo-b01d18c1-9e59-459d-ad60-9f1c025e409b-drawer-7-
+  .navigation-promo__carousel-controls {
+  inset-block-end: var(--content-over-media-column-gap);
+}
+
+@media screen and (min-width: 700px) {
+  #navigation-promo-b01d18c1-9e59-459d-ad60-9f1c025e409b-drawer-7- {
+    --promo-heading-font-size: var(--text-h6);
+    --mega-menu-promo-grid-image-min-width: 192px;
+    --content-over-media-row-gap: var(--spacing-4);
+    --content-over-media-column-gap: var(--spacing-5);
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  #navigation-promo-b01d18c1-9e59-459d-ad60-9f1c025e409b-drawer-7- {
+    --promo-heading-font-size: var(--text-h5);
+    --content-over-media-row-gap: var(--spacing-5);
+    --content-over-media-column-gap: var(--spacing-7);
+    --mega-menu-promo-grid-image-min-width: 220px;
+  }
+}
+
+#shopify-section-template--16207621849276__a64e0a85-c138-4d27-b711-74baf99fd738 {
+  --section-background-hash: 0;
+}
+
+#shopify-section-template--16207621849276__a64e0a85-c138-4d27-b711-74baf99fd738
+  + * {
+  --previous-section-background-hash: 0;
+}
+
+#shopify-section-template--16207621849276__a64e0a85-c138-4d27-b711-74baf99fd738
+  .product-list {
+  --product-list-gap: var(--product-list-row-gap) var(--spacing-2);
+  --product-list-items-per-row: 2;
+  --product-list-carousel-item-width: 74vw;
+  --product-list-grid: auto /
+    repeat(var(--product-list-items-per-row), minmax(0, 1fr));
+}
+
+@media screen and (min-width: 700px) {
+  #shopify-section-template--16207621849276__a64e0a85-c138-4d27-b711-74baf99fd738
+    .product-list {
+    --product-list-gap: var(--product-list-row-gap)
+      var(--product-list-column-gap);
+    --product-list-items-per-row: 2;
+    --product-list-carousel-item-width: 36vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #shopify-section-template--16207621849276__a64e0a85-c138-4d27-b711-74baf99fd738
+    .product-list {
+    --product-list-items-per-row: 4;
+    --product-list-carousel-item-width: calc(
+      var(--container-inner-width) / 4 -
+        (var(--product-list-column-gap) / 4 * 3)
+    );
+  }
+}
+.blog-posts {
+  overflow: hidden;
+  position: relative;
+}
+
+.blog-posts img {
+  transition: transform 0.7s ease;
+}
+
+.blog-posts:hover img {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}

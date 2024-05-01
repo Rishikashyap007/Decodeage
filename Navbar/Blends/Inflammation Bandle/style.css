@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: rgba(101, 107, 158, 0.1);
+  overflow-x: hidden;
+}
+.container {
+  height: 750px;
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  justify-content: space-evenly;
+  gap: 0px;
+  overflow: hidden;
+  /* background-color: orange; */
+}
+@media screen and (max-width: 1000px) {
+  .left {
+    width: 100%;
+    height: 700px;
+  }
+  .right {
+    flex-direction: column;
+    display: inline;
+    display: none;
+  }
+  .container {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    scroll-padding-inline: 0;
+  }
+  .imagesss {
+    display: none;
+  }
+  .ResearchText {
+    flex-direction: column;
+    display: block;
+  }
+  .ResearchImage {
+    height: 700px;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 700px) {
+  .sm\:unbleed {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    scroll-padding-inline: 0;
+  }
+}
+.left {
+  height: 90%;
+  width: 45%;
+  background-image: url("image/img1.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  flex-wrap: wrap;
+}
+
+.right {
+  height: 70%;
+  width: 50%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* background-color: blue; */
+}
+.right h1 {
+  font-size: 45px;
+}
+.Save-parcentage {
+  border-radius: 50px;
+  border: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 75px;
+  height: 21px;
+  color: white;
+  margin-left: 140px;
+  background-color: #3a70f8;
+  font-weight: normal;
+}
+.rupses {
+  color: #3a70f8;
+  font-weight: normal;
+  margin-top: 18px;
+}
+.money1 {
+  color: #1a1a1ab3;
+  font-weight: normal;
+  text-decoration-line: line-through;
+}
+.money2 {
+  color: #1a1a1ab3;
+  font-weight: normal;
+}
+.money {
+  color: #1a1a1a;
+  font-weight: normal;
+  margin-top: 20px;
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6vh;
+  width: 12vw;
+  border-style: groove;
+  border-radius: 50px;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+.counter {
+  font-size: 24px;
+}
+.button {
+  margin: 0 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+}
+#decreaseBtn {
+  border: none;
+  font-size: 25px;
+  margin-right: 20px;
+}
+#increaseBtn {
+  border: none;
+  font-size: 25px;
+  margin-left: 20px;
+}
+.button {
+  width: 48vw;
+  height: 10vh;
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* display: inline-block; */
+}
+.buttonCart {
+  height: 7.5vh;
+  width: 23vw;
+  background-color: rgb(245, 188, 82);
+  color: black;
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  border-radius: 32px;
+}
+.buttonBuy {
+  height: 5vh;
+  width: 23vw;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  /* display: inline-block;
+  justify-content: space-between; */
+}
+.src {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 69px;
+}
+.imagesss {
+  height: 30vh;
+  width: 98.77vw;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
+.Reasearch h1 {
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 47px;
+  font-weight: 600;
+  margin-left: 20%;
+  margin-top: 60px;
+  height: 100px;
+}
+.ResearchSection {
+  height: 64vh;
+  /* width: 95.77vw; */
+  background-color: #e0ddddb3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-top-right-radius: 25px;
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+}
+.ResearchImage {
+  height: 500px;
+  width: 95%;
+  /* background-color: black; */
+  overflow: hidden;
+}
+.researchimg {
+  height: 500px;
+  /* width: 95%; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-right: 5px;
+  margin-left: 25px;
+  border-top-left-radius: 25px;
+  cursor: pointer;
+  transition: all 1.1s;
+}
+.researchimg:hover {
+  transform: scale(1.2);
+}
+.ResearchText {
+  height: 400px;
+  width: 45%;
+  /* margin-left: 40px; */
+  /* background-color: #1a1a1a; */
+}
+.Senolytics {
+  height: 27px;
+  width: 100px;
+  background-color: #e0ddddb3;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+.Inflammation {
+  font-size: 41px;
+  margin-left: 20px;
+}
+.InflammationText {
+  font-size: 20px;
+  gap: 8px;
+  margin-left: 20px;
+}
+.likeText {
+  height: 20vh;
+  width: 97vw;
+  background-color: darkgoldenrod;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.product-card {
+  width: 320px;
+  height: 500px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  padding: 20px;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  margin-left: 10px;
+  margin-top: 50px;
+}
+/* .product-card h3 {
+  background-color: white;
+} */
+
+img {
+  width: 100%;
+  /* height: 80%; */
+  border-radius: 10px;
+  background-color: none;
+}
+
+.product-info {
+  /* text-align: center; */
+  /* gap: 10px; */
+  align-items: center;
+  justify-content: space-evenly;
+}
+.Save {
+  border-radius: 50px;
+  border: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 75px;
+  height: 21px;
+  color: white;
+  background-color: #3a70f8;
+  font-weight: normal;
+}
+.price {
+  font-size: 1em;
+  margin-right: 90px;
+}
+.price2 {
+  font-size: 1em;
+  margin-right: 50px;
+  text-decoration-line: line-through;
+}
+
+.buyButton {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 20px 30px;
+  border-radius: 50px;
+  /* margin-top: 10px; */
+  cursor: pointer;
+}
+
+/* button:hover {
+  background-color: #2980b9;
+} */

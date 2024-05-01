@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: blue;
+    padding: 20px;
+    margin: 0 20px; /* Adjusted to ensure same left and right margins */
+    display: flex;
+    flex-direction: column; /* Changed to column to stack items vertically */
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Aligns children to opposite ends */
+    align-items: center; /* Vertically centers children */
+    width: 70%; /* Ensures the content takes up the full width */
+    margin: 0 20px; /* Adds margin to the left and right */
+    margin-top:20px ;
+    margin-bottom: 20px;
+}
+
+.header-title {
+    color: white;
+    margin: 0;
+    font-size: 19px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+}
+
+.header-nav-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-right: 40px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 80px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+.search-engine {
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 2%;
+    width: 100%;
+}
+
+.input-icons {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #92bafa; /* Icon color */
+}
+
+.search-input {
+    padding: 5px 5px 5px 30px; /* Adjust padding to make room for the icon */
+    border: none;
+    height: 50px;
+    border-radius: 5px;
+    width: 300%;
+    background-color: #92bafa;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 20px;
+}
+
+.search-input:hover {
+    background-color: #92bafa;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.search-input:focus {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+
+.box {
+    /* width: 65rem; */
+    height: 290px;
+    border: 1px solid rgb(148, 147, 147);
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: 20%;
+    margin-right: 18%;
+    border-radius: 12px;
+}
+
+
+.box1 {
+    /* width: 65rem; */
+    height: 190px;
+    border: 1px solid rgb(148, 147, 147);
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: 20%;
+    margin-right: 18%;
+    border-radius: 12px;
+}
+
+
+.box2 {
+    /* width: 65rem; */
+    height: 240px;
+    border: 1px solid rgb(148, 147, 147);
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: 20%;
+    margin-right: 18%;
+    border-radius: 12px;
+}
+
+.boxheading{
+   
+    margin-left: 2%;
+ }
+
+   .row {
+   height: 50px;
+   line-height: 40px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   border-radius: 5px;
+   font-size: 18px;
+   }
+   
+.row:hover {
+   background-color: rgb(201, 239, 247);
+}
+
+.symbol{
+   offset-distance: 50px;
+}
+
+.flow1{
+    margin-left: 20%;
+    margin-right: 40%;
+    margin-top: 1%;  
+}
+.first1 a{
+    text-decoration: none;
+}
+.bottom{
+   text-align: center;
+   color:rgb(197, 190, 190);
+   margin-top: 10%;
+}
+ .heading{
+    font-size: 25px;
+    margin-left: 20%;
+    margin-right: 18%;
+ }
+
+ .circle-text {
+ display: flex;
+ align-items: center;
+ margin-left: 20%;
+ margin-right: 18%;
+}
+
+.circle {
+ background: #b1b2ec;
+ border-radius: 50%; 
+ color: #f1f1f1; 
+ display: inline-block; 
+ font-weight: bold;
+ line-height: 20px; 
+  margin-right: 5px; 
+ padding: 2px 5px;
+ text-align: center; 
+ width: 20px; 
+
+}
+.question{
+   margin-right: 10px; /* Adds some space between the question and the symbol */
+   padding-left: 12px;
+   flex-grow: 1;
+}
+
+
+.circle-text1 {
+   display: flex;
+   align-items: center;
+}
+
+.circle1 {
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color: #f0f0f0;
+   text-align: center;
+   line-height: 50px;
+   margin-right: 10px;
+}
+
+.info1 p {
+   margin: 0;
+   padding: 0;
+}
+
+@media only screen and (max-width: 480px) {
+   .box {
+       width: 90%;
+       margin-left: 5%;
+   }
+   .row {
+       height: auto;
+       line-height: normal;
+   }
+   .circle {
+       width: 15px;
+       height: 15px;
+       line-height: 15px;
+       margin-right: 3px;
+       padding: 1px 3px;
+   }
+   .circle1 {
+       width: 30px;
+       height: 30px;
+       line-height: 30px;
+   }
+   .heading {
+       font-size: 20px;
+       margin-left: 5%;
+   }
+   .circle-text, .circle-text1 {
+       margin-left: 5%;
+   }
+   .question {
+       margin-right: 5px;
+       padding-left: 6px;
+   }
+   .bottom {
+       margin-top: 5%;
+   }
+}

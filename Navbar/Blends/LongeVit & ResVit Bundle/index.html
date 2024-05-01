@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-image">
+            <img src="i1.png" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">LongeVit & ResVit Bundle</h3>
+            <p class="product-price">&#8377; 6,100.00 INR</p>
+            <p class="product-discount"><s>&#8377;₹6,500.00 INR</s></p>
+            <p class="product-line">Tax included. Shipping calculated at checkout</p>
+            <p class="product-description">Strong supplement combos like LongeVit and ResVit promote longevity and general health. ResVit has potent antioxidants like resveratrol and green tea extract, while LongeVit has essential components including NMN and CoQ10. When combined, they have a positive impact on cardiovascular health, improve cognitive function, and boost energy generation. This combination can enhance overall longevity, encourage a healthy and active lifestyle, and support ageing in a positive way.</p>
+            <h4>Quantity:</h4><br>
+            <div class="quantity-controls"> 
+                <button onclick="decreaseQuantity()">-</button>
+                <input type="number" id="quantity" value="1" min="1">
+                <button onclick="increaseQuantity()">+</button>
+            </div>
+            <div class="product-actions">
+                <button class="btn1" onclick="addToCart()">Add to Cart</button>
+                <button class="btn2" onclick="buyNow()">Buy Now</button>
+            </div>
+            <div class="product-bottomimg">
+                <img src="img2.png" alt="Product Image">
+            </div>
+        </div>   
+    </div>
+    <div class="product-bottomimg">
+        <img src="img3.png" alt="Product Image">
+    </div>
+    <div class="research">
+        <div class="header-container">
+            <h1>Research</h1>
+            <h6 class="toggle-heading">
+                View All <span class="arrow">&#9650;</span>
+            </h6>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="image-section">
+            <img src="img1.jpg" alt="Image Description">
+
+        </div>
+        <div class="text-section">
+            <h2>2023's top anti-aging supplements</h2>
+            <p>The search for the fountain of youth is an ongoing endeavour in a world where time is always moving forward. They say that the only thing that is constant is change, and it's true. However...
+            </p>
+            <div class="date-section1">
+                <span class="calendar-icon">&#128197;</span>
+                <span class="date">April 1, 2024</span>
+            </div>
+        </div>
+    </div>
+    <div class="invisible-container">
+        <div class="star-rating">
+            <div class="stars">
+                <span class="star">☆</span>
+                <span class="star">☆</span>
+                <span class="star">☆</span>
+                <span class="star">☆</span>
+                <span class="star">☆</span>
+            </div>
+            <button class="review-btn">Write a Review</button>
+        </div>
+        <p class="center-text">Be the first to<a href="#"> write a review.</a></p>
+    </div>
+    
+
+    <div class="img-card">
+        <h1>You may also like</h1>
+    </div>
+    <div class="container1">
+        <div class="box1">
+            <h2>Sirtuin Activator Bundle</h2>
+            <img src="i1.png" alt="Image 1">
+            <p class="save-text">Save 22%</p>
+            <div class="card1">
+                <div class="text-container">
+                    <p class="card__text1">₹3,500.00 INR</p>
+                    <p class="card__text2">₹4,500.00 INR</p>
+                </div>
+                <button class="card__btn">Buy Now</button>
+            </div>
+        </div>
+       
+        <div class="box1">
+            <h2>Healthy Ageing Bundle</h2>
+            <img src="i1.png" alt="Image 1">
+            <p class="save-text">Save 22%</p>
+            <div class="card1">
+                <div class="text-container">
+                    <p class="card__text1">₹3,500.00 INR</p>
+                    <p class="card__text2">₹4,500.00 INR</p>
+                </div>
+                <button class="card__btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="box1">
+            <h2>Skin Health Bundle</h2>
+            <div class="image-container">
+                <img src="i1.png" alt="Your Image">
+            </div>
+            <p class="save-text">Save 22%</p>
+            <div class="card1">
+                <div class="text-container">
+                    <p class="card__text1">₹3,500.00 INR</p>
+                    <p class="card__text2">₹4,500.00 INR</p>
+                </div>
+                <button class="card__btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="box1">
+            <h2>Heart Health Bundle</h2>
+            <img src="i1.png" alt="Image 1">
+            <p class="save-text">Save 22%</p>
+            <div class="card1">
+                <div class="text-container">
+                    <p class="card__text1">₹3,500.00 INR</p>
+                    <p class="card__text2">₹4,500.00 INR</p>
+                </div>
+                <button class="card__btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="years">
+        <div class="buttons">
+            <button class="year-btn" onclick="displayImage('1955')">1955</button>
+            <button class="year-btn" onclick="displayImage('1956')">1956</button>
+            <button class="year-btn" onclick="displayImage('1957')">1957</button>
+        </div>
+    </div>
+    <div id="imageContainer">
+        <!-- Images will be displayed here -->
+    </div>
+    <div class="last">
+        <h3>Subheadding</h3>
+        <h2>Heading</h2>
+        <h6>Give your customers information about your brand by using this text. Give a product description, make a statement, or greet consumers as they enter your store.</h6>
+    </div>
+
+    
+<div class="block-container">
+    <p class="text">Subscribe to fresh tales and exclusive deals.
+    </p>
+    <div class="search-box">
+        <input type="text" placeholder="Search email...">
+        <button class="toggle-button">&#8964;</button>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

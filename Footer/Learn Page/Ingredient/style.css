@@ -1,0 +1,420 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+
+}
+
+.p1{
+    font-size: 300%;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.date-section1{
+    margin-left: 38%;
+    margin-top: -1%;
+    cursor: pointer;
+    color: rgb(148, 141, 141);
+}
+
+.date-section1:hover{
+    color: rgb(148, 141, 141);
+}
+.date{
+    color: rgb(148, 141, 141);
+}
+.date:hover{
+    color: black;
+}
+
+.date-section2{
+    
+}
+.p2{
+    margin-left: 52%;
+    margin-top: -1.2%;
+    color:rgb(148, 141, 141);
+}
+
+.p2:hover{
+    color:black;
+}
+
+
+img{
+    width: 70%;
+    height: 100%;
+    border-radius: 3%;
+}
+
+h1{
+    margin-left: 17%;
+    font-size: 250%;
+    font-weight: bold;
+    width: 50%;
+}
+
+.p3{
+    margin-left: 17%;
+    width: 50%;
+    font-size: 110%;
+    line-height: 150%;
+}
+
+h2{
+    margin-left: 17%;
+    font-weight: bold;
+    font-size: 170%;
+}
+
+.d1{
+    width: 50%;
+}
+
+.p4{
+    font-size: 100%;
+    font-weight: bold;
+    margin-left: 33%;
+}
+
+.images{
+    width: 5%;
+    display: flex;
+    margin: 42%;
+    margin-top: -7.3%;
+}
+
+.images  img{
+    margin: 40%;
+    cursor: pointer;
+}
+
+.images img:hover{
+    color: rgb(244, 7, 7);
+}
+
+.d2 p{
+    font-weight: bold;
+    font-size: 150%;
+    margin-top: -2.5%;
+    margin-left: 22%;
+}
+
+.right-arrow {
+    margin-left: 17%;
+    margin-top: -10%;
+    color: rgb(12, 11, 11);
+    font-size: 50px
+
+}
+
+.d2{
+    margin-top: -15%;
+}
+
+.d3 img{
+    width: 30%;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.p9{
+    margin-left: 0%;
+    font-size: 120%;
+    font-weight: bold;
+    width: 30%;
+    cursor: pointer;
+}
+
+.date-section2{
+    margin-left: 0%;
+    color:rgb(148, 141, 141) ;
+}
+
+.p10{
+    margin-left:11%;
+    margin-top: -1.5%;
+    font-size: 100%;
+    color: rgb(148, 141, 141);
+}
+
+.p10:hover{
+    color: black;
+}
+
+.d3{
+    margin-left: 17%;
+}
+
+.d4{
+    margin-left: 47%;
+    width: 100%;
+    margin-top: -19%;
+}
+.d4 img{
+    width: 25%;
+    transition:5ms;
+
+}
+
+.container {
+    border-radius: 5%;
+    max-width: 800px;
+    margin-left: 17%;
+    margin-top: 0%;
+    padding: 3em;
+    display: flex;
+    justify-content: space-between;
+    background-color: #faf8f8;
+}
+
+
+
+input {
+    width: 60%;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    justify-content: space-between;  
+}
+
+textarea {
+    width: 100%;
+    height: 15%;
+    padding: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+}
+
+
+
+#submit-btn {
+    font-size: 100%;
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #555;
+}
+
+.message-text {
+    margin: 0;
+}
+
+
+.form-container input.input-side-by-side2 {
+    margin-left: 0%;
+    margin-top: 2%;
+}
+.heading{
+    height: 0%;
+    margin-left: 180%;
+    margin-top: -56%;
+}
+
+.form-container p{
+    font-weight: bold;
+    font-size: 250%;
+    margin-top: -3%;
+}
+
+.form-container h1{
+    font-size: 90%;
+    margin-left: 0%;
+    margin-top: -3%;
+    margin-bottom: 5%;
+    width: 100%;
+    color: rgb(107, 107, 107);
+    
+}
+
+@media screen and (max-width: 480px) {
+    .p1 {
+        font-size: 150%;
+    }
+
+    .date-section1{
+        margin-left: 8%;
+    }
+    .date{
+        font-size: 80%;
+    }
+    .p2 {
+        font-size: 80%;
+        margin-top: -5%;
+        margin-left: 55%;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 150%;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+
+
+    h2 {
+        font-size: 130%;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .p3 {
+        font-size: 90%;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .p4 {
+        font-size: 90%;
+        margin-left: 10%;
+    }
+
+    .images img {
+        width: 300%;
+        margin-top: -310%;
+        margin-left:200%;
+    }
+
+    .d2 p {
+        font-size: 120%;
+        margin-left: 10%;
+    }
+
+    .right-arrow {
+        margin-left: 10%;
+        margin-top: -5%;
+        font-size: 30px;
+    }
+
+    .d3 img {
+        width: 90%;
+        margin-left: -15%;
+    }
+
+    .p9 {
+        font-size: 100%;
+        width: 80%;
+        margin-left: -13%;
+    }
+
+    .d4 {
+        margin-left: 20%;
+        margin-top: 18%;
+    }
+
+    .d4 img {
+        width: 90%;
+        margin-left: -17%;
+    }
+
+    .d2{
+        width: 100%;
+        margin-left: -5%;
+    }
+
+    .d3{
+        width: 100%;
+    }
+
+    .d4{
+        width: 100%;
+    }
+
+    .date-section2{
+        margin-left: -15%;
+    }
+
+    .p10{
+        margin-left: 30%;
+        margin-top: -5%;
+    }
+
+    .container {
+        flex-wrap: wrap; 
+        margin-top: -20%;
+        margin-left:0%;
+        }
+    
+    
+    input {
+        width: 110%; 
+        padding: 1.5em;
+        margin-bottom: 1em;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        justify-content: space-between;
+        margin-left: -13%;
+    }
+    
+    textarea {
+        width: 110%; 
+        height: 150px;
+        padding: 1.5em;
+        margin-bottom: 1em;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        display: block;
+        margin-left: -13%;
+    }
+    
+
+    
+    #submit-btn {
+        font-size: 100%;
+        background-color: #333;
+        color: white;
+        padding: 1em;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-left: -13%;
+    }
+    
+    #submit-btn:hover {
+        background-color: #555;
+    }
+    
+    .message-text {
+        margin: 0;
+    }
+    
+    
+    .form-container input.input-side-by-side2 {
+        margin-left: -13%;
+        margin-top: 0%;
+    
+    }
+    
+    .heading {
+        margin-left: -13%;
+        margin-top: 10%;
+    }
+
+    h2{
+        margin-left: 3%;
+    }
+    
+    .container p{
+        font-size: 170%;
+        margin-left: -10%;
+    }
+
+    .container h1{
+        margin-left: -5%;
+    }
+}

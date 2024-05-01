@@ -1,0 +1,443 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+}
+
+section{
+    display: flex;
+    gap: 50px;
+    margin: 15px;
+  background-color: rgb(248, 245, 245);
+
+}
+
+#center{
+    height: 500px;
+    width: 450px;
+    background: whitesmoke;
+}
+
+
+#content{
+    margin-left: 700px;
+    height:600px;
+    width: 50%;
+    
+}
+#content h2{
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+#content span{
+  font-size: 0.9rem;
+}
+ #content p{
+    margin-top: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+ }
+ .buynow{
+  /* border: 1px solid black; */
+  background-color: white;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  height: 580px;
+  width: 90%;
+  border-radius: 10px;
+ }
+ .head h2{
+  font-weight: 700;
+  margin-top: 10px;
+ }
+ 
+ .one{  
+   display: flex;
+   /* flex-direction: column; */
+   justify-content: space-between;
+   width: inherit;
+ }
+ .one .le p{
+  font-weight: 700;
+ }
+ .one:hover{
+    border: 1px solid blue;
+    cursor: pointer;
+    padding: 10px;
+ }
+ 
+ .sub{
+  display: flex;
+   width: inherit;
+ }
+ .sub:hover{
+  border: 1px solid blue;
+  cursor: pointer;
+  padding: 5px;
+}
+.btn{
+  width: 100%;
+  padding: 5px;
+  font-weight: 700;
+}
+.checked {
+  color: orange;
+  cursor: pointer;
+}
+.review {
+  margin-bottom: 10px;
+}
+
+#used{
+    display: flex;
+    flex-direction: column;
+  background-color: rgb(248, 245, 245);
+
+}
+ #rig{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+ }
+ #rig div span{
+    text-align: justify;
+ }
+  #rig .p1{
+    display: flex;
+    gap: 5px;
+    border: 1px solid lightslategrey;
+    padding: 8px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+  }
+  #rig a{
+   color: black;
+   text-decoration: none;
+  }
+  #rig .p1 img{
+    height: 100px;
+    width: 100px;
+  }
+  #rig .p1 button{
+    /* margin: 10px 20px 15px 0px; */
+    height: 40px;
+    width: 70px;
+    border: none;
+    background-color: silver;
+    border-radius: 40px;
+  }
+  #rig .p2{
+    display: flex;
+    gap: 2px;
+    border: 1px solid lightslategrey;
+    padding: 10px;
+   justify-content: center;
+   align-items: center;
+  }
+  #rig .p2 img{
+    height: 100px;
+    width: 100px;
+  }
+  #rig .p2 button{
+    /* margin: 10px 20px 15px 0px; */
+    height: 40px;
+    width: 70px;
+    border: none;
+    /* padding: 15px; */
+    background-color: silver;
+    border-radius: 40px;
+  }
+  #rig .light{
+   font-weight: 200;
+  }
+
+  #product{
+    margin: 10px;
+    height: 900px;
+    display: flex;
+    padding: 20px;
+  background-color: rgb(248, 245, 245);
+
+  }
+  .matter{
+    margin: 20px;
+    width: 40%;
+}
+ .matter p{
+   font-style: italic;
+   margin-top:30px;
+   font-weight: 700;
+   font-size: 1.3rem;
+ }
+ .table{
+    margin: 30px;
+    width: 60%;
+    padding: 30px;
+    /* border: 1px solid red; */
+    background-color: gainsboro;
+ }
+ .table .f{
+    display: flex;
+    gap: 100px;
+ }
+ .table .s{
+    display: flex;
+    gap: 120px;
+ }
+ .table .t{
+    display: flex;
+    gap: 120px;
+ }
+ .table .fou{
+    display: flex;
+    gap: 70px;
+ }
+ .table .fiv{
+    display: flex;
+    gap: 115px;
+ }
+ 
+ .table div span{
+    margin: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+ }
+
+ .table div p{
+    margin: 10px;
+    font-size: 1.3rem;
+ }
+ 
+ #Timeline{
+    padding: 20px;
+    height: 800px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+ }
+ #Timeline h2{
+   font-size: 2.9rem;
+
+ }
+ #Timeline div h1{
+   padding: 10px;
+   font-size: 2.9rem;
+   font-weight: 700;
+ }
+
+ aside{
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ /* @media only screen and (max-width: 600px) {
+  .BenefitBoxes {
+    flex-direction: column;
+  } */
+
+
+.image-container {
+   display: inline-block;
+   text-align: center;
+   margin: 10px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   border-radius: 50%;
+   position: relative;
+   opacity: 0.5;
+ }
+.image-container img {
+   border-radius: 0%;
+ }
+.image-container p {
+   margin: 0;
+   position: absolute;
+   width: 100%;
+   transform: translateY(1%);
+   left: 0;
+   right: 0;
+   opacity: 0;
+   transition: all 0.3s ease;
+   /* margin-top: 10px; */
+   font-size: 0.8rem;
+   font-weight: 400;
+ }
+.image-container.clicked {
+   opacity: 1;
+   transform: scale(1.2);
+ }
+.image-container.clicked img {
+   border-radius: 0;
+ }
+.image-container.clicked p {
+   opacity: 1;
+ }
+
+ .note {
+    background-color: gainsboro;
+    margin-top: 80px;
+    text-align: start;
+}
+ .note .ma{
+  padding: 40px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 30px;
+ }
+
+ #img{
+  width: 100%;
+ }
+
+ #Benefits{
+   padding: 20px;
+   margin: 10px;
+   display: flex;
+   flex-direction: column;
+   height: 500px;
+   background-color: white;
+}
+#Benefits h2{
+  margin-left: 30px;
+   font-weight: 700;
+  font-size: 2.5rem;
+
+}
+#Benefits .head h1{
+  padding: 10px;
+  font-size: 2.9rem;
+  font-weight: 700;
+  color: darkgrey;
+  margin-left: 30px;
+
+}
+
+ .BenefitBoxes{   
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   max-width: 1500px;
+   width: 100%;
+   height: auto;
+ } 
+ @media only screen and (max-width: 600px) {
+   .BenefitBoxes{
+     flex-direction: column;
+   }
+ } 
+ .BenefitBox1{
+   float: left;
+   margin-left: 30px;
+   width: 30%;
+ }
+ .BenefitBox2{
+   float: left;
+   margin-left: 30px;
+   width: 30%;
+ }
+ .BenefitBox3{
+   float: left;
+   margin-left: 30px;
+   width: 30%;
+ } 
+ #Blended{
+  /* background-color: white; */
+
+ }
+ 
+ .Boxes .Box1 h1{
+   font-size: 2.5rem;
+   font-weight: 700;
+ }
+ .Boxes .Box1 p{
+  margin-top: 30px;
+ }
+
+ #Blended .Boxes{
+   display: flex;
+   width: 100%;
+   margin: 40px;
+ }
+
+ .Box1{
+   margin: 20px;
+   width: 50%;
+ }
+ .Box2{
+   margin: 20px;
+   width: 50%;
+   padding: 10px;
+   
+ }
+ .Box2 .accordion,.accordion-body,.accordion-button,.accordion-collapse,.accordion-header,.accordion-item{
+   background: rgb(215, 217, 220);
+ }
+ .accordion{
+   border-radius: 10px;
+ }
+ .accordion-item{
+   padding: 15px 20px;
+   font-weight: 400;
+ }
+
+ .accordion-body{
+   font-weight: 700;
+   font-size: large;
+ }
+
+ #blog{
+  display: flex;
+  flex-direction: column;
+ }
+ 
+ .posts{
+  display: flex;
+  margin: 20px;
+ }
+ .p1{
+  margin: 10px;
+  padding: 10px;
+ }
+ .p1 h1{
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 2rem;
+ }
+ .p1 img:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+ }
+ 
+ .reviews{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ }
+
+  .btn{
+    width: 10%;
+    background-color: azure;
+  }
+
+ #FAQ{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   /* background-color: white; */
+
+ }
+
+ .accord{
+   width: 60%;
+ }

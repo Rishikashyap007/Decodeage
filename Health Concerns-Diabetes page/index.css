@@ -1,0 +1,601 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#eeecec;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+     
+}
+
+.x img {
+    width: 95%; /* Adjust the width as needed */
+    height:80%; /* Increase the height to make the image larger */
+    overflow: hidden;
+    margin-right: 20px;
+    margin-top: 3%;
+    border: 5%;
+}
+
+
+
+.product-line{
+    color:gray;
+    font-size: 15px;
+    margin-top: 1px;
+}
+
+.product-info {
+    width: 40%;
+    margin-right: 0%;
+    margin-top: 2%;
+}
+
+.product-title {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    margin-bottom: 8px;
+    color:rgb(103, 103, 244);
+    font-size: 30px;
+
+}
+
+.product-discount {
+    margin-bottom: 7px;
+    color: gray;
+}
+
+.product-description {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quantity-controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.quantity-controls input {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn1 {
+    background-color:  rgb(210, 210, 11);
+    color:black;
+    border: none;
+    border-radius: 30px;
+    padding: 20px 50px;
+    cursor: pointer;
+    width: 45%;
+}
+
+
+.btn2 {
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 20px 50px;
+    cursor: pointer;
+    width: 45%;
+    
+}
+.product-bottomimg1 img{
+   width: 100%;
+   margin-top: 5%;
+   
+}
+
+.product-bottomimg img{
+    width: 100%;
+    
+ }
+
+
+
+.faq2 {
+    background-color: #e5e8f2;
+    border-radius: 3%;
+    max-width: 100%;
+    padding: 2%;
+    margin-top: 5%;
+}
+
+
+.bold {
+    font-weight: 700;
+    text-align: left;
+    color: black;
+    font-size: 20px;
+}
+
+.accordion__toggle {
+    gap: var(--spacing-2);
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding-block-start: var(--accordion-spacing);
+    padding-block-end: var(--accordion-spacing);
+    display: flex;
+}
+
+.circle-chevron {
+    width: var(--spacing-6);
+    height: var(--spacing-6);
+    border-radius: var(--rounded-full);
+    background: rgb(var(--text-color) / .1);
+    flex-shrink: 0;
+    place-items: center;
+    transition: all .2s ease-in-out;
+    display: grid;
+}
+
+.icon {
+    text-align: center;
+    display: block;
+}
+
+.v-stack {
+    text-align: center;
+}
+
+.accordion-box>:first-child {
+    border-block-start-width: 0;
+}
+
+.accordion {
+    --accordion-spacing: var(--spacing-5);
+    box-sizing: content-box;
+    border-block-start-width: 1px;
+    border-block-end-width: 1px;
+}
+
+*, :before, :after {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0;
+    border-color: rgb(var(--text-color) / .12);
+}
+.circle-chevron {
+    width: var(--spacing-6);
+    height: var(--spacing-6);
+    border-radius: var(--rounded-full);
+    background: rgb(var(--text-color) / .1);
+    flex-shrink: 0;
+    place-items: center;
+    transition: all .2s ease-in-out;
+    display: grid;
+} 
+
+.accordion__content {
+    margin-block-end: var(--accordion-spacing);
+    padding-inline-end: var(--spacing-6);
+    transform: translateY(-4px);
+}
+
+.prose h6:not(.h0,.h1,.h2,.h3,.h4,.h5,.h6) {
+    font-size: var(--text-h6);
+    line-height: 1.4;
+}
+
+.prose>:last-child, .prose>:last-child :last-child {
+    margin-block-end: 0 !important;
+}
+.prose>:first-child, .prose>:first-child :first-child {
+    margin-block-start: 0;
+}
+
+.section-stack__main {
+    text-align: right;
+}
+
+.prose {
+    text-align:left;
+    color:black;
+    font-size: 18px;
+}
+
+summary {
+   
+    justify-content: center;
+    align-items: center;
+  }
+
+.heading5 {
+    font-size:300%;
+    font-weight: bold;
+    margin-left: 15%;
+    margin-top: 10%;
+    margin-bottom: -6%;
+
+}
+
+.button6 {
+    margin-top: 4%;
+    
+}
+.button5 {
+    margin-left: 90%;
+    color: black;
+    background-color: #94a6db;
+    padding: 0.5%;
+    border-radius:10%;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    max-width: 100%;
+    max-height: 2000%;
+    background-color: #dee1ea;
+    border-radius: 2%;
+}
+
+.image-section {
+    position: relative;
+    width: 150%;
+    overflow: hidden;
+    
+
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 2%;
+}
+
+.image-section:hover img {
+    transform: scale(1.1);
+}
+
+.button9 {
+    font-size: 100%;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: #bdc1cd;
+    border-radius: 5%;
+}
+
+.text-section h2 {
+    font-size: 170%;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.text-section p {
+    font-size: 110%;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+
+
+.date-section1 {
+    margin-left: 10%;
+    margin-top: 10%;   
+}
+
+.calendar-icon {
+    margin-right: 5px;
+}
+
+.invisible-container {
+    /* Makes the container invisible */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 50px; /* Adds space around the container */
+}
+
+.star-rating {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%; /* Ensures the stars and button take up the full width */
+   padding: 0 20px; /* Adds space on the left and right of the stars and button */
+}
+
+.review-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.review-btn:hover, .review-btn:active {
+    background-color: #ddd;
+}
+
+.stars {
+    display: flex;
+}
+
+.star {
+    color: rgba(243, 156, 16, 0.885);
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.center-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    
+}
+
+.img-card {
+    font-size:150%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.product-listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+   
+  }
+  
+  .product-card {
+    width: calc(24% - 10px);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-card img {
+    width:100%;
+    height: auto;
+    vertical-align: middle;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .product-card__content-wrapper {
+    padding: 10px;
+    background-color: rgba(244, 239, 239, 0.5);
+    color: #413636;
+    
+  }
+
+  .stricked {
+    color: rgb(103, 72, 188);
+    text-decoration: line-through;
+}
+  
+  .product-card:hover .product-card__content-wrapper {
+    opacity: 1;
+  }
+  
+  .product-card__title {
+    margin-top: 0;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+
+  
+  .product-card__description {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(46, 20, 237);
+  }
+  
+  .product-card__brand {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #a4a4a4;
+  }
+  
+  .product-card__name {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .product-card__price {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .product-card__button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color:black; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    
+  }
+  
+  .product-card__button:hover {
+    background-color: #e65136;
+  }
+
+  .h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+  }
+
+  
+  @media screen and (max-width: 600px) {
+    .product-container {
+        flex-direction: column;
+        
+    }
+
+    .x img{
+       width: 100%;
+       text-align:center;
+        
+    }
+
+    .product-info {
+        width: 100%;
+        margin-left:8%;
+    }
+
+    .product-title {
+        font-size: 28px;
+    }
+
+    .product-price {
+        font-size: 20px;
+    }
+
+    .product-discount {
+        font-size: 18px;
+    }
+
+    .product-description {
+        font-size: 16px;
+        margin-left: -2%;
+        margin-right: 2%;
+    }
+    .product-line{
+        margin-left: -2%;
+        margin-right: 2%;
+    }
+    
+
+    .quantity-controls {
+       
+        align-items: left;
+    }
+
+    .quantity-controls button {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .product-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn1,
+    .btn2 {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 6%;
+    }
+    .product-bottomimg1{
+        margin-right: 5%;
+    }
+
+    .heading5 {
+        font-size: 200%;
+        margin-left: -1%;
+    }
+
+    .button5 {
+    margin-left: 80%;
+    color: black;
+    background-color: #94a6db;
+    padding: 0.5%;
+    border-radius:10%;
+    margin-top: -10%;
+    cursor: pointer;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;    
+        flex-direction: column;
+        background-color: #dee1ea;
+    }
+
+    .image-section img {
+        width: 66%;
+        transition: transform 0.3s ease-in-out;
+        border-radius: 2%;
+    }
+    
+    .img-card h1 {
+        text-align: center;
+        font-size: 100%;
+    }
+    .review-btn {
+        font-size: 100%;
+        margin-left: -0%;
+    }
+    .star {
+        font-size: 200%;
+        margin-right: -5%;
+    
+    }
+     .stars {
+        margin-left: -20%;
+     }
+
+     .product-listing {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+      }
+
+      .product-card {
+        width: calc(100% - 10px);
+        margin-bottom: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        margin-left: 2%;
+        
+      }
+      .faq2 {
+        margin-left: -4%;
+      }
+    
+}

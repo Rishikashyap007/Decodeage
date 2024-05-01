@@ -1,0 +1,1149 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+html body.cre-test4 .shopify-section--main-product .product-info__buy-buttons>form .v-stack {
+    background: #ffffff;
+    border: 1px solid #d9d9d9;
+    padding: 20px;
+    gap: 0;
+}
+
+
+html body.cre-test4 .shopify-section--main-product div[data-type="subscription-purchase"] .recurpay__frequency_label_title,
+html body.cre-test4 .shopify-section--main-product .product-info .product-info__quantity-selector .form-control label {
+    position: unset;
+    color: var(--recurpay_secondary_color, #000);
+    text-align: left;
+    font-size: 15px;
+    line-height: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 6px;
+}
+
+html body.cre-test4 .shopify-section--main-product div[data-type="subscription-purchase"] .recurpay__frequency_select {
+    border: 1px solid #d9d9d9;
+    margin-top: 0;
+    padding: 10px 30px 10px 10px;
+    margin-bottom: 0;
+}
+
+
+html body.cre-test4 .shopify-section--main-product .product-info .product-info__quantity-selector .form-control {
+    text-align: center;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info .product-info__quantity-selector .quantity-selector {
+    border-radius: 0;
+    border: none;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info .product-info__quantity-selector .quantity-selector button {
+    border-width: 2px;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info .product-info__quantity-selector .quantity-selector input {
+    border-bottom-width: 2px;
+    border-top-width: 2px;
+}
+
+
+html body.cre-test4 .shopify-section--main-product div[data-type="subscription-purchase"] .recurpay__action,
+html body.cre-test4 .shopify-section--main-product .recurpay-pdp-widget>.recurpay__widget {
+    padding: 0;
+}
+
+
+html body.cre-test4 .shopify-section--main-product div[data-type="subscription-purchase"] .recurpay__group_content,
+html body.cre-test4 .shopify-section--main-product div[data-type="subscription-purchase"] .cre3-subscribe,
+html body.cre-test4 .shopify-section--main-product div[data-type="subscription-purchase"] .recurpay__action {
+    display: none;
+}
+
+html body.cre-test4 .shopify-section--main-product div[data-type="subscription-purchase"] .recurpay__group_content {
+    margin: 20px 0;
+}
+
+html body.cre-test4 .shopify-section--main-product div[data-type="subscription-purchase"].recurpay__widget_container--selected .recurpay__group_content,
+html body.cre-test4 .shopify-section--main-product div[data-type="subscription-purchase"].recurpay__widget_container--selected .recurpay__action {
+    display: block;
+}
+
+html body.cre-test4 .shopify-section--main-product div[data-type="subscription-purchase"].recurpay__widget_container--selected .cre3-subscribe {
+    display: flex;
+}
+
+
+html body.cre-test4 .shopify-section--main-product .recurpay__widget_container--selected>div.recurpay__group_label {
+    border: 1px solid var(--recurpay_primary_color, #000);
+}
+
+html body.cre-test4 .shopify-section--main-product .recurpay__widget .recurpay__action button,
+html body.cre-test4 .shopify-section--main-product .product-info__buy-buttons .buy-buttons .cowlendar-add-to-cart,
+html body.cre-test4 .shopify-section--main-product .product-info__buy-buttons .buy-buttons .shopify-payment-button__button {
+    border-radius: 5px !important;
+    background-color: #e8833a !important;
+    color: #fff;
+    border: 2px solid #e8833a !important;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info__buy-buttons .buy-buttons .cowlendar-add-to-cart {
+    background-color: #fff !important;
+    color: #e8833a !important;
+}
+
+html body.cre-test4 .shopify-section--main-product .recurpay__widget .recurpay__action button {
+    text-transform: capitalize;
+    font-weight: 700 !important;
+    text-align: center;
+}
+
+html body.cre-test4 .shopify-section--main-product .recurpay__widget .recurpay__group_title {
+    font-size: 14px;
+}
+
+html body.cre-test4 .shopify-section--main-product div[data-type="onetime-purchase"] .recurpay__group_title {
+    min-width: 136px;
+}
+
+html body.cre-test4 .shopify-section--main-product .recurpay__widget .recurpay__group_header {
+    padding: 6px;
+}
+
+html body.cre-test4 .shopify-section--main-product .recurpay__widget .recurpay__radio_group {
+    margin-right: 6px;
+}
+
+
+html body.cre-test4 .shopify-section--main-product .recurpay__radio_group svg {
+    min-width: 18px !important;
+    width: 18px !important;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info .product-info__quantity-selector {
+    margin-bottom: 20px;
+}
+
+html body.cre-test4 .cre3-price-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    margin-left: auto;
+}
+
+html body.cre-test4 .cre3-price-list .cre3-r-price {
+    text-decoration: line-through;
+    margin-right: 5px;
+    color: rgb(var(--text-color) / .7);
+    font-weight: 600;
+}
+
+html body.cre-test4 .cre3-price-list .cre3-text {
+    font-size: 10px;
+    margin-left: 3px;
+}
+
+html body.cre-test4 [for="recurpay__subscribe_radio"] .recurpay__group_price_wrapper {
+    display: none;
+}
+
+html body.cre-test4 .recurpay__widget .recurpay__group_subtitle:after {
+    content: "Cancel anytime ";
+    position: absolute;
+    color: gray;
+    left: 0;
+}
+
+html body.cre-test4 .recurpay__widget .recurpay__group_subtitle {
+    color: transparent;
+    position: relative;
+}
+
+html body.cre-test4 .cre3-price-list .cre3-s-price {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+html body.cre-test4 .cre3-price-list .cre3-s-price>div:first-child {
+    font-weight: 800;
+}
+
+html body.cre-test4 .cre3-buyNowText {
+    font-size: 28px;
+    line-height: 1.1;
+    text-align: center;
+    margin-bottom: 15px;
+    order: -1;
+}
+
+
+html body.cre-test4 .cre3-subscription {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+html body.cre-test4 .cre3-open-popup {
+    color: var(--recurpay_primary_color, #000);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+html body.cre-test4 .cre3-subscription img {
+    max-width: 14px;
+    margin-right: 5px;
+}
+
+html body.cre-test4 .cre3-hr-live {
+    width: 90%;
+    border-bottom-width: 2px;
+    margin: 10px auto;
+    margin-top: 20px;
+}
+
+html body.cre-test4 .cre3-free-shipping {
+    margin-bottom: 20px;
+}
+
+html body.cre-test4 .cre3-free-shipping>div {
+    font-size: var(--text-base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html body.cre-test4 .cre3-free-shipping>div img {
+    max-width: 14px;
+    margin-right: 5px;
+}
+
+html body.cre-test4 .cre3-subscription {
+    cursor: pointer;
+}
+
+html body.cre-test4 .cre3-open-popup:hover {
+    text-decoration: none;
+}
+
+html body.cre-test4 .cre3-free-shipping>div .cre3-open-popup {
+    margin-left: 10px;
+}
+
+html body.cre-test4 .cre3-shipping-text {
+    color: rgb(var(--text-color) / .7);
+    font-size: var(--text-sm);
+    text-align: center;
+    margin: 8px 0;
+}
+
+html body.cre-test4 .cre3-payment-icons {
+    margin: auto;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info__buy-buttons .buy-buttons .cowlendar-add-to-cart:hover {
+    background-color: #e8833a !important;
+    color: #fff !important;
+    border: 2px solid #fff !important;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info__buy-buttons .buy-buttons .shopify-payment-button__button:hover {
+    background-color: #fff !important;
+    color: #e8833a !important;
+}
+
+
+html body.cre-test4 .shopify-section--main-product .product-info__buy-buttons .buy-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* prod description  */
+html body.cre-test4 .shopify-section--main-product .product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info product-recommendations {
+    order: 12;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info .product-info__accordion {
+    order: 11;
+}
+
+
+html body.cre-test4 .shopify-section--main-product .product-info .product-info__image {
+    order: 10;
+}
+
+
+html body.cre-test4 .shopify-section--main-product .product-info__description,
+html body.cre-test4 .shopify-section--main-product .product-info .product-info__accordion.cre3-acc-open {
+    order: 9;
+    border: none;
+}
+
+
+html body.cre-test4 .shopify-section--main-product .product-info .product-info__accordion.cre3-acc-open h6 {
+    font-weight: 400;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info h1+div {
+    order: 8;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info h1+div a {
+    display: flex;
+    align-items: center;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info h1+div a .loox-rating-label {
+    display: none;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info h1+div a .cre3-rating {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info h1+div a .loox-rating {
+    display: flex;
+    margin: -2px 6px 0;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info h1+div a .loox-rating .loox-icon {
+    width: 13px;
+    margin-bottom: 15px;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info h1+div a .cre3-text {
+    cursor: pointer;
+    font-size: var(--text-sm);
+    color: var(--recurpay_primary_color, #000);
+    text-decoration: underline;
+    margin-bottom: 15px;
+    margin-right: 9px;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info h1+div .cre3-sold {
+    display: flex;
+    align-items: center;
+    font-size: var(--text-sm);
+    margin-bottom: 15px;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info h1+div .cre3-sold img {
+    max-width: 20px;
+    margin-right: 4px;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info h1 {
+    order: 7;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom-width: 2px;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info .product-info__accordion.cre3-acc-open summary {
+    display: none;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info__variant-picker {
+    margin: 0;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info__description {
+    margin-top: 0;
+}
+
+/* popup  */
+
+html body.cre-test4 .cre3-popUp {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    padding: 50px 0;
+    display: none;
+}
+
+html body.cre-test4.cre3-show-popup {
+    overflow: hidden;
+}
+
+html body.cre-test4.cre3-show-popup .cre3-popUp {
+    display: flex;
+}
+
+html body.cre-test4 .cre3-popUp .cre3-popUp-content {
+    border-radius: 4px;
+    background: #f3f3f4;
+    padding: 40px 20px 45px;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 500px;
+}
+
+html body.cre-test4 .cre3-popUp .cre3-popUp-content .cre3-close {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    cursor: pointer;
+}
+
+html body.cre-test4 .cre3-popUp .cre3-popUp-content .cre3-close img {
+    width: 100%;
+}
+
+html body.cre-test4 .cre3-popUp .cre3-popUp-tp {
+    margin-bottom: 18px;
+}
+
+html body.cre-test4 .cre3-popUp .cre3-popUp-tp h2 {
+    color: #1a1a1a;
+    text-align: center;
+    font-family: "Metropolis", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    margin-bottom: 10px;
+}
+
+html body.cre-test4 .cre3-popUp .cre3-popUp-tp p {
+    color: #1a1a1a;
+    text-align: center;
+    font-family: "Metropolis", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    margin-bottom: 10px;
+}
+
+html body.cre-test4 .cre3-popUp .cre3-popUp-m {
+    border-radius: 6px;
+    background: #1581c4;
+    padding: 17px 14px 25px;
+    margin-bottom: 31px;
+}
+
+html body.cre-test4 .cre3-popUp .cre3-popUp-m h3 {
+    color: #fff;
+    text-align: left;
+    font-family: "Metropolis", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+html body.cre-test4 .cre3-popUp .cre3-popUp-m .cre3-popUp-row {
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    padding: 10px 13px;
+    position: relative;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+html body.cre-test4 .cre3-popUp .cre3-popUp-m .cre3-popUp-row:last-child {
+    margin: 0;
+}
+
+html body.cre-test4 .cre3-popUp .cre3-popUp-m .cre3-popUp-row p {
+    color: #1a1a1a;
+    font-family: "Metropolis", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+html body.cre-test4 .cre3-popUp .cre3-popUp-m .cre3-popUp-row strong {
+    font-weight: 700;
+}
+
+html body.cre-test4 .cre3-popUp .cre3-popUp-m .cre3-popUp-row img {
+    position: absolute;
+    width: 9px;
+    height: 15px;
+    bottom: -20px;
+}
+
+html body.cre-test4 .cre3-popUp .cre3-popUp-btm {
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: #fff;
+    padding: 20px 12px;
+}
+
+html body.cre-test4 .cre3-popUp .cre3-popUp-btm h3 {
+    color: #1a1a1a;
+    text-align: left;
+    font-family: "Metropolis", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+html body.cre-test4 .cre3-popUp .cre3-popUp-btm>div {
+    color: #1a1a1a;
+    font-family: "Metropolis", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 6px;
+}
+
+html body.cre-test4 .cre3-popUp .cre3-popUp-btm>div img {
+    width: 13px;
+    height: 11px;
+    margin-right: 9px;
+    position: relative;
+    top: 2px;
+}
+
+html body.cre-test4 .cre3-popUp .cre3-popUp-btm p {
+    color: rgba(26, 26, 26, 0.6);
+    font-family: "Metropolis", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    padding-right: 5px;
+    margin-top: 9px;
+}
+
+html body.cre-test4.sold-out04 [is="product-form"] .cre3-buyNowText {
+    display: none;
+}
+
+html body.cre-test4.sold-out04 .product-info__buy-buttons [is="product-form"] .v-stack {
+    border: none;
+}
+
+html body.cre-test4.sold-out04 .product-info__buy-buttons [is="product-form"] .v-stack .buy-buttons .cowlendar-add-to-cart {
+    background-color: #1a1a1a1f !important;
+    color: #1a1a1a !important;
+    border: none !important;
+}
+
+html body.cre-test4.sold-out04 [is="product-form"] .cre3-shipping-text {
+    display: none !important;
+}
+
+html body.cre-test4.sold-out04 [is="product-form"] .footer__payment-icons {
+    display: none !important;
+}
+
+@media screen and (max-width: 650px) {
+    html body.cre-test4 .shopify-section--main-product .product-gallery--desktop-thumbnails-left .product-gallery__thumbnail-list-wrapper {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    html body.cre-test4 .shopify-section--main-product .product-gallery--desktop-thumbnails-left .product-gallery__thumbnail-list-wrapper {
+        height: 350px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    html body.cre-test4 .shopify-section--main-product .product-gallery--desktop-thumbnails-left .product-gallery__thumbnail-list-wrapper {
+        height: 250px;
+    }
+}
+
+/* t4 css */
+html body.cre-test4 .productDetails-T4 .cre3-sold {
+    display: flex;
+    align-items: center;
+    font-size: var(--text-sm);
+}
+
+html body.cre-test4 .productDetails-T4 .cre3-rating {
+    font-weight: 700;
+    font-size: 14px;
+
+}
+
+html body.cre-test4 .productDetails-T4 .cre3-sold img {
+    max-width: 20px;
+    margin-right: 4px;
+}
+
+html body.cre-test4 .productDetails-T4 .cre3-text {
+    font-size: 10px;
+    margin-left: 3px;
+}
+
+html body.cre-test4 .productDetails-T4 .shopify-block {
+    display: flex;
+    align-items: center;
+
+}
+
+html body.cre-test4 .prose.detailed_discription-04 {
+    font-size: 14px;
+    max-height: 100%;
+
+}
+
+html body.cre-test4 .detailed_discription-04+.prose {
+    margin-top: 10px;
+}
+
+html body.cre-test4 .detailed_discription-04+.prose h6 strong {
+    font-size: 14px;
+    max-height: 100%;
+    font-weight: 300;
+}
+
+html body.cre-test4 .detailed_discription-04+.prose h6 {
+    font-size: 14px;
+    max-height: 100%;
+    font-weight: 300;
+}
+
+html body.cre-test4 .prose.benifit_section-04 {
+    font-size: 14px;
+}
+
+html body.cre-test4 .cre3-subscribe p {
+    font-size: 14px;
+}
+
+html body.cre-test4 .cre3-open-popup {
+    font-size: 14px;
+}
+
+html body.cre-test4 .product-info__title {
+    font-size: 34px;
+    line-height: 40px;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+html body.cre-test4 .productDetails-T4 [data-testid="loox-rating-widget"] {
+    padding: 0px 5px;
+    margin-top: -4px !important;
+}
+
+html body.cre-test4 .productDetails-T4 .loox-rating .loox-icon {
+    color: #e8833a;
+    font-size: 12px;
+}
+
+html body.cre-test4 .product-info__buy-buttons {
+    margin-top: 5px;
+}
+
+html body.cre-test4 .productDetails-T4 .cre3-text {
+    cursor: pointer;
+    font-size: var(--text-sm);
+    color: var(--recurpay_primary_color, #000);
+    text-decoration: underline;
+    margin: 0px 12px;
+}
+
+html body.cre-test4 .prose.benifit_section-04 h6 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+
+}
+
+
+html body.cre-test4.subscription-purchase-t4 .cre3-free-shipping div:first-child {
+    display: block !important;
+}
+
+html body.cre-test4 .productDetails-T4 a {
+    display: flex;
+    align-items: center;
+}
+
+html body.cre-test4 .productDetails-T4 a .loox-rating-label {
+    display: none;
+}
+
+html body.cre-test4.cre-test4 .product {
+    background: #fff;
+    display: flex;
+    padding: 20px 15px;
+    gap: 1px;
+    justify-content: space-between;
+}
+
+html body.cre-test4.cre-test4 .product .product-gallery {
+    max-width: 30%;
+}
+html body.cre-test4.cre-test4 .productDetails-T4 {
+    max-width: 32%;
+}
+
+html body.cre-test4.cre-test4 .product-info {
+    max-width: 30%;
+}
+
+html body.cre-test4 .prose.benifit_section-04 {
+    margin-top: 10px;
+}
+
+html body.cre-test4 .product-info__image {
+    margin-top: 15px;
+}
+
+html body.cre-test4.cre-test4 .product-recomandation-area {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+html body.cre-test4.cre-test4 .product-recomandation-area .product-details-accordian {
+    width: 45%;
+}
+
+html body.cre-test4.cre-test4 .product-recomandation-area .product-recomandation {
+    width: 45%;
+}
+
+html body.cre-test4.sold-out04 .cre3-free-shipping div:first-child {
+    display: none;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info__buy-buttons .buy-buttons button:first-child:hover {
+    background-color: #e8833a !important;
+    color: #fff !important;
+    border: 2px solid #fff !important;
+}
+
+html body.cre-test4 .shopify-section--main-product .product-info__buy-buttons .buy-buttons button:first-child {
+    background-color: #fff !important;
+    color: #e8833a !important;
+    border: 2px solid #e8833a !important;
+    border-radius: 5px !important;
+}
+
+@media(max-width:1430px) {
+
+    html body.cre-test4 .buy-buttons--multiple .button,
+    html body.cre-test4 .buy-buttons--multiple .shopify-payment-button {
+        font-size: 14px;
+    }
+}
+ @font-face {
+    font-family: "Nunito Sans";
+    font-weight: 400;
+    font-style: italic;
+    font-display: fallback;
+    src: url("//decodeage.com/cdn/fonts/nunito_sans/nunitosans_i4.e88a2041a6cfbeacffb96db0e8efdfaaa38ddc5c.woff2?h1=bGlmZWVsZW1lbnRzLmlu&h2=ZGVjb2RlYWdlLmNvbQ&h3=ZGVjb2RlLWFnZS5teXNob3BpZnkuY29t&h4=bGlmZWVsZW1lbnRzLXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h5=YWNjb3VudC5kZWNvZGVhZ2UuY29t&hmac=04b78e6a2ddbe6a4f1c1eb3d0c7c6c2a8f464595a4b6a5e9abaf23ad8a0faf50") format("woff2"),
+        url("//decodeage.com/cdn/fonts/nunito_sans/nunitosans_i4.2c3733ccdf579e6e89e929a950e6a93484fdf6b4.woff?h1=bGlmZWVsZW1lbnRzLmlu&h2=ZGVjb2RlYWdlLmNvbQ&h3=ZGVjb2RlLWFnZS5teXNob3BpZnkuY29t&h4=bGlmZWVsZW1lbnRzLXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h5=YWNjb3VudC5kZWNvZGVhZ2UuY29t&hmac=77eddd85e9e0e406a7561cfe96b6278516591901f0ca2622874847a4421c8bfc") format("woff");
+}
+@font-face {
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    font-style: italic;
+    font-display: fallback;
+    src: url("//decodeage.com/cdn/fonts/nunito_sans/nunitosans_i7.975ea93f521412ef99ca1e2e434d8ca6a5cf77e7.woff2?h1=bGlmZWVsZW1lbnRzLmlu&h2=ZGVjb2RlYWdlLmNvbQ&h3=ZGVjb2RlLWFnZS5teXNob3BpZnkuY29t&h4=bGlmZWVsZW1lbnRzLXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h5=YWNjb3VudC5kZWNvZGVhZ2UuY29t&hmac=cf48e2dcdff98b3f1c61ae35f117fe3981cf24b0c95c85adc02726b2c6ab6bdb") format("woff2"),
+        url("//decodeage.com/cdn/fonts/nunito_sans/nunitosans_i7.83b70272d04b71e88f25fc6834dc9b88e4ba4e95.woff?h1=bGlmZWVsZW1lbnRzLmlu&h2=ZGVjb2RlYWdlLmNvbQ&h3=ZGVjb2RlLWFnZS5teXNob3BpZnkuY29t&h4=bGlmZWVsZW1lbnRzLXN0b3JlLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h5=YWNjb3VudC5kZWNvZGVhZ2UuY29t&hmac=ecfb62ea7842fdc94bd99d196079c1a2628df02f803a97694f98055c08825393") format("woff");
+}
+
+@media screen and (pointer: fine) {
+
+    .button:not([disabled]):hover,
+    .btn:not([disabled]):hover,
+    .shopify-payment-button__button--unbranded:not([disabled]):hover {
+        --button-background-opacity: 0.85;
+    }
+
+    .button--subdued:not([disabled]):hover {
+        --button-background: var(--text-color) / .05 !important;
+    }
+}
+:root {
+    /**
+* ---------------------------------------------------------------------
+* SPACING VARIABLES
+*
+* We are using a spacing inspired from frameworks like Tailwind CSS.
+* ---------------------------------------------------------------------
+*/
+    --spacing-0-5: 0.125rem;
+    /* 2px */
+    --spacing-1: 0.25rem;
+    /* 4px */
+    --spacing-1-5: 0.375rem;
+    /* 6px */
+    --spacing-2: 0.5rem;
+    /* 8px */
+    --spacing-2-5: 0.625rem;
+    /* 10px */
+    --spacing-3: 0.75rem;
+    /* 12px */
+    --spacing-3-5: 0.875rem;
+    /* 14px */
+    --spacing-4: 1rem;
+    /* 16px */
+    --spacing-4-5: 1.125rem;
+    /* 18px */
+    --spacing-5: 1.25rem;
+    /* 20px */
+    --spacing-5-5: 1.375rem;
+    /* 22px */
+    --spacing-6: 1.5rem;
+    /* 24px */
+    --spacing-6-5: 1.625rem;
+    /* 26px */
+    --spacing-7: 1.75rem;
+    /* 28px */
+    --spacing-7-5: 1.875rem;
+    /* 30px */
+    --spacing-8: 2rem;
+    /* 32px */
+    --spacing-8-5: 2.125rem;
+    /* 34px */
+    --spacing-9: 2.25rem;
+    /* 36px */
+    --spacing-9-5: 2.375rem;
+    /* 38px */
+    --spacing-10: 2.5rem;
+    /* 40px */
+    --spacing-11: 2.75rem;
+    /* 44px */
+    --spacing-12: 3rem;
+    /* 48px */
+    --spacing-14: 3.5rem;
+    /* 56px */
+    --spacing-16: 4rem;
+    /* 64px */
+    --spacing-18: 4.5rem;
+    /* 72px */
+    --spacing-20: 5rem;
+    /* 80px */
+    --spacing-24: 6rem;
+    /* 96px */
+    --spacing-28: 7rem;
+    /* 112px */
+    --spacing-32: 8rem;
+    /* 128px */
+    --spacing-36: 9rem;
+    /* 144px */
+    --spacing-40: 10rem;
+    /* 160px */
+    --spacing-44: 11rem;
+    /* 176px */
+    --spacing-48: 12rem;
+    /* 192px */
+    --spacing-52: 13rem;
+    /* 208px */
+    --spacing-56: 14rem;
+    /* 224px */
+    --spacing-60: 15rem;
+    /* 240px */
+    --spacing-64: 16rem;
+    /* 256px */
+    --spacing-72: 18rem;
+    /* 288px */
+    --spacing-80: 20rem;
+    /* 320px */
+    --spacing-96: 24rem;
+    /* 384px */
+
+    /* Container */
+    --container-max-width: 1520px;
+    --container-narrow-max-width: 1270px;
+    --container-gutter: var(--spacing-5);
+    --section-outer-spacing-block: var(--spacing-12);
+    --section-inner-max-spacing-block: var(--spacing-10);
+    --section-inner-spacing-inline: var(--container-gutter);
+    --section-stack-spacing-block: var(--spacing-8);
+
+    /* Grid gutter */
+    --grid-gutter: var(--spacing-5);
+
+    /* Product list settings */
+    --product-list-row-gap: var(--spacing-8);
+    --product-list-column-gap: var(--grid-gutter);
+
+    /* Form settings */
+    --input-gap: var(--spacing-2);
+    --input-height: 2.625rem;
+    --input-padding-inline: var(--spacing-4);
+
+    /* Other sizes */
+    --sticky-area-height: calc(var(--sticky-announcement-bar-enabled, 0) * var(--announcement-bar-height, 0px) + var(--sticky-header-enabled, 0) * var(--header-height, 0px));
+
+    /* RTL support */
+    --transform-logical-flip: 1;
+    --transform-origin-start: left;
+    --transform-origin-end: right;
+
+    /**
+* ---------------------------------------------------------------------
+* TYPOGRAPHY
+* ---------------------------------------------------------------------
+*/
+
+    /* Font properties */
+    --heading-font-family: Nunito, sans-serif;
+    --heading-font-weight: 400;
+    --heading-font-style: normal;
+    --heading-text-transform: normal;
+    --heading-letter-spacing: -0.02em;
+    --text-font-family: "Nunito Sans", sans-serif;
+    --text-font-weight: 400;
+    --text-font-style: normal;
+    --text-letter-spacing: 0.0em;
+
+    /* Font sizes */
+    --text-h0: 2.5rem;
+    --text-h1: 1.75rem;
+    --text-h2: 1.5rem;
+    --text-h3: 1.375rem;
+    --text-h4: 1.125rem;
+    --text-h5: 1.125rem;
+    --text-h6: 1rem;
+    --text-xs: 0.6875rem;
+    --text-sm: 0.75rem;
+    --text-base: 0.875rem;
+    --text-lg: 1.125rem;
+
+    /**
+* ---------------------------------------------------------------------
+* COLORS
+* ---------------------------------------------------------------------
+*/
+
+    /* Color settings */
+    --accent: 26 26 26;
+    --text-primary: 26 26 26;
+    --background-primary: 243 243 246;
+    --dialog-background: 255 255 255;
+    --border-color: var(--text-color, var(--text-primary)) / 0.12;
+
+    /* Button colors */
+    --button-background-primary: 26 26 26;
+    --button-text-primary: 255 255 255;
+    --button-background-secondary: 240 196 23;
+    --button-text-secondary: 26 26 26;
+
+    /* Status colors */
+    --success-background: 224 244 232;
+    --success-text: 0 163 65;
+    --warning-background: 255 246 233;
+    --warning-text: 255 183 74;
+    --error-background: 254 231 231;
+    --error-text: 248 58 58;
+
+    /* Product colors */
+    --on-sale-text: 58 112 248;
+    --on-sale-badge-background: 58 112 248;
+    --on-sale-badge-text: 255 255 255;
+    --sold-out-badge-background: 0 0 0;
+    --sold-out-badge-text: 255 255 255;
+    --primary-badge-background: 128 60 238;
+    --primary-badge-text: 255 255 255;
+    --star-color: 255 183 74;
+    --product-card-background: 255 255 255;
+    --product-card-text: 26 26 26;
+
+    /* Header colors */
+    --header-background: 240 240 240;
+    --header-text: 26 26 26;
+
+    /* Footer colors */
+    --footer-background: 255 255 255;
+    --footer-text: 26 26 26;
+
+    /* Rounded variables (used for border radius) */
+    --rounded-xs: 0.25rem;
+    --rounded-sm: 0.375rem;
+    --rounded: 0.75rem;
+    --rounded-lg: 1.5rem;
+    --rounded-full: 9999px;
+
+    --rounded-button: 3.75rem;
+    --rounded-input: 0.5rem;
+
+    /* Box shadow */
+    --shadow-sm: 0 2px 8px rgb(var(--text-primary) / 0.1);
+    --shadow: 0 5px 15px rgb(var(--text-primary) / 0.1);
+    --shadow-md: 0 5px 30px rgb(var(--text-primary) / 0.1);
+    --shadow-block: 0px 30px 50px rgb(var(--text-primary) / 0.1);
+
+    /**
+* ---------------------------------------------------------------------
+* OTHER
+* ---------------------------------------------------------------------
+*/
+
+    --cursor-close-svg-url: url(//decodeage.com/cdn/shop/t/21/assets/cursor-close.svg?v=147174565022153725511699087093);
+    --cursor-zoom-in-svg-url: url(//decodeage.com/cdn/shop/t/21/assets/cursor-zoom-in.svg?v=154953035094101115921699087093);
+    --cursor-zoom-out-svg-url: url(//decodeage.com/cdn/shop/t/21/assets/cursor-zoom-out.svg?v=16155520337305705181699087093);
+    --checkmark-svg-url: url(//decodeage.com/cdn/shop/t/21/assets/checkmark.svg?v=77552481021870063511699087093);
+}
+
+[dir="rtl"]:root {
+    /* RTL support */
+    --transform-logical-flip: -1;
+    --transform-origin-start: right;
+    --transform-origin-end: left;
+}
+
+@media screen and (min-width: 700px) {
+    :root {
+        /* Typography (font size) */
+        --text-h0: 3.25rem;
+        --text-h1: 2.25rem;
+        --text-h1: 56px;
+        --text-h2: 1.75rem;
+        --text-h2: 32px;
+        --text-h3: 1.625rem;
+        --text-h4: 1.25rem;
+        --text-h5: 1.25rem;
+        --text-h6: 1.125rem;
+
+        --text-xs: 0.75rem;
+        --text-sm: 0.875rem;
+        --text-base: 1.0rem;
+        --text-lg: 1.25rem;
+
+        /* Spacing */
+        --container-gutter: 2rem;
+        --section-outer-spacing-block: var(--spacing-16);
+        --section-inner-max-spacing-block: var(--spacing-12);
+        --section-inner-spacing-inline: var(--spacing-12);
+        --section-stack-spacing-block: var(--spacing-12);
+
+        /* Grid gutter */
+        --grid-gutter: var(--spacing-6);
+
+        /* Product list settings */
+        --product-list-row-gap: var(--spacing-12);
+
+        /* Form settings */
+        --input-gap: 1rem;
+        --input-height: 3.125rem;
+        --input-padding-inline: var(--spacing-5);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    :root {
+        /* Spacing settings */
+        --container-gutter: var(--spacing-12);
+        --section-outer-spacing-block: var(--spacing-18);
+        --section-inner-max-spacing-block: var(--spacing-16);
+        --section-inner-spacing-inline: var(--spacing-16);
+        --section-stack-spacing-block: var(--spacing-12);
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    :root {
+        /* Spacing settings */
+        --container-gutter: var(--spacing-12);
+        --section-outer-spacing-block: var(--spacing-20);
+        --section-inner-max-spacing-block: var(--spacing-16);
+        --section-inner-spacing-inline: var(--spacing-16);
+        --section-stack-spacing-block: var(--spacing-12);
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    :root {
+        --text-h0: 4rem;
+        --text-h1: 3rem;
+        --text-h2: 2.5rem;
+        --text-h3: 1.75rem;
+        --text-h4: 1.5rem;
+        --text-h5: 1.25rem;
+        --text-h6: 1.25rem;
+
+        --section-outer-spacing-block: var(--spacing-24);
+        --section-inner-max-spacing-block: var(--spacing-18);
+        --section-inner-spacing-inline: var(--spacing-18);
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    :root {
+        --section-outer-spacing-block: var(--spacing-24);
+        --section-inner-max-spacing-block: var(--spacing-20);
+        --section-inner-spacing-inline: var(--spacing-20);
+    }
+}
+
+.star {
+    width: 32px;
+    height: 32px;
+    transition: .6s all;
+  }
+  #rating {
+    cursor: pointer;
+    display: inline-block
+  }
+  #review-form .input-group-addon {
+    min-width: 100px;
+  }
+  #review-form .btn {
+    min-width: 100px;
+  }
+  #review-form input[type="text"],
+  #review-form textarea {
+    width: 100%;
+  }
+  #review-form .form-group {
+    margin-bottom: 15px;
+  }
+  #review-form .help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  blockquote {
+    border-left: 5px solid rgb(238, 238, 238);
+    padding-left: 20px;
+  }
+  
+  blockquote .footer{
+    display: block;
+    font-size: 80%;
+  }
+
+  .stars-container {
+    margin-bottom: 5px;
+  }

@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1>SeneVit Potent Senolytic Activator Blend, 30 Veg Capsules</h1>
+        <div class="container">
+            <span class="fa fa-star fa-3x checked"></span>
+            <span class="fa fa-star fa-3x checked"></span>
+            <span class="fa fa-star fa-3x checked"></span>
+            <span class="fa fa-star fa-3x"></span>
+            <span class="fa fa-star fa-3x"></span>
+        </div>
+    </div>
+    <div class="price">
+        <h1>
+            ₹2,400.00 INR
+            <h1>
+    </div>
+    <div class="dprice">
+        <h1>
+            ₹3,000.00 INR
+            <h1>
+                <div class="hrline">
+                    <hr>
+                </div>
+    </div>
+    <div class="subheading">
+        <h1>Tax included. Shipping calculated at checkout
+            <h1>
+    </div>
+    <!-- dropdown -->
+    <div class="faq">
+        <button class="accordiond">
+      Description
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+        <div class="pannel">
+            <p>
+                The cells in our bodies divide a set number of times before entering a stable cell cycle halt. Ageing and tissue healing are slowed down by the 'zombie-like', highly toxic senescent cells that consume the surrounding cells. SeneVit lessens the impact
+                of senescence, eliminates zombie cells from tissues, and supports normal cellular function.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <button class="accordiond">
+      Benefits
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+        <div class="pannel">
+            <p>
+                ✔Strong Senolytic Activator<br> ✔Enhance Cognitive Performance<br> ✔All-Around Antioxidant Support<br> ✔Encourages Bone and Joint Health<br> ✔Boosts Immune Function<br> ✔Supports Cardiovascular Health<br> ✔Enhances Skin Health<br> ✔Increased
+                Bioavailability
+                <br> ✔Encourages Healthy Aging <br>
+            </p>
+        </div>
+    </div>
+
+    <!-- quantity -->
+
+    <!-- Outer container -->
+    <div class="outer-container">
+        <!-- Inner container -->
+        <div class="inner-container">
+            <div class="quantity-button minus" onclick="decreaseValue()"></div>
+            <div class="quantity-display" id="quantity"><b>1</b></div>
+            <div class="quantity-button" onclick="increaseValue()"></div>
+        </div>
+    </div>
+
+    <script>
+        // Function to increase value
+        function increaseValue() {
+            var value = parseInt(document.getElementById('quantity').innerText, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('quantity').innerText = value;
+        }
+
+        // Function to decrease value
+        function decreaseValue() {
+            var value = parseInt(document.getElementById('quantity').innerText, 10);
+            value = isNaN(value) ? 0 : value;
+            if (value > 1) {
+                value--;
+                document.getElementById('quantity').innerText = value;
+            }
+        }
+    </script>
+    </script>
+    <!-- quantity -->
+
+
+
+    <div class="subheading2">
+        <h1>
+            Quantity:
+        </h1>
+    </div>
+    <!-- quantity -->
+    <div class="subheading3">
+        <h1>
+            EXTRA PERKS WHEN YOU SUBSCRIBE<br>
+            <br>
+        </h1>
+        <h2>
+            ✔ Discounts up to 40%. <br>✔ First access to new products and promotions.<br> ✔ Priority customer service.<br> ✔ Guaranteed availability, never run out of your essential health products.
+        </h2>
+        <h3>
+            Know more
+        </h3>
+    </div>
+    </div>
+    </div>
+    <!-- radiobutton -->
+    <div class="outer-container1">
+        <div class="inner-container1">
+            <label class="radio-container1">
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark1"></span>
+        </label>
+            <span class="name1">One-Time Purchase</span>
+            <span class="price1">₹2,400.00</span>
+
+        </div>
+
+
+    </div>
+    <!-- radiobutton -->
+    <div class="outer-container1">
+        <div class="inner-container1">
+            <label class="radio-container1">
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark1"></span>
+        </label>
+            <span class="name2">Subscribe now and Save</span>
+            <span class="price2">₹2,160.00</span>
+
+        </div>
+
+    </div>
+    <!-- radiobutton -->
+
+
+    <div class="button-container">
+        <!-- First large button -->
+        <a href="#" class="large-button1">Buy Now</a>
+        <!-- Second large button -->
+        <a href="#" class="large-button2">Add To Cart</a>
+    </div>
+
+    <div class="miniimg">
+        <img src="8.jpg" alt="">
+    </div>
+    <!-- dropdown -->
+    <script>
+        var acc = document.getElementsByClassName("accordiond");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                this.parentElement.classList.toggle("active");
+
+                var pannel = this.nextElementSibling;
+
+                if (pannel.style.display === "block") {
+                    pannel.style.display = "none";
+                } else {
+                    pannel.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <!-- dropdown -->
+
+
+    <!-- image slider -->
+    <div class="product">
+        <div class="product-small-img">
+            <img src="1.jpg" onclick="Myfunction(this)">
+            <img src="2.jpg" onclick="Myfunction(this)">
+            <img src="3.jpg" onclick="Myfunction(this)">
+            <img src="5.jpg" onclick="Myfunction(this)">
+            <img src="6.jpg" onclick="Myfunction(this)">
+            <img src="7.jpg" onclick="Myfunction(this)">
+        </div>
+        <div class="img-container">
+            <img id="ImageBox" src="1.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        function Myfunction(smallImg) {
+            var fullimg = document.getElementById("ImageBox");
+            fullimg.src = smallImg.src;
+        }
+    </script>
+    <!-- image slider -->
+    <div class="boxlefthead">
+
+        <h1>
+            Product details
+        </h1>
+        <h2>
+            With SeneVit, embrace a brighter, healthier life and help you on your path to a younger, more active living.
+        </h2>
+    </div>
+    <div class="box2">
+        <p1><b>When to Consume.</b> </p1><br>
+        <p2>Unless your doctor instructs you otherwise, take 1 capsule after supper every other night.
+        </p2>
+        <div class="line2"></div>
+        <p1><b>Serving Size.</b> </p1><br>
+        <p2>
+            Serving Size: 1 <br> Capsules Servings Per Container: 30</p2>
+        <div class="line2"></div>
+        <p1><b>Contains.</b> </p1><br>
+        <p2>✔ 30 Veg Capsules.</p2>
+        <div class="line2"></div>
+        <p1><b>Key Ingredients.</b> </p1><br>
+        <p2>✔ Fisetin (Strawberry Extract): 75mg<br> ✔ Quercetin (Sophora Japonica Extract): 140mg<br> ✔ Apigenin (Chamomile Extract): 100mg<br> ✔ Piper Longum (Pepper Extract): 30mg</p2>
+    </div>
+
+
+    <!-- benefits -->
+    <div class="continer-Benefits">
+        <h2>Benefits</h2>
+        <h1>The Journey to a Healthier Age Begins Here. Unreveal the SeneVit of Age...</h1>
+    </div>
+
+    <div class="content-container">
+        <div class="content-box">
+            <h3>Eliminates
+                <br>Zombie Cells</h3>
+            <p class="c1">SeneVit enhances cellular health by eliminating senescent cells old, damaged cells((aka Zombie cells)) that contribute to ageing.</p>
+        </div>
+        <div class="content-box">
+            <h3>Promotes
+                <br>Anti-Inflammaging</h3>
+            <p class="c1">SeneVit reduces inflammaging by minimizing senescent cell burden, fostering healthier tissues and mitigating age-related inflammation. </div>
+        <div class="content-box">
+            <h3>Reduces<br> Oxidative Stress</h3>
+            <p class="c1">SeneVit neutralizes free radicals and protects healthy cells from oxidative stress. </div>
+    </div>
+
+
+
+
+    </div>
+    <div id="fifth-section">
+        <h1>Reliable Decode Age SeneVit therapy addresses the three main indicators of aging: loss of proteostasis, inflammation, and cellular senescence. Daily consumption incessantly guarantees continuous internal optimization for general well-being. Effects
+            vary from person to person and are frequently felt within 30 days. It's common to not see results after 30 days.<br><br><br>
+            <h1 id="timeline">Timeline</h1>
+            <div class="img-nav">
+                <img class="img-nav-icon " src="9.jpg" />
+                <img class="img-nav-icon " src="10.jpg" />
+                <img class="img-nav-icon" src="11.jpg" />
+                <img class="img-nav-icon" src="12.jpg" />
+                <img class="img-nav-icon" src="13.jpg" />
+                <img class="img-nav-icon" src="14.jpg" />
+            </div>
+    </div>
+
+    <!-- accordion -->
+    <div class="acctext">
+        <h1>
+            Strong mixture for senescence cells
+        </h1>
+    </div>
+    <ul class="accordion">
+
+        <li>
+            <input type="radio" name="accordion" id="first" checked>
+            <label for="first">Fisetin and Quercetin</label>
+            <div class="content">
+                <p>
+                    Renowned for their potency as senolytic activators include quercetin and fisetin. Together, they eliminate senescent cells, which are aged, defective cells that speed up the aging process. Together, quercetin and fisetin can improve each other's senolytic
+                    properties, fostering more robust, functional cells and delaying the aging process.
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="second">
+            <label for="second">Quercetin and Piper Longum</label>
+            <div class="content">
+                <p>
+                    When mixed with Piper longum, a substance that increases the bioavailability of other substances, quercetin's health advantages are amplified. This mixture improves the absorption and utilization of quercetin by your body, which promotes improved cellular
+                    health and anti-inflammatory benefits.
+
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="third">
+            <label for="third">Apigenin and Fisetin</label>
+            <div class="content">
+                <p>
+                    Fisetin and apigenin are recognized for their possible neuroprotective properties; when combined, they can support improved brain function. This combination may provide protection against age-related cognitive decline and enhance cognitive performance.
+
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="fourth">
+            <label for="fourth">Fisetin, Quercetin, and Apigenin </label>
+            <div class="content">
+                <p>
+                    Together, the antioxidants fisetin, quercetin, and apelin form a potent barrier against the harm that free radicals can do to cells. Together, these three offer a complete strategy for protecting against free radicals, enhancing the lifetime and general
+                    health of cells.
+
+                </p>
+            </div>
+        </li>
+    </ul>
+    <div class="accpara">
+        <p>SeneVit, in contrast to other senolytic supplements, makes use of the powerful properties of premium extracts of Piper longum, Fisetin, Quercetin, and Apigenin. These constituents have been chosen due to their exceptional purity, improved stability,
+            and strict quality control. SeneVit benefits from greater cellular health and longevity benefits over ordinary senolytic vitamins because to this effective combination.
+        </p>
+    </div>
+    <div class="landscape">
+        <img src="1 copy.jpg" alt="" class="img1">
+    </div>
+    <div class="acctext1">
+        <h1>
+            Fighting Senescence Cells to Target the Ageing Process
+
+        </h1>
+        <h2>
+            SeneVit is a powerful combination of substances with scientific backing that carefully tackles the signs and symptoms of aging.
+        </h2>
+
+    </div>
+    <ul class="accordion1">
+        <li>
+            <input type="radio" name="accordion1" id="sixth" checked>
+            <label for="sixth">Cellular Senescence </label>
+            <div class="content1">
+                <p>
+                    Senescence is the term used to describe a condition in which cells are unable to divide and perform correctly. These cells may be involved in aging and a number of disorders associated with aging. SeneVit aids in the removal of these senescent cells because
+                    it is a potent senolytic activator. Fisetin and quercetin are the main agents in this activity; they cooperate to eliminate these ineffective cells and encourage the growth of healthier, more functional cells.
+
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion1" id="seven">
+            <label for="seven">Stem Cell Exhaustion</label>
+            <div class="content1">
+                <p>
+                    Senescent cells have the ability to alter the body's environment in a way that hinders stem cell function and accelerates their weariness. The environment for stem cells may become healthier by eliminating these dangerous senescent cells, which may hence
+                    promote the longevity and functionality of stem cells. </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion1" id="eight">
+            <label for="eight">Inflammation</label>
+            <div class="content1">
+                <p>
+                    Chronic inflammation can accelerate the ageing process and is a key factor in many age-related diseases. SeneVit, with its blend of natural ingredients including Fisetin, Quercetin, and Apigenin, provides multi-targeted anti-inflammatory action, helping
+                    to soothe and manage inflammation in the body.
+                </p>
+            </div>
+        </li>
+
+    </ul>
+    <div class="acctext2">
+        <h1>
+            SeneVit's advantages for managing chronic diseases
+
+        </h1>
+        <h2>
+            SeneVit is designed to tackle the biological processes that cause aging and promote general health with a blend of natural components. While SeneVit can promote healthy functioning and possibly help with the treatment of certain chronic diseases, it's
+            vital to remember<br><br> But it's important to keep in mind that SeneVit is a supplement meant to enhance overall health rather than a drug meant to treat or cure specific conditions.
+        </h2>
+
+        <ul class="accordion2">
+
+            <li>
+                <input type="radio" name="accordion2" id="eleven">
+                <label for="eleven">Skin Ageing and Hyperpigmentation</label>
+                <div class="content2">
+                    <p>
+                        SeneVit's antioxidants can shield the skin from oxidative stress, which is a primary cause of skin aging. Through cellular turnover and a reduction in skin irritation, they may also aid in the management of hyperpigmentation.
+
+                    </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion2" id="twelve">
+                <label for="twelve">Chronic inflammation and Arthrtis</label>
+                <div class="content2">
+                    <p>Fisetin, Quercetin, Apigenin, and Piper Longum—all of the components in SeneVit—have all shown anti-inflammatory qualities. When combined, they may offer a wider spectrum of anti-inflammatory assistance, which could be advantageous
+                        for ailments like arthritis.
+
+                    </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion2" id="thirteen">
+                <label for="thirteen">Cancer </label>
+                <div class="content2">
+                    <p>
+                        SeneVit may be a viable cancer treatment, even though the anti-cancer effects of quercetin and fisetin, increased by the bioavailability booster piper longum, may
+
+                    </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion2" id="fourteen">
+                <label for="fourteen">Age related vision problem</label>
+                <div class="content2">
+                    <p>
+                        Piper Longum may increase quercetin's antioxidant actions in the eye, which may help prevent age-related vision issues.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion2" id="fifteen">
+                <label for="fifteen">Osteoporosis </label>
+                <div class="content2">
+                    <p>
+                        SeneVit's anti-inflammatory components, especially quercetin, may be able to assist control chronic inflammation, which is linked to an increased risk of osteoporosis.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion2" id="sixteen" checked>
+                <label for="sixteen">Neurodegenerative Diseases </label>
+                <div class="content2">
+                    <p>
+                        SeneVit contains two nutrients, fisetin and apelin, both of which have been studied for their neuroprotective properties. These properties may assist maintain cognitive health and maybe lessen the impacts of neurodegenerative illnesses like Parkinson's
+                        and Alzheimer's. </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion2" id="seventeen" checked>
+                <label for="seventeen">Liver diseases </label>
+                <div class="content2">
+                    <p>
+                        It is well known that quercetin has hepatoprotective properties. SeneVit may assist liver health and function because of Piper Longum's enhanced bioavailability. </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion2" id="eighteen" checked>
+                <label for="eighteen">Diabetes </label>
+                <div class="content2">
+                    <p>
+                        SeneVit's support for cellular health in general and quercetin's possible impact in blood sugar management could provide a further level of assistance for those with diabetes. </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion2" id="nineteen" checked>
+                <label for="nineteen">Cardiovascular diseases </label>
+                <div class="content2">
+                    <p>
+                        SeneVit's combination of quercetin and fisetin can offer strong antioxidant protection, possibly assisting in the reduction of oxidative stress, a major cause of cardiovascular illnesses. </p>
+                </div>
+            </li>
+        </ul>
+        </ul>
+        </ul>
+        </ul>
+
+        <!-- accordion -->
+
+        <!-- image slider -->
+        <div class="heading1">
+            <h1>SeneVit Potent Senolytic Activator Blend, 30 Veg Capsules</h1>
+            <div class="star">
+                <span class="fa fa-star fa-3x checked"></span>
+                <span class="fa fa-star fa-3x checked"></span>
+                <span class="fa fa-star fa-3x checked"></span>
+                <span class="fa fa-star fa-3x"></span>
+                <span class="fa fa-star fa-3x"></span>
+            </div>
+            <div class="price4">
+                <h1>
+                    ₹2,400.00 INR
+                </h1>
+            </div>
+            <div class="dprice4">
+                <h1>
+                    ₹3,000.00 INR
+                    <h1>
+                        <div class="hrline">
+                            <hr>
+                        </div>
+            </div>
+        </div>
+        <div class="subheading4">
+            <h1>Tax included. Shipping calculated at checkout
+            </h1>
+        </div>
+        <div class="subheading5">
+            <p>Strong supplement combos like LongeVit and ResVit promote longevity and general health. ResVit has potent antioxidants like resveratrol and green tea extract, while LongeVit has essential components including NMN and CoQ10. When combined,
+                they have a positive impact on cardiovascular health, improve cognitive function, and boost energy generation. This combination can enhance overall longevity, encourage a healthy and active lifestyle, and support ageing in a positive way.
+
+
+            </p>
+        </div>
+
+        <div class="subheading8">
+            <h1>
+                Quantity:
+            </h1>
+        </div>
+
+        <!-- quantity -->
+
+        <!-- Outer container -->
+        <div class="outer-container5">
+            <!-- Inner container -->
+            <div class="inner-container5">
+                <div class="quantity-button minus5" onclick="decreaseValue1()"></div>
+                <div class="quantity-display5" id="quantity5"><b>1</b></div>
+                <div class="quantity-button5" onclick="increaseValue1()"></div>
+            </div>
+        </div>
+
+        <script>
+            // Function to increase value
+            function increaseValue1() {
+                var value = parseInt(document.getElementById('quantity5').innerText, 10);
+                value = isNaN(value) ? 0 : value;
+                value++;
+                document.getElementById('quantity5').innerText = value;
+            }
+
+            // Function to decrease value
+            function decreaseValue1() {
+                var value = parseInt(document.getElementById('quantity5').innerText, 10);
+                value = isNaN(value) ? 0 : value;
+                if (value > 1) {
+                    value--;
+                    document.getElementById('quantity5').innerText = value;
+                }
+            }
+        </script>
+        </script>
+        <!-- quantity -->
+
+        <div class="button-container1">
+            <!-- First large button -->
+            <a href="#" class="large-button2">Add To Cart</a>
+        </div>
+
+        <div class="product1">
+            <div class="product-small-img">
+                <img src="1.jpg" onclick="Myfunction(this)">
+                <img src="2.jpg" onclick="Myfunction(this)">
+                <img src="3.jpg" onclick="Myfunction(this)">
+                <img src="5.jpg" onclick="Myfunction(this)">
+                <img src="6.jpg" onclick="Myfunction(this)">
+                <img src="7.jpg" onclick="Myfunction(this)">
+            </div>
+            <div class="img-container">
+                <img id="ImageBox" src="1.jpg" alt="">
+            </div>
+        </div>
+        <script>
+            function Myfunction(smallImg) {
+                var fullimg = document.getElementById("ImageBox");
+                fullimg.src = smallImg.src;
+            }
+        </script>
+        <!-- image slider -->
+        <div class="containerImg">
+            <!-- Left side for image -->
+            <div class="left-side1">
+                <img class="image2" src="box1.jpg" alt="Landscape">
+            </div>
+            <!-- Right side for text -->
+            <div class="right-side1">
+                <h2>Senolytic medications and joint diseases</h2><br>
+                <p>Senescent cells, which proliferate with age and lead to tissue malfunction, are the focus of senolytic medications, which offer a promising treatment option for joint disorders. These medications seek to specifically eli...</p>
+                <img src="cal.png" alt="">
+                <h1>Nov 30, 2023</h1>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="blog">
+        <h1>Blog Posts</h1>
+    </div>
+
+    <div class="container123">
+        <div class="card">
+            <img src="https://decodeage.com/cdn/shop/articles/LongeVit_Decode_Age_2.webp?v=1710998188&width=600" alt="Placeholder Image">
+            <h2>LongeVit: What is it? Why Is Starting Your Healthy Aging Journey a Better Option?</h2>
+            <p>LongeVit: The best option for NMN users looking for all-encompassing well-being, vitality augmentation, and holistic aging support.
+            </p>
+            <br><br><br><br>
+            <p>Mar 11, 2024</p>
+        </div>
+        <div class="card">
+            <img src="https://decodeage.com/cdn/shop/articles/Trans-Pterostilbene_Banner.jpg?v=1710572059&width=600" alt="Placeholder Image">
+            <h2>Examining Trans-Pterostilbene: Uses, Advantages, Appropriate Amount, and Possible Dangers
+            </h2>
+            <p>Trans Pterostilbene, a natural compound in blueberries, offers potent antioxidant protection, anti-inflammatory benefits, and potential cardiovascular and cognitive support. More bioavailable than ....</p>
+            <p><br><br>Mar 5, 2024</p>
+        </div>
+        <div class="card">
+            <img src="https://decodeage.com/cdn/shop/articles/Blog_Grey_Hair_3.webp?v=1710138568&width=600" alt="Placeholder Image">
+            <h2>Use Spermidine to Reverse Grey Hair
+            </h2>
+            <p>The causes of grey hair are environment, stress, and heredity. Spermidine supplements provide hope for reversing gray hair by increasing melanin synthesis and combating oxidative stress.
+            </p>
+            <br><br><br>
+            <p>Mar 1, 2024</p>
+        </div>
+    </div>
+    <div class="star3">
+
+        <span class="fa fa-star fa-3x checked"></span>
+        <span class="fa fa-star fa-3x checked"></span>
+        <span class="fa fa-star fa-3x checked"></span>
+        <span class="fa fa-star fa-3x"></span>
+        <span class="fa fa-star fa-3x"></span>
+        <div class="reviewbutton">
+            <button class="transparent-btn">60 Review</button>
+        </div>
+    </div>
+
+
+    </div>
+    <button class="transparent-btn1">Write a Review </button>
+
+
+    <!-- Review box -->
+    <div class="review-box">
+        <!-- Customer name -->
+        <div class="customer-name">Shivnath</div>
+        <!-- Date -->
+        <div class="date">March 18, 2024</div>
+        <!-- Star rating -->
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+        <!-- Customer review -->
+        <div class="review">
+            Say Goodbye to Chronic Inflammation . SeneVit have helped me manage chronic inflammation and support my overall health and wellbeing.</div>
+    </div>
+    <div class="review-box">
+        <!-- Customer name -->
+        <div class="customer-name">Shivnath</div>
+        <!-- Date -->
+        <div class="date">March 18, 2024</div>
+        <!-- Star rating -->
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+        <!-- Customer review -->
+        <div class="review">
+            Say Goodbye to Chronic Inflammation . SeneVit have helped me manage chronic inflammation and support my overall health and wellbeing.</div>
+    </div>
+    <div class="review-box">
+        <!-- Customer name -->
+        <div class="customer-name">Shivnath</div>
+        <!-- Date -->
+        <div class="date">March 18, 2024</div>
+        <!-- Star rating -->
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+        <!-- Customer review -->
+        <div class="review">
+            Say Goodbye to Chronic Inflammation . SeneVit have helped me manage chronic inflammation and support my overall health and wellbeing.</div>
+    </div>
+    <div class="review-box">
+        <!-- Customer name -->
+        <div class="customer-name">Shivnath</div>
+        <!-- Date -->
+        <div class="date">March 18, 2024</div>
+        <!-- Star rating -->
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+        <!-- Customer review -->
+        <div class="review">
+            Say Goodbye to Chronic Inflammation . SeneVit have helped me manage chronic inflammation and support my overall health and wellbeing.</div>
+    </div>
+    <div class="review-box">
+        <!-- Customer name -->
+        <div class="customer-name">Shivnath</div>
+        <!-- Date -->
+        <div class="date">March 18, 2024</div>
+        <!-- Star rating -->
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+        <!-- Customer review -->
+        <div class="review">
+            Say Goodbye to Chronic Inflammation . SeneVit have helped me manage chronic inflammation and support my overall health and wellbeing.</div>
+    </div>
+    <div class="review-box">
+        <!-- Customer name -->
+        <div class="customer-name">Shivnath</div>
+        <!-- Date -->
+        <div class="date">March 18, 2024</div>
+        <!-- Star rating -->
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+        <!-- Customer review -->
+        <div class="review">
+            Say Goodbye to Chronic Inflammation . SeneVit have helped me manage chronic inflammation and support my overall health and wellbeing.</div>
+    </div>
+    <div class="review-box">
+        <!-- Customer name -->
+        <div class="customer-name">Shivnath</div>
+        <!-- Date -->
+        <div class="date">March 18, 2024</div>
+        <!-- Star rating -->
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+        <!-- Customer review -->
+        <div class="review">
+            Say Goodbye to Chronic Inflammation . SeneVit have helped me manage chronic inflammation and support my overall health and wellbeing.</div>
+    </div>
+    <div class="review-box">
+        <!-- Customer name -->
+        <div class="customer-name">Shivnath</div>
+        <!-- Date -->
+        <div class="date">March 18, 2024</div>
+        <!-- Star rating -->
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+        <!-- Customer review -->
+        <div class="review">
+            Say Goodbye to Chronic Inflammation . SeneVit have helped me manage chronic inflammation and support my overall health and wellbeing.</div>
+    </div>
+    <div class="review-box">
+        <!-- Customer name -->
+        <div class="customer-name">Shivnath</div>
+        <!-- Date -->
+        <div class="date">March 18, 2024</div>
+        <!-- Star rating -->
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+        <!-- Customer review -->
+        <div class="review">
+            Say Goodbye to Chronic Inflammation . SeneVit have helped me manage chronic inflammation and support my overall health and wellbeing.</div>
+    </div>
+    <div class="review-box">
+        <!-- Customer name -->
+        <div class="customer-name">Shivnath</div>
+        <!-- Date -->
+        <div class="date">March 18, 2024</div>
+        <!-- Star rating -->
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+        <!-- Customer review -->
+        <div class="review">
+            Say Goodbye to Chronic Inflammation . SeneVit have helped me manage chronic inflammation and support my overall health and wellbeing.</div>
+    </div><br><br><br>
+    <button class="transparent-btn2">Show More Reviews </button><br><br><br><br>
+
+    <div class="header">
+        <br><br>
+        <h1>Products recently viewed</h1>
+    </div> <br><br>
+    <div class="product-listing">
+        <div class="product-card">
+            <h2 class="product-card__title">
+                <center>NAD+ Booster Bundle</center>
+            </h2>
+            <img src="https://cdn.shopify.com/s/files/1/0605/3445/6508/files/nad-booster-bundle-decode-age-36014756823228.webp?v=1699018717&width=500">
+            <div class="product-card__content-wrapper">
+                <p class="product-card__description">Save 18%</p>
+                <p class="product-card__price"><br>₹2,400.00 IN <br><span class="stricked">₹3,000.00 INR</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="product-card__button">Buy Now</button></p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <h2 class="product-card__title">
+                <center>Healthy Ageing Bundle <br>Bundle</center>
+            </h2>
+            <img src="https://cdn.shopify.com/s/files/1/0605/3445/6508/files/healthy-ageing-bundle-decode-age-36014771830972.webp?v=1699018894&width=500">
+            <div class="product-card__content-wrapper">
+                <p class="product-card__description">Save 18%</p>
+                <p class="product-card__price"><br>₹3,800.00 INR <br><span class="stricked">₹5,500.00 INR</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="product-card__button">Buy Now</button></p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <h2 class="product-card__title">
+                <center>Insulin Sensitivity Bundle (2 Months Dosage) <br> Bundle</center>
+            </h2>
+            <img src="https://cdn.shopify.com/s/files/1/0605/3445/6508/files/insulin-sensitivity-bundle-2-months-dosage-decode-age-36088141349052.webp?v=1700216616&width=500">
+            <div class="product-card__content-wrapper">
+                <p class="product-card__description">Save 20%</p>
+                <p class="product-card__price"><br>₹3,100.00 INR <br><span class="stricked">₹5,500.00 INR</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="product-card__button">Buy Now</button>                    </p>
+            </div>
+        </div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    </div>
+
+    <div class="wrapper">
+        <h1>FAQ</h1>
+
+        <div class="faqfaq">
+            <button class="accordionfaq">
+                What is SeneVit ?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+            <div class="pannelfaq">
+                <p>
+                    SeneVit is a potent combination of senolytic activators that targets and eradicates senescent cells in an effort to promote healthy aging. </p>
+            </div>
+        </div>
+        <div class="faqfaq">
+            <button class="accordionfaq">
+                How dows SeneVit work as a powerful senolytic activator ?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+            <div class="pannelfaq">
+                <p>
+                    SeneVit functions by utilizing its special combination of essential components, including Piper longum, Fisetin, Quercetin, and Apigenin. Together, these components aid in the removal of senescent cells, which are aged, dysfunctional cells that may have
+                    a detrimental effect on general health.
+                </p>
+            </div>
+        </div>
+        <div class="faqfaq">
+            <button class="accordionfaq">
+                What makes SeneVit a powerful senolytic blend ?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+            <div class="pannelfaq">
+                <p>
+                    SeneVit's potency is derived from its premium components, which act in concert to eliminate senescent cells, lower inflammation, and improve cellular health. </p>
+            </div>
+        </div>
+        <div class="faqfaq">
+            <button class="accordionfaq">
+                How often should I take SeneVit ?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+            <div class="pannelfaq">
+                <p>
+                    The potency of SeneVit lies in its high-quality ingredients that synergistically work together to remove senescent cells, reducing inflammation and enhancing cellular health. </p>
+            </div>
+        </div>
+        <div class="faqfaq">
+            <button class="accordionfaq">
+                How does SeneVit support skin health ?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+            <div class="pannelfaq">
+                <p>
+                    SeneVit's antioxidants, which include quercetin and fisetin, can help control skin pigmentation and shield the skin from free radical damage, resulting in a complexion that is bright and balanced.
+                </p>
+            </div>
+        </div>
+        <div class="faqfaq">
+            <button class="accordionfaq">
+                What are the anti inflammatory benefits of SeneVit ?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+            <div class="pannelfaq">
+                <p>
+                    SeneVit contains ingredients like Fisetin, Quercetin, and Apigenin, which have demonstrated anti-inflammatory properties. Together, they can provide a broad range of anti-inflammatory support. </p>
+            </div>
+        </div>
+
+        <script>
+            var acc = document.getElementsByClassName("accordionfaq");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    this.parentElement.classList.toggle("active");
+
+                    var pannelfaq = this.nextElementSibling;
+
+                    if (pannelfaq.style.display === "block") {
+                        pannelfaq.style.display = "none";
+                    } else {
+                        pannelfaq.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
+
+
+
+</body>
+<script src="script.js"></script>
+<!-- benefits -->
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,675 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 5;
+}
+
+.scrolling-text {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scrollText 20s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Logo styling */
+.nav__logo img {
+   width: 120px; /* Adjust the width as needed */
+   height: auto; /* Maintain aspect ratio */
+   margin-right: 20px; /* Add margin to separate logo from other elements */
+}
+
+/* Example styling for the header */
+.header {
+   background-color: #333; /* Background color of the header */
+   color: black; /* Text color */
+   padding: 10px 0; /* Padding for the header */
+}
+
+.container {
+   max-width: 1200px; /* Limit the width of the container */
+   margin: 0 auto; /* Center the container */
+   padding: 0 20px; /* Add padding to the container */
+}
+
+.nav__logo {
+   font-size: 1.5rem; /* Font size of the logo text */
+   font-weight: bold; /* Bold font weight */
+   text-decoration: none; /* Remove underline from the logo text */
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color:  #333;
+    color: white;
+}
+
+.nav__logo {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    margin-right: 20px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav__close {
+    display: none;
+    cursor: pointer;
+}
+
+.nav__actions {
+    display: flex;
+    align-items: center;
+}
+
+.nav__search,
+.nav__login,
+.nav__toggle {
+    font-size: 1.5rem;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.search {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.search__form {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.search__input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.search__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+<!-----------------Home----------------->
+.home .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.image-container {
+  width: 400px; /* Set the width of the container */
+  height: 300px; /* Set the height of the container */
+  border: 0px solid #ddd; /* Optional: Add a border for visual clarity */
+  overflow: hidden; /* Optional: Hide any content that overflows the container */
+}
+
+.image-container img {
+  width: 100%; /* Make the image fill the container horizontally */
+  height: 100%; /* Make the image fill the container vertically */
+  object-fit: cover; /* Optional: Resize the image to cover the container */
+}
+
+.text-container {
+  max-width: 800px; /* Adjust as needed */
+  
+  padding: 20px;
+  text-align: center;
+}
+
+.underlined-text {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.text_new-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.underlined-text::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.text_new-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+.underlined-text::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px; /* Adjust the width of the underline */
+  height: 2px; /* Adjust the height/thickness of the underline */
+  background-color: #333; /* Adjust the color of the underline */
+}
+
+
+
+/* Adjust the styles below as needed */
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.text-container {
+    max-width: 500px; /* Set maximum width for better readability */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 2px; /* Add some padding around the content */
+}
+
+.text-container h1 {
+    font-size: 32px; /* Set the font size for the heading */
+    margin-bottom: 10px; /* Add some space below the heading */
+}
+
+.text-container p {
+    font-size: 12px; /* Set the font size for the paragraph */
+    line-height: 1.6; /* Set the line height for better readability */
+}
+.quantity-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  margin: 0 auto; /* This centers the box horizontally */
+}
+
+
+.quantity-button {
+  width: 30px;
+  height: 30px;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+}
+
+.quantity-input {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 0 10px;
+}
+.add-to-cart-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-input {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+.add-to-cart-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+}
+
+.button {
+  padding: 10px 20px;
+  margin-right: 10px; /* Adjust the margin as needed */
+  font-size: 16px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Optional: To remove margin from the last button */
+.button:last-child {
+  margin-right: 0;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+
+
+.faq__grid {
+  margin-top: 4rem;
+  max-width: 600px;
+  margin-inline: auto;
+  display: grid;
+  gap: 1rem;
+  justify-content: start; /* Align grid at the left side */
+}
+
+
+.faq__card {
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+  background-color: #f8f7f5;
+  border-radius: 1rem;
+}
+
+.faq__header {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.faq__header h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.faq__header span {
+  font-size: 1.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.faq__card.active .faq__header span {
+  transform: rotate(180deg);
+}
+
+.faq__content {
+  font-weight: 500;
+  color: var(--text-dark);
+  display: none;
+}
+/* Style for the star icon */
+.fa-regular.fa-star {
+  color: gold; /* Set the color of the star to gold */
+}
+
+/* Style for the rating text */
+.rating {
+  font-size: 16px; /* Set the font size of the rating */
+  margin-left: 50px;
+
+}
+
+
+.faq__card.active .faq__content {
+  display: block;
+}
+.icons-container {
+  margin-top: 2rem; /* Adjust as needed */
+  width: 1000px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons img {
+  width: 500px; /* Set the width of the icon image */
+  height:500; /* Maintain aspect ratio */
+}
+
+
+.custom-img-container {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-image: url('C:\Users\SONY\Downloads\The_five_best_ways_to_keep_your_brain_healthy-01_1.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+
+
+.text-container h2 {
+  margin-top: 0;
+}
+
+.text-container p {
+  margin-bottom: 0;
+}
+<!---------icon sextion--->
+
+.icons-container .icons{
+    background: white;
+    border: .1rem solid rgba(0,0,0,.1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+    width: 190px;
+}
+
+.icons-container .icons img{
+    height: 13rem;
+    margin-right: 2rem;
+    width: 190rem;
+}
+<!----------Research------>
+
+/* Research section */
+#third-section {
+  width: 100%;
+}
+
+#third-section h1 {
+  margin-bottom: 10px;
+}
+
+.third-section-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.third-section-card-content {
+  width: 350px;
+  border-top: 1.5px solid rgb(194, 190, 190);
+  padding: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.third-section-card-content p {
+  color: #a39f9f;
+}
+
+#third-section #img-decode,
+h2 {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 3.5rem;
+}
+
+#research {
+  margin-top: 50px;
+  padding-left: 100px;
+  font-size: 15rem;
+}
+
+.third-section-main-headline {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  border-radius: 10px;
+
+}
+
+.main-headline-left {
+  width: 100%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+}
+
+.main-headline-left img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.main-headline-left img:hover {
+  cursor: pointer;
+  width: 100%;
+  transform: scale(1.1);
+}
+
+.main-headline-right {
+  width: 70%;
+  padding: 2%;
+  background-color: #e8e8ea;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.main-headline-right button {
+  border: none;
+  padding: 2%;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+/*review*/
+.start-writeareviwe {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  color: gold;
+
+}
+.start-writeareviwe span {
+  padding: 10px;
+  border-radius: 5px;
+  border: 0.5px solid grey;
+  color: #333;
+}
+
+#review {
+  text-align: center;
+}
+
+#review a {
+  text-decoration: underline;
+}
+/* Review box */
+.box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.stars {
+    margin-bottom: 10px;
+}
+
+.stars i {
+    color: #ffd700;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+font-size:20px;
+}
+p{
+font-size:15px;
+}
+
+/* Calendar icon */
+.calendar-icon {
+    margin-right: 5px;
+}
+
+#fourth-section h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(226, 223, 223);
+  margin-top: 10px;
+}
+.hover-image {
+  width: 100%;
+  height: 100%;
+  position: absolute; /* Position the hover image */
+  top: 0; /* Align the hover image to the top of the container */
+  left: 0; /* Align the hover image to the left of the container */
+  opacity: 0; /* Initially hide the hover image */
+  transition: opacity 0.3s; /* Add a smooth transition effect */
+}
+
+.image-container:hover .hover-image {
+  opacity: 1; /* Display the hover image when hovering over the container */
+}
+.card span {
+  background-color: rgb(87, 87, 247);
+  padding: 4px 5px 4px 5px;
+  color: white;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-radius: 20px;
+}
+
+.h4-1 {
+  color: rgb(45, 45, 235);
+  ;
+}
+
+.h4-2 {
+  color: rgb(138, 143, 143);
+  text-decoration: line-through;
+}
+
+.card-box {
+  width: 290px;
+  border-radius: 4%;
+  padding: 3%;
+  margin: 4%;
+
+  background-color: white;
+}
+
+#noWrap {
+  text-wrap: nowrap;
+}
+
+.card-box img {
+  width: 100%;
+}
+
+.card-box img:hover {
+  width: 100%;
+  opacity: 80%;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.card-price-buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.card-price-buy h4 {
+  margin-bottom: 10px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 10px 15px 10px 15px;
+  margin: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: rgb(36, 34, 34);
+  color: white;
+}
+
+button:hover {
+  background-color: gray;
+  color: blanchedalmond;
+}

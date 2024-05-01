@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containers {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.image {
+    float: left;
+    width: 28%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.description {
+    float: left;
+    width: 33%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.buy {
+    float: right;
+    width: 33%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 12 px;
+    width: 320px;
+}
+
+.product-card h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.product-card p {
+    font-size: 14px;
+    display: none;
+    /* Initially hide description and benefits */
+}
+
+.dropdown {
+    cursor: pointer;
+}
+
+.button-container {
+    margin-right: 80px;
+}
+
+.container {
+    float: right;
+    height: 500px;
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.heading {
+    margin-block: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.table-container1 {
+    border: 1px solid blue;
+}
+
+.table {
+    display: table;
+    font-weight: bold;
+}
+
+.cancel {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.table-cell {
+    vertical-align: middle;
+    padding: 5px;
+    display: table-cell;
+}
+
+.sub-container {
+    text-align: center;
+    padding: 8px;
+}
+
+.link {
+    display: block;
+    padding-block: 10px;
+}
+
+.flexbox {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.order-text {
+    margin-block: 25px;
+}
+
+.buttons {
+    display: inline-block;
+    padding-block: 15px;
+    padding-inline: 20px;
+    border: 1px solid orange;
+    text-decoration: none;
+}
+
+.buttons:hover {
+    background-color: orange;
+    color: white;
+}
+
+.buttons:first-child {
+    margin-right: 20px;
+}
+
+.free-shipping {
+    margin-block: 10px;
+}
+
+.border {
+    border: 1px solid blue;
+}

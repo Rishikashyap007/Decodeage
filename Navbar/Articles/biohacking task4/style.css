@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --spacing-0-5: 0.125rem;
+
+  --spacing-1: 0.25rem;
+
+  --spacing-1-5: 0.375rem;
+
+  --spacing-2: 0.5rem;
+
+  --spacing-2-5: 0.625rem;
+  /* 10px */
+  --spacing-3: 0.75rem;
+  /* 12px */
+  --spacing-3-5: 0.875rem;
+  /* 14px */
+  --spacing-4: 1rem;
+  /* 16px */
+  --spacing-4-5: 1.125rem;
+
+  --spacing-5: 1.25rem;
+
+  --spacing-5-5: 1.375rem;
+
+  --spacing-6: 1.5rem;
+
+  --spacing-6-5: 1.625rem;
+
+  --spacing-7: 1.75rem;
+
+  --spacing-7-5: 1.875rem;
+
+  --spacing-8: 2rem;
+  --spacing-8-5: 2.125rem;
+  /* 34
+    --spacing-9: 2.25rem;
+    /* 36px */
+  --spacing-9-5: 2.375rem;
+  /* 38px */
+  --spacing-10: 2.5rem;
+  /* 40px */
+  --spacing-11: 2.75rem;
+  /* 44px */
+  --spacing-12: 3rem;
+  /* 48px */
+  --spacing-14: 3.5rem;
+  /* 56px */
+  --spacing-16: 4rem;
+  /* 64px */
+  --spacing-18: 4.5rem;
+  /* 72px */
+  --spacing-20: 5rem;
+  /* 80px */
+  --spacing-24: 6rem;
+  /* 96px */
+  --spacing-28: 7rem;
+  /* 112px */
+  --spacing-32: 8rem;
+  /* 128px */
+  --spacing-36: 9rem;
+  /* 144px */
+  --spacing-40: 10rem;
+  /* 160px */
+  --spacing-44: 11rem;
+  /* 176px */
+  --spacing-48: 12rem;
+  /* 192px */
+  --spacing-52: 13rem;
+  /* 208px */
+  --spacing-56: 14rem;
+  /* 224px */
+  --spacing-60: 15rem;
+  /* 240px */
+  --spacing-64: 16rem;
+  /* 256px */
+  --spacing-72: 18rem;
+  /* 288px */
+  --spacing-80: 20rem;
+  /* 320px */
+  --spacing-96: 24rem;
+  /* 384px */
+
+  --container-max-width: 1520px;
+  --container-narrow-max-width: 1270px;
+  --container-gutter: var(--spacing-5);
+  --section-outer-spacing-block: var(--spacing-12);
+  --section-inner-max-spacing-block: var(--spacing-10);
+  --section-inner-spacing-inline: var(--container-gutter);
+  --section-stack-spacing-block: var(--spacing-8);
+
+  --grid-gutter: var(--spacing-5);
+
+  --product-list-row-gap: var(--spacing-8);
+  --product-list-column-gap: var(--grid-gutter);
+
+  --input-gap: var(--spacing-2);
+  --input-height: 2.625rem;
+  --input-padding-inline: var(--spacing-4);
+
+  --sticky-area-height: calc(var(--sticky-announcement-bar-enabled, 0) * var(--announcement-bar-height, 0px) + var(--sticky-header-enabled, 0) * var(--header-height, 0px));
+
+  --transform-logical-flip: 1;
+  --transform-origin-start: left;
+  --transform-origin-end: right;
+
+
+
+  --heading-font-family: Nunito, sans-serif;
+  --heading-font-weight: 400;
+  --heading-font-style: normal;
+  --heading-text-transform: normal;
+  --heading-letter-spacing: -0.02em;
+  --text-font-family: "Nunito Sans", sans-serif;
+  --text-font-weight: 400;
+  --text-font-style: normal;
+  --text-letter-spacing: 0.0em;
+
+  --text-h0: 2.5rem;
+  --text-h1: 1.75rem;
+  --text-h2: 1.5rem;
+  --text-h3: 1.375rem;
+  --text-h4: 1.125rem;
+  --text-h5: 1.125rem;
+  --text-h6: 1rem;
+  --text-xs: 0.6875rem;
+  --text-sm: 0.75rem;
+  --text-base: 0.875rem;
+  --text-lg: 1.125rem;
+
+
+
+  --accent: 26 26 26;
+  --text-primary: 26 26 26;
+  --background-primary: 243 243 246;
+  --dialog-background: 255 255 255;
+  --border-color: var(--text-color, var(--text-primary)) / 0.12;
+
+  --button-background-primary: 26 26 26;
+  --button-text-primary: 255 255 255;
+  --button-background-secondary: 240 196 23;
+  --button-text-secondary: 26 26 26;
+
+  --success-background: 224 244 232;
+  --success-text: 0 163 65;
+  --warning-background: 255 246 233;
+  --warning-text: 255 183 74;
+  --error-background: 254 231 231;
+  --error-text: 248 58 58;
+
+  --on-sale-text: 58 112 248;
+  --on-sale-badge-background: 58 112 248;
+  --on-sale-badge-text: 255 255 255;
+  --sold-out-badge-background: 0 0 0;
+  --sold-out-badge-text: 255 255 255;
+  --primary-badge-background: 128 60 238;
+  --primary-badge-text: 255 255 255;
+  --star-color: 255 183 74;
+  --product-card-background: 255 255 255;
+  --product-card-text: 26 26 26;
+
+
+
+
+  /* Rounded variables (used for border radius) */
+  --rounded-xs: 0.25rem;
+  --rounded-sm: 0.375rem;
+  --rounded: 0.75rem;
+  --rounded-lg: 1.5rem;
+  --rounded-full: 9999px;
+
+  --rounded-button: 3.75rem;
+  --rounded-input: 0.5rem;
+
+  --shadow-sm: 0 2px 8px rgb(var(--text-primary) / 0.1);
+  --shadow: 0 5px 15px rgb(var(--text-primary) / 0.1);
+  --shadow-md: 0 5px 30px rgb(var(--text-primary) / 0.1);
+  --shadow-block: 0px 30px 50px rgb(var(--text-primary) / 0.1);
+
+}
+
+
+
+@media screen and (min-width: 700px) {
+  :root {
+    --text-h0: 3.25rem;
+    --text-h1: 2.25rem;
+    --text-h1: 56px;
+    --text-h2: 1.75rem;
+    --text-h2: 32px;
+    --text-h3: 1.625rem;
+    --text-h4: 1.25rem;
+    --text-h5: 1.25rem;
+    --text-h6: 1.125rem;
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1.0rem;
+    --text-lg: 1.25rem;
+
+    /* Spacing */
+    --container-gutter: 2rem;
+    --section-outer-spacing-block: var(--spacing-16);
+    --section-inner-max-spacing-block: var(--spacing-12);
+    --section-inner-spacing-inline: var(--spacing-12);
+    --section-stack-spacing-block: var(--spacing-12);
+
+    /* Grid gutter */
+    --grid-gutter: var(--spacing-6);
+
+    /* Product list settings */
+    --product-list-row-gap: var(--spacing-12);
+
+    /* Form settings */
+    --input-gap: 1rem;
+    --input-height: 3.125rem;
+    --input-padding-inline: var(--spacing-5);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  :root {
+    --container-gutter: var(--spacing-12);
+    --section-outer-spacing-block: var(--spacing-18);
+    --section-inner-max-spacing-block: var(--spacing-16);
+    --section-inner-spacing-inline: var(--spacing-16);
+    --section-stack-spacing-block: var(--spacing-12);
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  :root {
+    --container-gutter: var(--spacing-12);
+    --section-outer-spacing-block: var(--spacing-20);
+    --section-inner-max-spacing-block: var(--spacing-16);
+    --section-inner-spacing-inline: var(--spacing-16);
+    --section-stack-spacing-block: var(--spacing-12);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  :root {
+    --text-h0: 4rem;
+    --text-h1: 3rem;
+    --text-h2: 2.5rem;
+    --text-h3: 1.75rem;
+    --text-h4: 1.5rem;
+    --text-h5: 1.25rem;
+    --text-h6: 1.25rem;
+
+    --section-outer-spacing-block: var(--spacing-24);
+    --section-inner-max-spacing-block: var(--spacing-18);
+    --section-inner-spacing-inline: var(--spacing-18);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  :root {
+    --section-outer-spacing-block: var(--spacing-24);
+    --section-inner-max-spacing-block: var(--spacing-20);
+    --section-inner-spacing-inline: var(--spacing-20);
+  }
+}
+
+.blog-posts__container {
+  gap: var(--spacing-8);
+  margin-block-start: var(--spacing-10);
+  margin-block-end: var(--spacing-14);
+  display: grid;
+}
+
+@media screen and (min-width: 700px) {
+  .blog-posts__container {
+    gap: var(--spacing-10);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .blog-posts__container {
+    gap: var(--spacing-20);
+    margin-block-start: var(--spacing-20);
+    margin-block-end: var(--spacing-28);
+  }
+}
+
+.blog-banner {
+  --banner-container-gap: var(--spacing-16);
+  padding-block-start: var(--banner-spacing-block-added, 0px);
+}
+
+.blog-banner-content {
+  padding-block-start: var(--banner-content-padding-block-start);
+  padding-block-end: var(--spacing-16);
+}
+
+.blog-filter-list {
+  --filter-list-item-padding: var(--spacing-2-5) var(--spacing-5);
+  white-space: nowrap;
+}
+
+.blog-filter-list [aria-selected="true"] {
+  background-color: rgb(var(--background-primary));
+  color: rgb(var(--text-primary));
+}
+
+.blog-filter-list [aria-selected="false"] {
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+}
+
+@media screen and (pointer: fine) {
+  .blog-filter-list [aria-selected="false"]:hover {
+    opacity: 1;
+  }
+}
+
+.blog-filter-list a {
+  padding: var(--filter-list-item-padding);
+  display: block;
+}
+
+.blog-banner__form {
+  width: 100%;
+  max-width: 500px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  padding-inline-start: var(--spacing-6);
+  padding-inline-end: var(--spacing-6);
+}
+
+@media screen and (min-width: 700px) {
+  .blog-banner {
+    --banner-container-gap: var(--spacing-28);
+  }
+
+  .blog-banner-content {
+    padding-block-end: var(--spacing-28);
+  }
+
+  .blog-banner__form {
+    box-sizing: content-box;
+  }
+
+  .blog-filter-list {
+    --filter-list-item-padding: var(--spacing-4) var(--spacing-6);
+  }
+}
+
+.blog-posts {
+  --blog-articles-gap: var(--spacing-8);
+  align-items: flex-start;
+  gap: var(--blog-articles-gap);
+  display: grid;
+}
+
+.blog-posts-newsletter {
+  padding: var(--spacing-8);
+  align-content: flex-start;
+}
+
+.blog-posts-newsletter>.form {
+  gap: var(--spacing-2);
+}
+
+@media screen and (min-width: 700px) {
+  .blog-posts {
+    --article-per-row: var(--blog-posts-per-row, 2);
+    --blog-articles-gap: var(--spacing-10);
+    --blog-articles-margin-block: var(--spacing-14);
+    grid: auto / repeat(var(--article-per-row), minmax(0, 1fr));
+  }
+
+  .blog-posts-newsletter {
+    padding: var(--spacing-10);
+  }
+
+  .blog-posts-newsletter>.form {
+    gap: var(--spacing-4);
+  }
+
+  .blog-posts-newsletter__content>svg {
+    width: var(--spacing-8);
+    height: var(--spacing-8);
+  }
+}
+
+#shopify-section-template--16207144091836__470f5ce0-dc06-4d47-9f9a-7337e347f9d6 .product-list {
+  --product-list-gap: var(--product-list-row-gap) var(--product-list-column-gap);
+  --product-list-items-per-row: 1;
+  --product-list-carousel-item-width: 74vw;
+  --product-list-grid: auto / auto-flow var(--product-list-carousel-item-width);
+}
+
+@media screen and (min-width: 700px) {
+  #shopify-section-template--16207144091836__470f5ce0-dc06-4d47-9f9a-7337e347f9d6 .product-list {
+      --product-list-gap: var(--product-list-row-gap) var(--product-list-column-gap);
+      --product-list-items-per-row: 2;
+      --product-list-carousel-item-width: 36vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #shopify-section-template--16207144091836__470f5ce0-dc06-4d47-9f9a-7337e347f9d6 .product-list {
+      --product-list-items-per-row: 4;
+      --product-list-carousel-item-width: calc(var(--container-inner-width) / 4 - (var(--product-list-column-gap) / 4 * 3));
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .blog-posts {
+    --article-per-row: var(--blog-posts-per-row, 3);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .blog-posts {
+    --blog-articles-gap: var(--spacing-20);
+  }
+}

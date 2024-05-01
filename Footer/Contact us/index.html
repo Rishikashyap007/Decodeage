@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Layout Example</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <h1>We Care, We Listen</h1>
+        <p>Lets make Centenarian Life a reality together.</p>
+    
+    
+        <section>
+            <p> <b>Need help?</b></p>
+            <ul>
+                <li><strong>Phone:</strong> +91 73920-92920</li>
+                <li><strong>Email:</strong> <a href="mailto:care@decodeage.com">care@decodeage.com</a></li>
+                <li>
+                    <strong>Office hours:</strong> (Mon-Sat) 10AM-6PM
+                </li>
+            </ul>
+        </section>
+        <section>
+            <p>
+                <strong>Bangalore Head Office:</strong>
+            </p>
+            <p>
+                No. 7, 1, Haudin Rd, <br />
+                Yellappa Chetty Layout Sivanchetti Gardens, <br />
+                Halasuru, Bengaluru, Karnataka 560042 IN
+            </p>
+            <p>
+                <strong>Surat Office:</strong>
+            </p>
+            <p>
+                401, Pramukh Orbit 1, <br />
+                Puna-Saroli Rd, <br />
+                Opp. Canal Coridor, <br />
+                Surat, Gujarat 395010 IN
+            </p>
+        </section>
+    </main>
+
+    <div class="container">
+        <div class="form-container">
+          <h2>Name</h2>
+          <input class="input-side-by-side1" type="text" id="name" placeholder="Enter your name">
+          <h2 class="heading">Email</h2>
+          <input class="input-side-by-side2" type="email" id="email" placeholder="Enter your email address">
+          <h2>Select who you are</h2>
+          <select id="user2type">
+            <option value="">Select Who You are</option>
+            <option value="">Fitness Professional</option>
+            <option value="">Biohacker</option>
+            <option value="">Sciencs Comunicator</option>
+            <option value="">Reseacher or Scientist</option>
+            <option value="">Healthcare practitioner</option>
+            <option value="">Investor in Healthcare</option>
+            <option value="">Curious About Decoade Age</option>
+          </select>
+          <h2>Message</h2>
+          <textarea id="message" placeholder="Enter your message"></textarea>
+          <button id="submit-btn" onclick="sendMessage();">Send message</button>
+        </div>
+        <div class="message-container">
+          <p class="message-text" id="response-text"></p>
+        </div>
+      </div>
+    
+</body>
+</html>

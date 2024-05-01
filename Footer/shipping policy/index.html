@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333; /* Default text color */
+    background-color:#f0f0f0;
+  }
+  .container {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: flex-start; /* Align items at the top */
+    flex-wrap: wrap; /* Wrap items if they exceed container width */
+  }
+  .box1 {
+    width: 650px;
+    height: 300px;
+    margin: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: large;
+    margin-right: 50px;
+  }
+  .box {
+    background-color:#ddd;/* Light grey background */
+    padding: 50px;
+    border-radius: 9px;
+    border: 1px solid #ddd; 
+    height: 600px;
+    width: 650px;
+    font-weight: bold;
+    margin: 10px;
+    color:grey;
+
+    font-weight: 900;
+  }
+  .light-grey-line {
+    border-top: 1px solid #ccc; /* Light grey line */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .info-box h2 {
+    margin-top: 0; /* Remove default margin for h2 */
+  }
+  .box- ul {
+    padding-left: 20px;
+    color: grey; /* Indent list items */
+  }
+  
+  .light-grey-text {
+    color: #888; /* Light grey text color */
+  }
+  
+  h2 {
+    width: 100%;
+    text-align: center;
+    margin-left: 550px;
+    margin-bottom:100px ;
+  }
+  .accordion {
+    border-bottom: 1px solid #ccc; /* Adds a grey border between each accordion item */
+    margin-bottom: 10px; /* Adjust this value to change the spacing */
+  }
+  
+  .centered-text {
+  text-align: center;
+}
+.box2 {
+    /* Add your box styling here */
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    background-color:#ddd;
+    width: 800px;
+    margin-left: 350px;
+    border-radius: 10px;
+}
+  .bold {
+    font-weight: bold;
+  }
+  .prose p {
+    margin-bottom: 10px; /* Adjust spacing between paragraphs */
+  }
+  .accordion__toggle {
+    cursor: pointer;
+  }
+  .accordion__toggle:hover {
+    color: black;
+}
+
+  .accordion__content {
+    display: none; /* Hide content by default */
+    padding: 10px ;
+    
+  }
+  .accordion__content.active {
+    display: block; /* Display content when active */
+  }
+ .box4{
+  text-align: center;
+  margin-top: 40px;
+
+ }
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="box1">
+      <h1>Shipping Policy</h1>
+      <h3>At Decode Age, we understand the importance of fast and efficient service. We strive to deliver your orders promptly and securely, usually within 5 working days across India.</h3>
+    </div>
+    <div class="box">
+      <h4>Shipping Details:</h4>
+      <ul>
+        ✔ We ship to all locations across India.<br></b>
+        ✔ Shipping is free on all orders.<br>
+        ✔ We offer Cash on Delivery (COD) in select cities in India.<br>
+        ✔ COD is not available for orders worth Rs. 5000 & above.<br>
+        ✔ Cashback offers apply only to prepaid orders and not on COD orders.<br>
+        ✔ A minimum of 1 product must be purchased to complete the order.<br>
+        ✔ All product MRPs include applicable taxes, as per government laws.</b>
+      </ul>
+      <div class="light-grey-line"></div>
+      <h4>Payment & Refund Information:</h4>
+      <ul>
+        ✔ Our leading courier partners handle shipping and COD services.<br>
+        ✔ Refunds will be processed through the same payment gateway used for the order.<br>
+        ✔ Customers can modify the shipping address only before the product is packed. After packing, the shipping address cannot be changed<br>
+        ✔ In case of non-receipt of the order within the stipulated period, please raise a complaint at <a href="mailto:care@decodeage.com">care@decodeage.com</a> with your order number.<br>
+      </ul>
+    </div>
+  </div>
+
+  
+  <h1 class="centered-text">FAQ</h1>
+
+
+  <div class="box2">
+    <div class="section-stack__main">
+      <div class="accordion-box rounded bg-secondary">
+          <details class="accordion group" aria-expanded="false" is="accordion-disclosure">
+              <summary>
+                  <div class="accordion__toggle bold">
+                      <span>When will l receive my order?</span><span
+                          class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg
+                              role="presentation" focusable="false" width="8" height="6"
+                              class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                              <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor"
+                                  stroke-width="1.5"></path>
+                          </svg></span>
+                  </div>
+              </summary>
+  
+              <div class="accordion__content">
+                  <div class="prose">
+                      <p>
+                        <h3>If your order is placed before 12:00 pm Eastern time, Monday through Friday, we will do our best to ship your order the same business day. Your order should arrive within 5 business days once shipped, barring any unforeseen issues. International orders can take up to 4-6 weeks for delivery, depending on clearance/customs issues.</h3>
+                      </p>
+                  </div>
+              </div>
+          </details>
+          <details class="accordion group" aria-expanded="false" is="accordion-disclosure">
+              <summary>
+                  <div class="accordion__toggle bold">
+                      <span>How does my order ship?</span><span
+                          class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg
+                              role="presentation" focusable="false" width="8" height="6"
+                              class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                              <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor"
+                                  stroke-width="1.5"></path>
+                          </svg></span>
+                  </div>
+              </summary>
+  
+              <div class="accordion__content">
+                  <div class="prose">
+                      <p>
+                        <h3>Your order will be shipped within India using one of our preferred carriers like BlueDart, Amazon, Delhivery, etc. 
+                        International shipments are shipped via Aramex or FedEx</h3>
+                  </div>
+              </div>
+          </details>
+          <details class="accordion group" aria-expanded="false" is="accordion-disclosure">
+              <summary>
+                  <div class="accordion__toggle bold">
+                      <span>Does Dcoder Age ship internationally?</span><span
+                          class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg
+                              role="presentation" focusable="false" width="8" height="6"
+                              class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                              <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor"
+                                  stroke-width="1.5"></path>
+                          </svg></span>
+                  </div>
+              </summary>
+  
+              <div class="accordion__content">
+                  <div class="prose">
+                      <p>
+                       <h3> Yes, Decode Age ships its products internationally. Please allow up to 4-6 weeks for delivery, barring any unforeseen clearance/customs issues. 
+                        The end user is responsible for any duty/tax and customs fees that may be due at the time of delivery.</h3>
+                      </p>
+                  </div>
+              </div>
+          </details>
+          <details class="accordion group" aria-expanded="false" is="accordion-disclosure">
+              <summary>
+                  <div class="accordion__toggle bold">
+                      <span>Will there be shipping fess charged on my order?</span><span
+                          class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg
+                              role="presentation" focusable="false" width="8" height="6"
+                              class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                              <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor"
+                                  stroke-width="1.5"></path>
+                          </svg></span>
+                  </div>
+              </summary>
+  
+              <div class="accordion__content">
+                  <div class="prose">
+                      <p>
+                        <h3>All retail orders shipped within India receive free "Ground" shipping. For international orders (outside India), 
+                        shipping fees are determined at the time of checkout and will be displayed prior to processing the payment.</h3>
+                      </p>
+                  </div>
+              </div>
+          </details>
+          <details class="accordion group" aria-expanded="false" is="accordion-disclosure">
+              <summary>
+                  <div class="accordion__toggle bold">
+                      <span>Can I ship my order to another address at checkout? </span><span
+                          class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg
+                              role="presentation" focusable="false" width="8" height="6"
+                              class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                              <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor"
+                                  stroke-width="1.5"></path>
+                          </svg></span>
+                  </div>
+              </summary>
+  
+              <div class="accordion__content">
+                  <div class="prose">
+                      <p>
+                        <h3>Yes, you can create a "Ship To" address other than your profile address when you get to the checkout page. 
+                        You don't have to add a "Ship To" address to your profile.</h3>
+                      </p>
+                  </div>
+              </div>
+          </details>
+          <details class="accordion group" aria-expanded="false" is="accordion-disclosure">
+              <summary>
+                  <div class="accordion__toggle bold">
+                      <span>Are you packing materials recyclable?</span><span
+                          class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg
+                              role="presentation" focusable="false" width="8" height="6"
+                              class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                              <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor"
+                                  stroke-width="1.5"></path>
+                          </svg></span>
+                  </div>
+              </summary>
+  
+              <div class="accordion__content">
+                  <div class="prose">
+                      <p>
+                        <h3>Yes, all our packing and shipping materials are made from recycled materials, including our envelopes.</h3>
+                      </p>
+                  </div>
+              </div>
+          </details>
+          <details class="accordion group" aria-expanded="false" is="accordion-disclosure">
+              <summary>
+                  <div class="accordion__toggle bold">
+                      <span>Will I receive an automatic notice before an auto-ship order is shipped?</span><span
+                          class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg
+                              role="presentation" focusable="false" width="8" height="6"
+                              class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                              <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor"
+                                  stroke-width="1.5"></path>
+                          </svg></span>
+                  </div>
+              </summary>
+  
+              <div class="accordion__content">
+                  <div class="prose">
+                      <p>
+                        <h3>Yes, you will receive an automatic email notifying you that your auto-ship order is getting ready to ship. 
+                          Please ensure that your address and payment information are current on your auto-ship orders to avoid delays.</h3>
+  
+                      </p>
+                  </div>
+              </div>
+          </details>
+          <details class="accordion group" aria-expanded="false" is="accordion-disclosure">
+              <summary>
+                  <div class="accordion__toggle bold">
+                      <span>What is the return policy for Decode Age?</span><span
+                          class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg
+                              role="presentation" focusable="false" width="8" height="6"
+                              class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                              <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor"
+                                  stroke-width="1.5"></path>
+                          </svg></span>
+                  </div>
+              </summary>
+         <div class="accordion__content">
+                  <div class="prose">
+                      <p>
+                        <h3>Decode Age offers a 30-day return policy for unopened products with the original packaging intact.
+                         If you wish to return a product, please contact our Customer Service Department at 9009003095 or email care@decodeage.com.</h3>
+                      </p>
+                  </div>
+              </div>
+          </details> 
+      </div>
+    </div>
+    
+  
+    <div class="box4">
+      <div class="section-stack__main">
+          <div class="accordion-box rounded bg-secondary">
+            <p>Our customer support is available Monday to Saturday: 10am-6pm.</p>
+            <p>Call us at +91 9009003095</p>
+          </div>
+      </div>
+  </div>
+  
+ 
+  
+      
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+const accordions = document.querySelectorAll('.accordion');
+
+accordions.forEach(accordion => {
+accordion.querySelector('summary').addEventListener('click', function() {
+const isActive = accordion.getAttribute('aria-expanded') === 'true';
+isActive ? accordion.removeAttribute('aria-expanded') : accordion.setAttribute('aria-expanded', 'true');
+const content = accordion.querySelector('.accordion__content');
+content.classList.toggle('active');
+});
+});
+});
+
+    </script>
+    
+          </html>   
+        </body>

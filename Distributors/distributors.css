@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 150;
+    padding: 150;
+  }
+  
+  header, footer {
+    background-color: #f0f0f0;
+    /* padding: 100px; */
+    padding-top: 20px;
+    padding-bottom: 30px;
+  } 
+  .container {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    margin: 30 auto;
+    text-align: center;
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+  }
+.navbar .nabar-nav .nav-item a{
+    padding: 15px;
+    font-family: Arial;
+    color: black;
+    font-weight: bold;
+
+}
+ul{
+    font-family: Arial;
+    font-weight: bold;
+}
+.div1{
+    padding-left: 33%;
+    padding-right: 33%;
+}
+
+input[type="text"],input[type="email"]{
+    width: 100%;
+    height: 45px;
+    border-radius: 6px;
+    border-color: lightgray;
+}
+
+input[type="submit"]{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    height: 45px;
+    border-radius: 6px;
+}
+select{
+  width: 100%;
+  height: 45px;
+  border-radius: 6px;
+  border-color: lightgray;
+
+}
+
+.fn , .ln{
+  width: 49%;
+}
+table{
+  width: 100%;
+}
+td{
+  height: 55px;
+}
+#state{
+  width: 33.3%;
+}
+
+.city , .pincode{
+  width: 33.3%;
+}
+
+input[type="tel"] {
+  width: 69%;
+  height: 45px;
+  border-radius: 6px;
+  border-color: lightgray;
+}
+
+.countries{
+  width: 30%;
+}
+.mobno{
+  width: 60%;
+}
+#Date , #month{
+  width: 25%;
+}
+#year {
+  width: 48%;
+}

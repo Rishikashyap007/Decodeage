@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ca-AKG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <section>
+
+        <div id="left">
+            <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                <button type="button" class="btn btn" onclick="showImage(0)"><img src="./images/img1.webp" height="60px" width="70px" alt=""></button>
+                <button type="button" class="btn btn" onclick="showImage(1)"><img src="./images/img2.webp" height="60px" width="70px" alt=""></button>
+                <button type="button" class="btn btn" onclick="showImage(2)"><img src="./images/img3.webp" height="60px" width="70px" alt=""></button>
+                <button type="button" class="btn btn" onclick="showImage(3)"><video src="./images/eb323f7ba6ae4b73a66bf4c0cc8587b7.HD-1080p-2.5Mbps-14467310.mp4" height="100px" width="70px" controls loop></video></button>
+                <button type="button" class="btn btn" onclick="showImage(4)"><img src="./images/img4.webp" height="60px" width="70px" alt=""></button>
+                <button type="button" class="btn btn" onclick="showImage(5)"><img src="./images/img5.webp" height="60px" width="70px" alt=""></button>
+                <button type="button" class="btn btn" onclick="showImage(6)"><img src="./images/img6.webp" height="60px" width="70px" alt=""></button>
+                <button type="button" class="btn btn" onclick="showImage(7)"><img src="./images/img7.webp" height="60px" width="70px" alt=""></button>
+              </div>
+        </div>
+
+        <div id="center">
+
+            <div id="carouselExample" height="500px" width="450px" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/img1.webp" class="d " height="500px" width="450px" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/img2.webp" class="d " height="500px" width="450px" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/img3.webp" class="d "  height="500px" width="450px" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <video src="./images/eb323f7ba6ae4b73a66bf4c0cc8587b7.HD-1080p-2.5Mbps-14467310.mp4" controls loop class="d " height="500px" width="450px" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/img4.webp" class="d " height="500px" width="450px" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/img5.webp" class="d" height="500px" width="450px" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/img6.webp" class="d " height="500px" width="450px" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/img7.webp" class="d " height="500px" width="450px" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </div>
+
+          <div class="buynow">
+            <div class="head">
+              <h2>BUY NOW</h2>
+            </div>
+
+            <aside class="one">
+              <div class="le">
+                <p>One-Time Purchase</p>
+              </div>
+              <div class="ri">
+                <span><strike>2,000.00 INR</strike> 1,399.00 INR (incl. Tax)</span>
+              </div>
+            </aside>
+            <div class="sub">
+              <div class="le">
+                <p>Subscribe & Save upto 40% <br><span>Cancel anytime</span>
+                </p>
+                
+                
+              </div>
+            </div>
+            <div class="anc">
+              <a href="#">How to save 40% with a subscription</a>
+              <hr class="hr">
+            </div>
+            
+            <div class="quantity">
+              <h3>Choose quantity</h3>
+            </div>
+            <div class="monthly">
+              <p>Monthly Subscription (1,259.10)</p>
+            </div>
+            <div>
+              <p>Subscription discount applied <a href="#">What's this?</a></p>
+              <p>This order qualifies for free shipping</p>
+            </div>
+
+            <div class="btn">
+              <button class="btn btn-warning" >Subscribe Now</button>
+            </div>
+
+            <div>
+              <p>FREE Shipping | 30-day money back guarantee</p>
+            </div>
+          </div>
+          
+    </section>
+
+    <div id="content">
+      <h2>Ca-AKG (Calcium Alpha-Ketoglutarate) - 500mg, 30 Veg Capsules</h2>
+      <hr>
+      <div class="review">
+        <div class="star-rating">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <a href="#">See all reviews</a>
+        </div>
+
+      <p>
+        <p>Following its discovery in a groundbreaking trial that lasted seven months that it might prevent biological ageing by as much as eight years, calcium alpha keto glutarate became a major focus of longevity science.</p>
+          <br>
+          <strong>
+            <i class="fa-solid fa-check"></i> Enhances Energy Production<br>
+          <i class="fa-solid fa-check"></i> Guards DNA <br>
+          <i class="fa-solid fa-check"></i> Helps Postpone Age Signs <br>
+          <i class="fa-solid fa-check"></i> Reduces Inflammation, Strengthens Bones <br>
+          <i class="fa-solid fa-check"></i> Enhances Muscle Performance<br>
+          <i class="fa-solid fa-check"></i> Supports Brain Health<br> 
+          <i class="fa-solid fa-check"></i> Boosts Immune System
+          </strong>
+      </p>
+
+      <div class="images">
+        <img src="./images/w1.avif" alt="">
+        
+      </div>
+    </div>
+
+      <section id="used">
+          <div id="rig">
+            <div>
+              <span>Frequently bought together</span> <br><br>
+            </div>
+              <div class="p1">
+                  <img src="./images/img1.webp" alt="">
+                  <h6><a href="#">NMN UTHEVER 1000 - World Purest NMN - 500mg, 60 Veg Capsules</a>
+                    <p class="light">₹2,999.00 INR</p></h6>
+                  
+                  <button>+Add</button>
+              </div>
+              <div class="p1">
+                  <img src="./images/img1.webp" alt="">
+                  <h6><a href="#">NMN UTHEVER 1000 - World Purest NMN - 500mg, 60 Veg Capsules</a>
+                      <p class="light">₹1,399.00 INR</p></h6>
+                  
+                  <button >+Add</button>
+              </div>
+          </div>
+          </div>
+        
+        
+      </section>
+
+      <section class="product">
+          <div class="matter">
+                <h1>Product specification</h1>
+                <p>Discover the magic of longevity with the Ca-AKG from Decode Age. Our supplement, which is packed with Alpha Keto Glutarate, which has been shown to slow down biological aging by up to five years, keeps your vitality levels sky high. It enhances the natural energy balance of your body by supporting optimal metabolic activity, thanks to the addition of calcium salts. Select Decode Age Ca-AKG, the secret to a more young and healthful existence.</p>
+            </div>
+
+            <div class="table">
+                <div class="f">
+                    <span>When to Consume</span>
+                    <p>Unless your doctor instructs you otherwise, take 1 capsule in the morning after lunch or breakfast.</p>
+                </div> <hr>
+                <div class="s">
+                    <span>Serving</span>
+                    <p>Serving Size:1 Capsules <br>
+                       Servings Per Container:30</p>
+                </div> <hr>
+                <div class="t">
+                    <span>Contains</span>
+                    <p>30 Veg Capsules</p>
+                </div> <hr>
+                <div class="fou">
+                    <span>Key Ingredients</span>
+                    <p>&#x2713; 98% Ca-AKG (Calcium Alpha-Ketoglutarate) <br>
+                      &#x2713; 500mg per Capsule <br>
+                      </p>
+                    
+                </div> <hr>
+                <div class="fiv">
+                    <span>Warnings</span>
+                    <p>&#x2713; Suitable for those with high blood sugar, hypertension, and high blood pressure. <br>
+                      &#x2713; Not recommended for individuals with kidney problems. <br>
+                      &#x2713; Always consult your healthcare provider before starting any supplement.</p>
+                </div>
+            </div>            
+        </section>
+
+        <section id="Benefits">
+          <div class="head">
+            <div>
+              <h2>
+                  Benefits
+              </h2>
+            </div>
+            <div>
+              <h1>
+                The Journey to a Healthier Age Begins Here. Crack the CA-AKG of Age...
+              </h1>
+            </div>
+          </div>
+      
+          <aside id="BenefitBoxes">
+            <div class="BenefitBox1">
+              <hr>
+              <h1 class="Bhead">Improves
+                Energy Metabolism</h1>
+                <p class="Bp">AKG is an essential metabolic fuel that is essential to the energy activities that occur within cells. It is a precursor of both glutamate and glutamine.</p>
+            </div>
+            
+            <div class="BenefitBox2">
+              <hr>
+              <h1 class="Bhead">Enhances
+                Bone and Muscle Health</h1>
+                <p class="Bp">AKG stimulates the synthesis of proteins, which greatly aids in the growth of bone tissue in skeletal muscles.</p>
+            </div>
+            
+            <div class="BenefitBox3">
+              <hr>
+              <h1 class="Bhead">Sharpens
+                Cognition</h1>
+                <p class="Bp">Glutamate and glutamine are two crucial brain chemicals whose levels are maintained in balance by AKG.</p>
+            </div>
+          </aside>
+        </section>
+
+
+        <section id="Timeline">
+            <div>
+                <h2>
+                    Timeline
+                </h2>
+            </div>
+            <div>
+                <h1>
+                  Regular Decode Age Ca-AKG guarantees continuous internal optimization for better general health and increased vitality. Effects vary from person to person and are frequently felt within 30 days. It's common to not feel the effects right away.
+                </h1>
+            </div>
+
+            <aside>
+              <div class="results">
+                <div class="image-container" id="hour1">
+                  <img src="./videos/v1.mp4 controls loop" alt="" height="170px" width="170px">
+                  <hr>
+                  <h6>Day 1</h6>
+                  <p><span><strong>Absorption and distribution</strong></span> <br> Following consumption, AKG is converted into essential amino acids such as glutamine and glutamate, which are critical for maintaining long life.</p>
+                </div>
+                <div class="hour2 image-container">
+                  <img src="./videos/v2.webp" alt="" height="170px" width="170px">
+                  <hr>
+                  <h6>Day 10</h6>
+                  <p><span><strong>Improves Cellular Energy</strong></span> <br>
+                    Ca-AKG, an essential part of the Krebs cycle, raises energy levels and keeps you going throughout the day. </p>
+                </div>
+                <div class="hour4 image-container">
+                  <img src="./videos/v3.webp" alt="" height="170px" width="170px">
+                  <hr>
+                  <h6>Day 20</h6>
+                  <p><span><strong>Improves Muscle Health</strong></span> <br>
+                    AKG is essential for maintaining muscle health, controlling the concentration of amino acids, preventing the breakdown of proteins, and boosting protein synthesis.</p>
+                </div>
+                <div class="day10 image-container">
+                  <img src="./videos/v4.webp" alt="" height="170px" width="170px">
+                  <hr>
+                  <h6>Day 60</h6>
+                  <p><span><strong>Improve Bone Health</strong></span> <br>
+                    Maintaining a healthy skeletal system and preventing age-related bone loss are two benefits of ongoing supplementation for bone health. </p>
+                </div>
+                <div class="day30 image-container">
+                  <img src="./videos/v5.webp" alt="" height="170px" width="170px">
+                  <hr>
+                  <h6>Day 90</h6>
+                  <p><span><strong>Improves Community</strong></span><br>
+                    By improving intestinal and systemic immune function, alpha-ketoglutarate (AKG) may provide improved defense against infections and diseases.</p>
+                </div>
+                <div class="day60 image-container">
+                  <img src="./videos/v6.webp" alt="" height="170px" width="170px">
+                  <hr>
+                  <h6>Day 180</h6>
+                  <p><span><strong>Reverse Biological Ageing</strong></span> <br>
+                    Studies have shown that Ca-AKG prevents biological aging by 5 years by enhancing cellular health, lowering oxidative stress and inflammation, and preserving young appearance.</p>
+                </div>
+                <div class="day60 image-container">
+                  <img src="./videos/v7.webp" alt="" height="170px" width="170px">
+                  <hr>
+                  <h6>Day 365</h6>
+                  <p><span><strong>Improved Longevity</strong></span> <br>
+                    Similar to Ca-AKG, supplemental AKG restores declining amounts, supporting the preservation of cellular energy balance and possibly delaying the aging process.</p>
+                </div>
+              </aside>
+        </section>
+
+        <article class="note">
+          <div class="ma">Decode Age's 98%+ pure Calcium Alpha-Ketoglutarate <br>offers unmatched quality. Our Ca-AKG supplement is <br>different from the others because it has undergone extensive testing to <br> guarantee the highest standards and delivers unrivaled potency for your <br> path towards improved health. Get ready to welcome a stronger, more energetic you with Decode Age Ca-AKG.
+          </div>
+        </article>
+        
+        <div id="img">
+          <img src="./images/l1.webp" width="100%" alt="">
+        </div>
+        
+        <section id="Blended">
+          <div class="Boxes">
+            <div class="Box1">
+              <h1>Ca-AKG's advantages in managing chronic diseases</h1>
+              <p>The Discover the effectiveness of calcium alpha-ketoglutarate (Ca-AKG) in the treatment of chronic illnesses. This amazing compound may revolutionize the way you treat chronic illnesses.</p>
+            </div>
+            <div class="Box2">
+              <div class="accordion accordion" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Chronic Yeast Infections
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Ca-AKG helps to restore the balance in the body's natural flora, which is often disrupted. Moreover, it fortifies the immune system, assisting your body's natural defenses against such diseases. Furthermore, it helps you stay vibrant even in the midst of these difficulties by stimulating and promoting the health of your cells.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Age-related Frailty
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Promising outcomes have been observed in delaying the onset of age-related frailty with Ca-AKG. It helps sustain muscle function and strength by enhancing mitochondrial function and encouraging energy synthesis, which lowers the risk of frailty.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Chronic Inflammation
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">A major contributing factor to many grave illnesses is chronic inflammation. Ca-AKG is important for controlling this kind of inflammation, which may help prevent a number of inflammatory illnesses.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      Bone Health
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Ca-AKG use on a regular basis may enhance bone health, particularly in elderly people. It can assist in the management and prevention of osteoporosis by promoting the formation of collagen, which is essential for strong bones.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                      Metabolic Dysfuntion
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Diabetes and other metabolic illnesses have a major negative influence on health. In order to maintain a healthy weight and blood sugar levels, which are essential for controlling metabolic conditions, Ca-AKG improves metabolic performance.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                      Cognitive Decline
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Cognitive performance typically declines with aging. Better mental clarity, focus, and sharpness are made possible by Ca-AKG, which promotes brain health and may help manage long-term neurodegenerative diseases like Alzheimer's.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section id="blog">
+          <div class="top">
+            <h1>Blog Spots</h1>
+            
+          </div>
+          <div class="bottom">
+            <div class="posts">
+              <div class="p1">
+                <img class="rounded-2" src="./images/b2.webp" height="180px" width="400px">
+              <h1>What is LongeVit? Why Is It a Better Choice to Begin Your Healthy Ageing Journey?</h1>
+              <p>LongeVit: The ultimate choice for NMN users seeking holistic ageing support, vitality enhancement, and comprehensive well-being.</p>
+              <p>&#128197; Mar 21, 2024</p>
+              </div>
+              <div class="p1">
+                <img class="rounded-2" src="./images/b1.webp" height="180px" width="400px">
+                <h1>Can NMN Supplements Improve Cognitive Function and Reduce Brain Fog in Ageing Adults?</h1>
+              <p>In today's fast-paced world, mental clarity is crucial. Brain fog, though common, can disrupt cognitive function and overall well-being. Emerging solutions like NMN supplements offer hope for impro...</p>
+              <p>&#x1F4C5; Apr 1, 2024</p>
+              </div>
+              <div class="p1">
+                <img class="rounded-2" src="./images/b3.webp" height="180px" width="400px">
+                <h1>Exploring Trans-Pterostilbene: Functions, Benefits, Ideal Dosage, and Potential Risks</h1>
+                <p>Trans Pterostilbene, a natural compound in blueberries, offers potent antioxidant protection, anti-inflammatory benefits, and potential cardiovascular and cognitive support. More bioavailable than ...</p>
+                <p>&#x1F4C5; Mar 16, 2024</p>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <section class="reviews">
+            <div>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span>59 Reviews</span>
+            </div>
+            <button class="btn">
+                Write a review
+            </button>
+
+            <div></div>
+        
+        </section>
+
+        <section id="FAQ">
+          <div class="faq">
+            <h1>FAQ</h1>
+          </div>
+          <div class="accord">
+            <div class="accordion accordion" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    What is Ca-AKG?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Our bodies need calcium alpha-ketoglutarate, or Ca-AKG, for the synthesis of amino acids, the synthesis of energy, and the methylation of DNA. It is well known for its possible ability to promote general health and slow down biological aging.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Why should I take a Ca-AKG supplement?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Our bodies naturally produce less alpha-ketoglutarate (AKG) as we become older. Restoring these levels through the use of a Ca-AKG supplement may reduce biological aging, increase energy, and improve general health.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    How does Ca-AKG support longevity?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Ca-AKG has been associated with maintaining the mitochondria's function—the cells' power plants—and with triggering the AMPK pathway, which aids in preserving the equilibrium of energy within the cell. Its potential function in lifespan and healthy aging may be enhanced by these actions.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Can Ca-AKG help with chronic diseases?
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Ca-AKG may promote general health, which may obliquely aid in the treatment of chronic illnesses. For instance, it can help with metabolic processes, which may be advantageous for diseases like diabetes. To completely comprehend its impacts, more research is necessary.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    Is Ca-AKG safe for everyone?
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Before beginning a new supplement regimen, always get advice from your healthcare physician.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    What makes Ca-AKG essential for cellular energy?
+                  </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">An important part of the citric acid cycle, which our cells employ to make energy, is played by Ca-AKG. Supplementing to restore AKG levels will help to ensure that this energy production mechanism runs as efficiently as possible.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    Can I take Ca-AKG with other supplements?
+                  </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Ca-AKG is generally safe to take in addition to other supplements. For individualized guidance, it is better to speak with your healthcare professional.
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+          </div>
+          <div>
+            Our customer support is available Monday to Saturday: 10am-6pm.
+Call us at +91 9009003095
+          </div>
+        </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

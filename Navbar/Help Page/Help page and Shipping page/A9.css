@@ -1,0 +1,309 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4f85c7;
+    color: white;
+}
+
+a {
+    color: #1890ff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+.a1:visited {
+    color: #a08d8d;
+}
+.a2:visited {
+    color: #a08d8d;
+}
+
+a:hover {
+    color:black;
+}
+.a1:hover {
+    color:black;
+}
+.a2:hover {
+    color:black;
+}
+
+a:active {
+    color: #1890ff;
+}
+
+a:focus {
+    outline: 0;
+    border-bottom: 1px solid #1890ff;
+}
+.p1{
+    width: 13%;
+    cursor: pointer;
+    font-size: 100%;
+}
+.p2{
+    width: 10%;
+    color: #f4f4f4;
+    padding: 1rem;
+    margin-left: 74%;
+    margin-top: -4.5%;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+.p1:hover{
+    color: #333;
+}
+.p2:hover{
+    color: #333;
+}
+
+.p1 {
+    font-size: 100%;
+    margin-left: 17%;
+}
+h1 {
+    margin-left: 17%;
+    font-size: 170%;
+    font-weight: bold;
+}
+
+.search-container {
+    background-color: #77aae3;
+    display: flex;
+    align-items: center;
+    margin-left: 16%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 68%;
+    
+}
+
+.search-container input[type="text"] {
+    background-color: #f6f8fa;
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    outline: none;
+}
+
+.search-container input[type="text"]:focus {
+    box-shadow: 0 0 2px 1px #4CAF50;
+}
+
+.search-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #3e8e41;
+}
+
+.search-container button:active {
+    background-color: #3e8e41;
+    transform: translateY(1px);
+}
+
+.p3{
+    font-size: 120%;
+    color:#a08d8d;
+    margin-left: 17%;
+    cursor: pointer;
+}
+.p3:hover{
+    color:black;
+}
+.p4{
+    font-size: 120%;
+    margin-left: 27%;
+    margin-top: -2.8%;
+    color: #a08d8d;
+}
+
+.p4:hover{
+    color:black;
+}
+
+.p5{
+    font-size: 120%;
+    margin-left: 34%;
+    margin-top: -2.8%;
+    color: #a08d8d;
+}
+
+.p6{
+    font-size: 200%;
+    font-weight: bold;
+    margin-left: 16.8%;
+    width: 40%;
+    font-weight: 700;
+}
+.p7{
+    font-size: 100%;
+    margin-left: 16.8%;
+    width: 47%;
+    margin-top: -1%;
+}
+
+.p{
+    font-size:180%;
+    background-color: #1890ff;
+    width: 1.7%;
+    text-align: center;
+    margin-left: 16.8%;
+}
+
+.p8{
+    font-size: 80%;
+    margin-left: 19%;
+    width: 60%;
+    margin-top: -4.1%;
+}
+
+.p9{
+    font-size:150%;
+    font-weight: bold;
+    margin-left: 16.7%;
+}
+
+.p10{
+    font-size: 100%;
+    margin-left: 16.8%;
+    width: 46%;
+    margin-top: 0%;
+}
+
+.Q{
+    background-color: #ebdbdb;
+    width: 43%;
+    margin-left: 16.8%;
+    padding: 3%;
+}
+.q{
+    font-size:100%;
+    text-align: center;
+    margin-top: -2.5%;
+
+}
+
+.p11{
+    color: #ae869c;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+    .p1, .p2, h1 {
+        margin-left: 0;
+        text-align: center;
+    }
+    .search-container {
+        margin-left: 5%;
+        width: 90%;
+        padding: 2%;
+        margin-left: 2.5%;   
+     }
+
+    .search-container input[type="text"] {
+    width: 100%;
+    padding:3.5%;
+    }
+
+    .search-container button{
+        width: 30%;
+        padding: 3%;
+    }
+
+    h1{
+        font-size:120%;
+    }
+
+    .p1{
+        font-size: 80%;
+        margin-left: 1%;
+        width: 50%;
+    }
+    .p2{
+        font-size: 80%;
+        margin-left: 40%;
+        width: 60%;
+        margin-top: -20%;
+    }
+
+    .p3{
+        font-size: 100%;
+        margin-left: 1%;
+    }
+    .p4{
+        font-size: 100%;
+        margin-left: 40%;
+        margin-top: -11%;
+    }
+    .h1{
+        font-size: 150%;
+        font-weight: bold;
+        margin-left: -50%;
+        margin-top: -3%;
+    }
+
+    .p5{
+        font-size: 70%;
+        margin-left: 67%;
+        margin-top: -11%;
+    }
+
+    .p6{
+        font-size: 150%;
+        margin-left: 0%;
+        width: 105%
+    }
+
+    .p7{
+        width: 90%;
+        margin-left: 0%;
+        font-size:80%;
+    }
+
+    .p{
+        width: 9%;
+        margin-left: 0%;
+    }
+
+    .p8{
+        margin-left: 12%;
+        margin-top: -19%;
+    }
+
+    .p9{
+        width: 100%;
+        margin-left: 0%;
+        font-size: 120%;
+    }
+
+    .p10{
+        font-size: 90%;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .Q{
+        width: 80%;
+        padding: 8%;
+        margin-left: 2%;
+    }
+}

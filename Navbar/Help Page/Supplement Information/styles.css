@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: blue;
+    padding: 20px;
+    margin: 0 20px; /* Adjusted to ensure same left and right margins */
+    display: flex;
+    flex-direction: column; /* Changed to column to stack items vertically */
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Aligns children to opposite ends */
+    align-items: center; /* Vertically centers children */
+    width: 70%; /* Ensures the content takes up the full width */
+    margin: 0 20px; /* Adds margin to the left and right */
+    margin-top:20px ;
+    margin-bottom: 20px;
+}
+
+.header-title {
+    color: white;
+    margin: 0;
+    font-size: 19px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+}
+
+.header-nav-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-right: 40px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 80px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+.search-engine {
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 2%;
+    width: 100%;
+}
+
+.input-icons {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #92bafa; /* Icon color */
+}
+
+.search-input {
+    padding: 5px 5px 5px 30px; /* Adjust padding to make room for the icon */
+    border: none;
+    height: 50px;
+    border-radius: 5px;
+    width: 300%;
+    background-color: #92bafa;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 20px;
+}
+
+.search-input:hover {
+    background-color: #92bafa;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.search-input:focus {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+
+.flow1{
+    margin-left: 20%;
+    margin-right: 18%;
+    margin-top: 1%;  
+}
+.first1 a{
+    text-decoration: none;
+    color:black;
+}
+.quest1{
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-right:30%;
+}
+.circle-text1 {
+    display: flex;
+    align-items: center;
+ }
+ 
+ .circle1 {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #7c98f3;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 10px;
+ }
+ 
+ .info1 p {
+    margin: 0;
+    padding: 0;
+ }
+ .quest1 h4{
+    font-size:18px;
+    color:rgb(61, 60, 60);
+ }
+
+ .quest1 h1{
+    font-size:34px;
+ }
+
+ .points h1{
+    font-size: 22px;
+ }
+
+ .points h4{
+    font-size:16.5px;
+    color:rgb(61, 60, 60);
+ }
+ 
+ .box {
+    width: 740px;
+    height: 100px;
+    border:none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 45px;
+    background-color: rgba(228, 224, 224, 0.913);
+    border-radius: 10px;
+}
+
+.centered-text {
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+
+
+.emojis {
+    display: flex;
+    justify-content:center;
+    width: 100%;
+}
+
+.emoji-container {
+    display: inline-block;
+}
+
+.emoji {
+    font-size: 24px;
+    transition: font-size 0.3s ease;
+}
+
+.emoji-container:hover .emoji {
+    font-size: 30px;
+}
+ul li {
+    font-size: 17px; /* Adjust the font size as needed */
+}
+
+.bulletheading{
+    font-size: 18px;
+}
+table {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 11px;
+    text-align: center;
+    background-color: #e3e0e0;
+}
+
+/*mobile responsive*/
+
+@media only screen and (max-width: 480px) {
+    .quest1 {
+        margin-left: 5%;
+        margin-top: 2%;
+        margin-right: 15%;
+    }
+    .circle1 {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .quest1 h4, .points h4 {
+        font-size: 14px;
+    }
+    .quest1 h1, .points h1 {
+        font-size: 28px;
+    }
+    .box {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+    .centered-text {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .emojis, .emoji-container {
+        flex-direction: column;
+    }
+    .emoji {
+        font-size: 20px;
+    }
+    ul li {
+        font-size: 14px;
+    }
+    .bulletheading {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,381 @@
+body {
+  font-family: Arial, sans-serif;
+  /* margin: 150; */
+  /* padding: 150; */
+}
+
+header,
+footer {
+  background-color: #f0f0f0;
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1100px;
+  margin: 30 auto;
+  text-align: center;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+
+.navbar .nabar-nav .nav-item a {
+  padding: 15px;
+  font-family: Arial;
+  color: black;
+  font-weight: bold;
+
+}
+
+ul {
+  font-family: Arial;
+  font-weight: bold;
+}
+
+
+.container3 {
+  display: flex;
+  /* align-items: center;
+    justify-content: center; */
+  /* padding-left: 5%; */
+  padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 2px;
+  width: 100%;
+}
+
+/* .image3{
+  width: 40%;
+} */
+
+.text1 {
+  width: 34%;
+  padding-top: 6%;
+  /* padding-left: 80px;
+    padding-right: 20px;  */
+  font-size: 15px;
+  background-color: white;
+}
+
+.text2 {
+  width: 34%;
+  padding-top: 6%;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 15px;
+  background-color: white;
+}
+
+table {
+  border: 1px solid darkgray;
+  width: 100%;
+
+}
+
+a.button1 {
+  display: inline-block;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: bold;
+  color: darkorange;
+  background-color: white;
+  text-align: center;
+  transition: all 0.2s;
+  height: 55px;
+  width: 150px;
+  margin-top: 15px;
+  padding-top: 15px;
+  align-items: center;
+  /* border-color: orange ; */
+  border: 2px solid darkorange;
+
+}
+
+a.button1:hover {
+  background-color: darkorange;
+  color: white;
+}
+
+@media all and (max-width:30em) {
+  a.button1 {
+    display: block;
+    margin: 0.2em auto;
+
+  }
+}
+
+a.button2 {
+  display: inline-block;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background-color: darkorange;
+  text-align: center;
+  transition: all 0.2s;
+  height: 55px;
+  width: 150px;
+  margin-top: 15px;
+  padding-top: 15px;
+  align-items: center;
+  /* border-color: orange ; */
+  border: 2px solid darkorange;
+
+}
+
+a.button2:hover {
+  background-color: white;
+  color: darkorange;
+}
+
+@media all and (max-width:30em) {
+  a.button2 {
+    display: block;
+    margin: 0.2em auto;
+
+  }
+}
+
+a.buttons{
+  display: inline-block;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+  background-color: none;
+  text-align: center;
+  transition: all 0.2s;
+  height: 40px;
+  width: 130px;
+  padding-top: 7px;
+  /* margin-top: 15px; */
+  align-items: center;
+  border: 1px solid darkgrey;
+
+}
+
+a.buttons:hover {
+  background-color: darkgrey;
+}
+
+.fn,
+.ln {
+  width: 48%;
+  padding-left: 35px;
+}
+
+.div3 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+}
+
+.div4 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+}
+
+.img2 {
+  width: 100%;
+}
+
+.Research {
+  padding-left: 20%;
+  /* background-color: lightgray; */
+}
+
+.viewall {
+  font-size: 20px;
+}
+
+
+.grid-container {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.description {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10 0;
+  padding-left: 10px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  align-items: center;
+}
+
+.products1 {
+  display: inline-block;
+  /* width: 100%; */
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: top;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.products1 img {
+  height: 335px;
+  width: 100%;
+}
+
+button.mbtn {
+
+  border-radius: 20px;
+  color: #fff;
+  background-color: #226ddf;
+  font-size: 1.0em;
+  border: 0;
+  cursor: pointer;
+}
+
+.buynow{
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  height: 50px;
+  width:110px;
+  cursor: pointer;
+  align-items: center;
+}
+.button1{
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.buynow:hover {
+  background-color: gray;
+
+}
+.saleprice{
+  color: blue;
+  font-size: 12px;
+}
+.s1{
+  color: blue;
+  font-size: 15px;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-top: 1px solid darkgray;
+  border-bottom: black;
+  font-weight: bold;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color:none;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color:none;
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  border-bottom: darkgray;
+}
+
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-input {
+  border: 2px solid #ddd;
+  display: inline-flex;
+  /* align-items: center; */
+}
+
+.number-input,
+.number-input * {
+  box-sizing: border-box;
+}
+
+.number-input button {
+  outline:none;
+  /* -webkit-appearance: none; */
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+
+.number-input button:after {
+  display: inline-block;
+  position: absolute;
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900;
+  content: '\f077';
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+.number-input button.plus:after {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.number-input input[type=number] {
+  font-family: sans-serif;
+  max-width: 5rem;
+  padding: .5rem;
+  border: solid #ddd;
+  border-width: 0 2px;
+  font-size: 2rem;
+  height: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+

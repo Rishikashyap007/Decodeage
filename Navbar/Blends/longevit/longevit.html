@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longevit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <div class="containers">
+        <div class="image">
+            <img src="longevit" alt="Web Page Image">
+        </div>
+        <div class="description">
+            <h2>LongeVit Blend to Slow Down Your Pace Of Ageing, 30 Veg Tablets</h2>
+            <p> Unlock the secret to graceful ageing with LongeVit, designed to target multiple hallmarks of ageing. Our unique blend, enriched with β NMN, CoQ10, and other potent ingredients, promotes cellular vitality, bolsters immunity, and aids cognitive
+                function. Empower your journey towards slowed ageing and enhanced wellness with LongeVit. Always consult a healthcare provider before starting any supplement. <br> ✔ Boost NAD+ <br> ✔ Improve Energy <br> ✔ Ageing Gracefully <br> ✔ Inflammation
+                and Oxidative Stress Warrior <br> ✔ Cognitive and Cardio Health <br> ✔ Best Absorption <br> ✔ Joint Mobility and Skin Hydration <br> ✔ Reduce Stress and Improve Immunity <br> ✔ Slow Down Ageing Process <br>
+            </p>
+            <img src="longevit1" alt="">
+        </div>
+
+
+        <div class="container">
+
+            <div class="heading">
+                Buy Now
+            </div>
+            <div class="border" id="table-container1">
+                <div class="table purchase" id="purchase-box">
+                    <div class="table-cell">
+                        <input type="radio" name="payment" value="purchase" id="purchase">
+                    </div>
+                    <div class="table-cell">
+                        One-time purchase
+                    </div>
+                    <div class="table-cell">
+                        <div>
+                            <div><s>3,500 INR</s></div>
+                            <div>3,400 INR</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-container2" id="table-container2">
+                <div class="table" id="subscribe-box">
+                    <div class="table-cell">
+                        <input class="click" type="radio" name="payment" value="subscribe" id="subscribe">
+                    </div>
+                    <div class="table-cell">
+                        <div>Subscribe & save upto 40%</div>
+                        <div class="cancel">Cancel anytime</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-container">
+                <div class="link">
+                    <a href="#">How to save 40% with a subscription</a>
+                </div>
+                <hr>
+                <span>Choose Quantity</span>
+
+                <div class="flexbox">
+                    <div id="increment" class="box" onclick="decrementQuantity()">
+                        -
+                    </div>
+                    <div id="quantity" class="box">
+                        1
+                    </div>
+                    <div id="decrement" class="box" onclick="incrementQuantity()">
+                        +
+                    </div>
+                </div>
+                <div class="order-text">This order qualified for free shipping</div>
+                <div>
+                    <a class="buttons" href="">Add to Cart</a><a class="buttons" href="">Buy it now</a>
+                </div>
+
+                <div class="free-shipping">Free Shipping | 30-day money back guarantee</div>
+
+            </div>
+
+        </div>
+
+
+        <script>
+            // JavaScript functions
+            var quantity = 1; // Initial quantity
+
+            function incrementQuantity() {
+                quantity++;
+                document.getElementById("quantity").innerText = quantity;
+            }
+
+            function decrementQuantity() {
+                if (quantity > 1) {
+                    quantity--;
+                    document.getElementById("quantity").innerText = quantity;
+                }
+            }
+
+
+            document.querySelector("#purchase").addEventListener('click', function() {
+                document.getElementById('table-container1').classList.add('border');
+                document.getElementById('table-container2').classList.remove('border');
+            });
+
+            document.querySelector("#subscribe").addEventListener('click', function() {
+                document.getElementById('table-container2').classList.add('border');
+                document.getElementById('table-container1').classList.remove('border');
+            });
+
+            function toggleContent(elementId) {
+                var content = document.getElementById(elementId);
+                if (content.style.display === "none") {
+                    content.style.display = "block";
+                } else {
+                    content.style.display = "none";
+                }
+            }
+
+            function addToCart() {
+                alert("Added " + quantity + " item(s) to cart.");
+                // Add your code here to handle adding to cart
+            }
+
+            function buyNow() {
+                alert("Buying " + quantity + " item(s) now.");
+                // Add your code here to handle buying now
+            }
+        </script>
+
+
+
+
+
+    </div>
+
+
+    <script>
+        // JavaScript functions
+        var quantity = 1; // Initial quantity
+
+        function incrementQuantity() {
+            quantity++;
+            document.getElementById("quantity").innerText = quantity;
+        }
+
+        function decrementQuantity() {
+            if (quantity > 1) {
+                quantity--;
+                document.getElementById("quantity").innerText = quantity;
+            }
+        }
+
+        function toggleContent(elementId) {
+            var content = document.getElementById(elementId);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+
+        function addToCart() {
+            alert("Added " + quantity + " item(s) to cart.");
+            // Add your code here to handle adding to cart
+        }
+
+        function buyNow() {
+            alert("Buying " + quantity + " item(s) now.");
+            // Add your code here to handle buying now
+        }
+    </script>
+
+
+
+</body>
+
+</html>

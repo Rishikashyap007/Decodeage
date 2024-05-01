@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 245, 250);
+}
+
+h1 {
+    margin-left: 0%;
+    font-size: 250%;
+}
+
+.p {
+    
+    font-size: 0.8em;
+}
+
+main {
+    margin-left: 5%;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+section h2 {
+    margin-bottom: 0.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.2em;
+}
+
+
+.container {
+    border-radius: 5%;
+    max-width: 800px;
+    margin-left: 38%;
+    margin-top: -40%;
+    padding: 3em;
+    display: flex;
+    justify-content: space-between;background-color: rgb(228, 228, 235);
+}
+
+
+
+input {
+    width: 120%;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    justify-content: space-between;  
+}
+
+textarea {
+    width: 300%;
+    height: 15%;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+}
+
+
+select {
+    width: 320%;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+}
+
+#submit-btn {
+    font-size: 100%;
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #555;
+}
+
+.message-text {
+    margin: 0;
+}
+
+
+.form-container input.input-side-by-side2 {
+    margin-left: 180%;
+    margin-top:17%;
+
+    
+
+}
+.heading{
+    height: 0%;
+    margin-left: 180%;
+    margin-top: -56%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.8em;
+    }
+    .p {
+      font-size: 1em;
+    }
+    main {
+      margin-left: 2%; 
+    }
+    section {
+      margin-bottom: 1em; 
+    }
+    li {
+      margin-bottom: 0.1em; 
+    }
+
+    
+            .container {
+            flex-wrap: wrap; 
+            margin-top: 20%;
+            margin-left:0%;
+            
+            }
+        
+        
+        input {
+            width: 110%; 
+            padding: 1.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            justify-content: space-between;
+            margin-left: -13%;
+        }
+        
+        textarea {
+            width: 110%; 
+            height: 150px;
+            padding: 1.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            display: block;
+            margin-left: -13%;
+        }
+        
+        select {
+            width: 130%; 
+            padding: 1.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            display: block;
+            margin-left: -13%;
+        }
+        
+        #submit-btn {
+            font-size: 100%;
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-left: -13%;
+        }
+        
+        #submit-btn:hover {
+            background-color: #555;
+        }
+        
+        .message-text {
+            margin: 0;
+        }
+        
+        
+        .form-container input.input-side-by-side2 {
+            margin-left: -13%;
+            margin-top: 20%;
+        
+        }
+        
+        .heading {
+            margin-left: -13%;
+            margin-top: 10%;
+        }
+
+        h2{
+            margin-left: -13%;
+        }
+        }      
+  
+
+

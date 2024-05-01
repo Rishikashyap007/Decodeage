@@ -1,0 +1,75 @@
+.section-header .prose {
+    text-align: center;
+    margin: auto;
+    
+}
+
+.heading {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 250%;
+}
+
+.section-header p {
+    font-size: 20px;
+    color: #a4a4a4;
+}
+
+.collection-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+  
+  .collection-card {
+    width:100%
+    margin-bottom: 20px; /* Adjust margin as needed */
+    text-align: center;
+
+   
+  }
+  .collection-card img {
+    text-align: center;
+    width:100% ;
+    
+  }
+  
+
+  @media only screen and (min-width: 768px) {
+    .heading {
+      font-size: 2.5rem; /* Reset font size for larger screens */
+    }
+  
+    .p {
+      font-size: 20px; /* Reset font size for larger screens */
+    }
+
+    .collection-card {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+    
+    .collection-card img {
+      width: 80%;
+      height: auto;
+      text-align: center;
+    }
+    
+    
+    
+
+  }
+  
+  
+  
+
+
+
+
+
+
+  
+
+
+  
+

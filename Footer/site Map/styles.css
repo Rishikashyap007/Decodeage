@@ -1,0 +1,177 @@
+/* styles.css */
+
+/* Container for the first section */
+#first-section {
+    background-color:black;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+
+.main-headline-left p,h2 {
+    background-color: black;
+    color: white; /* Set text color to white for better contrast */
+    padding: 10px;
+    text-align: left;
+    width: 60%;
+    font-size: large;
+}
+/* styles.css */
+
+h2 {
+    font-size: 30px; /* Set the font size to 24 pixels */
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto; /* Center the containers horizontally */
+    padding: 20px;
+}
+.left, .middle, .right {
+    flex: 1; /* Each container takes up equal space */
+    padding: 10px;
+}
+.left {
+    background-color: black;
+    color: white; /* Set text color to white for better contrast */
+    padding: 10px;
+    text-align: left;
+    width: 50%; /* Set the width to 50% to take up half of the container */
+}
+
+.middle {
+    background-color: black;
+    color: white;
+}
+.right {
+    background-color: black;
+    color: white;
+}
+/* styles.css */
+
+#second-section {
+    text-align: center; /* Center the content horizontally */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+#second-section h2 {
+    color: #333; /* Set heading color */
+    font-size: 24px; /* Set font size */
+}
+.left-heading {
+    order: 1; /* Display on the left */
+}
+
+.middle-heading {
+    order: 2; /* Display in the middle */
+}
+
+.right-heading {
+    order: 3; /* Display on the right */
+}
+.hidden-data {
+    display: none;
+}
+
+.heading:hover + .hidden-data {
+    display: block;
+}
+/* styles.css */
+
+/* Styling for the third section */
+#third-section {
+    text-align: center; /* Center the content horizontally */
+    padding: 20px;
+    background-color: black;
+    border: 1px solid #ccc;
+}
+
+/* Styling for the h2 tag */
+#third-section h2 {
+    color: white; /* Set heading color */
+    font-size: 50px; /* Set font size */
+}
+
+.image-container {
+    flex: 1; /* Take up one-third of the container */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-container {
+    flex: 2; /* Take up two-thirds of the container */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.text-container h1 {
+    margin-top: 0;
+    font-size: 60px;
+}
+/* styles.css */
+
+
+.view-more {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-more:hover {
+    background-color:black;
+}
+
+.image-container-2 {
+    flex: 1; /* Take up one-third of the container */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.image-container-2 img {
+    width: 90%;
+    height: auto;
+    display: block;
+    align-items: right;
+}
+
+.text-container {
+    flex: 2; /* Take up two-thirds of the container */
+    padding: 20px;
+    
+}
+.heading {
+    cursor: pointer;
+}
+.hidden-content-container {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.hidden-content {
+    color: #333;
+}
+
+/* Show hidden content when hovering over the heading */
+.heading:hover + .hidden-content-container {
+    display: block;
+}

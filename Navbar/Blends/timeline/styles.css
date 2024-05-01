@@ -1,0 +1,159 @@
+/* styles.css */
+
+.body{
+    font-family: Arial, sans-serif;
+    
+}
+.continer{
+    text-align:left;
+    margin-left: 1.5rem;
+}
+.continer h1{
+    color:rgb(187, 182, 182);
+    font-size: 3.5rem;
+    
+}
+
+.continer h2{
+  font-size: 2rem;
+}
+
+/* styles.css */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjusted gap size for less spacing */
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    width: 250px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+}
+
+.image-container img {
+    width: 100%;
+    height: 150px; /* Set the image height to 200px */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    border-bottom: 2px gray ;
+}
+
+.image-container .image-heading {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.image-container .description {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: black;/* Set the description color to black*/ 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.image-container:hover {
+    transform: scale(1.4);
+}
+
+.image-container:hover .description {
+    display: block;
+}
+
+/* Add a line between the image name and description */
+.image-container .image-heading::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px; /* Adjust the height for the line thickness */
+    background-color: black; /* Set the line color to black */
+    margin-top: 10px; /* Adjust the space between the heading and the line */
+}
+
+
+/**/
+
+.continer-Benefits{
+    text-align:left;
+    margin-left: 1.5rem;
+}
+.continer-Benefits h1{
+    color:gray;
+    font-size: 3rem;
+}
+
+.continer-Benefits h2{
+  font-size: 2rem;
+}
+/**/
+
+.content-container {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    
+}
+.content-box {
+    text-align: left;
+    width: 350px;
+    border: 0px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.content-box h3 {
+    margin-top: 0;
+}
+
+.content-box p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.c1{
+    color:gray;
+}
+
+/* Existing CSS */
+.body{
+    font-family: Arial, sans-serif;
+}
+.continer{
+    text-align:left;
+    margin-left: 1.5rem;
+}
+.continer h1{
+    color:rgb(187, 182, 182);
+    font-size: 3.5rem;
+}
+.continer h2{
+ font-size: 2rem;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+    .continer, .continer-Benefits {
+        margin-left: 1rem; /* Adjust margin for smaller screens */
+    }
+    .continer h1, .continer-Benefits h1 {
+        font-size: 2.5rem; /* Reduce font size for smaller screens */
+    }
+    .gallery {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+    }
+    .image-container {
+        width: 100%; /* Make images take full width on smaller screens */
+        height: auto; /* Adjust height automatically */
+    }
+    .content-container {
+        flex-direction: column; /* Stack content boxes vertically */
+    }
+    .content-box {
+        width: 100%; /* Make content boxes take full width */
+    }
+}

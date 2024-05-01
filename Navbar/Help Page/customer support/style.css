@@ -1,0 +1,29 @@
+
+  :root {
+    --body-bg: rgb(255, 249, 249);
+    --body-image: none;
+    --body-bg-rgb: 255, 255, 255;
+    --body-border: rgb(248, 248, 248);
+    --body-primary-color: #1a1a1a;
+    --body-table-border: rgb(204, 204, 204);
+    --body-color: hsl(0, 10%, 4%);
+    --footer-bg: rgb(255, 255, 255);
+    --footer-image: none;
+    --footer-border: rgb(230, 230, 230);
+    --footer-color: hsl(211, 10%, 61%);
+    --header-bg: rgb(34, 154, 195);
+    --header-image: none;
+    --header-color: hsl(0, 0%, 100%);
+    --collection-card-bg: rgb(255, 255, 255);
+    --collection-card-image: none;
+    --collection-card-color: hsl(195, 66%, 36%);
+    --card-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --search-bar-border-radius: 10px;
+    --search-bar-width: 100%;
+    --ticket-blue-bg-color: #dce1f9;
+    --ticket-blue-text-color: #334bfa;
+    --ticket-green-bg-color: #d7efdc;
+
+
+}
+ 
