@@ -1,10 +1,9 @@
-.section-header .prose {
+.home-section-header .home-prose {
     text-align: center;
     margin: auto;
-    
 }
 
-.heading {
+.home-heading {
 font-family: Arial, Helvetica, sans-serif;
 font-size: 250%;
 }
@@ -22,7 +21,7 @@ font-size: 250%;
   }
   
   .collection-card {
-    width:100%
+    width:100%;
     margin-bottom: 20px; /* Adjust margin as needed */
     text-align: center;
 
@@ -36,14 +35,9 @@ font-size: 250%;
   
 
   @media only screen and (min-width: 768px) {
-    .heading {
+    .home-heading {
       font-size: 2.5rem; /* Reset font size for larger screens */
     }
-  
-    .p {
-      font-size: 20px; /* Reset font size for larger screens */
-    }
-
     .collection-card {
       width: 50%;
       margin-bottom: 20px;

@@ -1,172 +1,109 @@
+/* Reset default styles */
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.bg-img {
+/* Base styles */
+body {
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+    color: #555;
+}
+
+.homepage-bg-img {
     margin-top: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 99vw;
+    width: 100%;
     height: 60vh;
     position: relative;
     background-image: url(1.jpg);
+    background-size: cover;
     background-position: center;
 }
 
-.bg-overley {
-    h1 {
-        position: absolute;
-        color: white;
-        font-family: Arial;
-        width: 1000px;
-        text-align: center;
-        font-size: 40px;
-        top: 9%;
-    }
-    h2 {
-        position: absolute;
-        color: white;
-        font-family: Arial;
-        width: 1115px;
-        text-align: center;
-        font-size: 40px;
-        top: 16.5%;
-    }
-    h3 {
-        position: absolute;
-        color: rgb(85, 77, 77);
-        font-size: 22px;
-        font-family: Arial;
-        top: 28%;
-        width: 1235px;
-        text-align: center;
-    }
-    h4 {
-        position: absolute;
-        color: rgb(85, 77, 77);
-        font-size: 22px;
-        font-family: Arial;
-        top: 33%;
-        width: 1102px;
-        text-align: center;
-    }
-    h5 {
-        position: absolute;
-        color: rgb(85, 77, 77);
-        font-size: 22px;
-        font-family: Arial;
-        top: 38%;
-        width: 1050px;
-        text-align: center;
-    }
+.homepage-bg-overley {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
 }
 
-.container {
-    margin-top: 20px;
+.homepage-bg-overley h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+.homepage-bg-overley h2 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.homepage-bg-overley h3,
+.homepage-bg-overley h4,
+.homepage-bg-overley h5 {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.homepage-container {
     display: flex;
     justify-content: center;
-    column-gap: 100px;
-    padding: 280px;
-    position: absolute;
-    left: -7%;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+    margin-top: 20px;
 }
 
-.box1 {
-    width: 700px;
-    height: 185px;
+.homepage-box1,
+.homepage-box2 {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
     background-color: rgb(38, 38, 183);
     border: 1px solid #ccc;
     padding: 20px;
-    box-sizing: border-box;
     border-radius: 10px;
     text-align: center;
-    font-family: Arial;
     color: white;
-    h7 {
-        color: white;
-        font-size: 25px;
-    }
 }
 
-.box2 {
-    width: 700px;
-    height: 185px;
-    background-color: rgb(38, 38, 183);
-    border: 1px solid #ccc;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    text-align: center;
-    font-family: Arial;
-    color: white;
-    h8 {
-        color: white;
-        font-size: 25px;
-    }
+.homepage-box1 h7,
+.homepage-box2 h8 {
+    font-size: 1.5rem;
 }
 
-.my-button {
+.homepage-my-button {
     background-color: blue;
-    /* Green background */
-    border: none;
-    /* Remove borders */
     color: white;
-    /* White text */
-    padding: 15px 32px;
-    /* Padding */
+    border: none;
+    padding: 10px 20px;
     text-align: center;
-    /* Center text */
     text-decoration: none;
-    /* Remove default underline */
     display: inline-block;
-    /* Make it behave like a block element */
-    font-size: 16px;
-    /* Font size */
-    margin: 4px 2px;
-    /* Margin */
+    font-size: 1rem;
+    margin-top: 20px;
+    border-radius: 5px;
     cursor: pointer;
-    /* Cursor on hover */
-    border-radius: 10px;
-    /* Rounded corners */
 }
 
-
-/* Change background color on hover */
-
-.my-button:hover {
-    background-color: purples;
+.homepage-my-button:hover {
+    background-color: purple;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: #f2f2f2;
-}
-
-@keyframes slide {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-.logos {
+/* Logos Slider */
+.homepage-logos {
     overflow: hidden;
     padding: 60px 0;
     background: rgb(0, 0, 0);
-    white-space: nowrap;
-    position: relative;
 }
 
-.logos:before,
-.logos:after {
+.homepage-logos:before,
+.homepage-logos:after {
     position: absolute;
     top: 0;
     width: 250px;
@@ -175,26 +112,73 @@ body {
     z-index: 2;
 }
 
-.logos:before {
+.homepage-logos:before {
     left: 0;
     background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(11, 8, 8));
 }
 
-.logos:after {
+.homepage-logos:after {
     right: 0;
     background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(15, 10, 10));
 }
 
-.logos:hover .logos-slide {
-    animation-play-state: paused;
+.homepage-logos-slide {
+    display: flex;
+    animation: slide 35s infinite linear;
 }
 
-.logos-slide {
-    display: inline-block;
-    animation: 35s slide infinite linear;
-}
-
-.logos-slide img {
+.homepage-logos-slide img {
     height: 50px;
     margin: 0 40px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .homepage-container {
+        padding: 10px;
+    }
+
+    .homepage-box1,
+    .homepage-box2 {
+        max-width: 100%;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .homepage-bg-overley{
+     width: 100%;
+    }
+    .homepage-bg-overley h1,
+    .homepage-bg-overley h2 {
+        font-size: 1.5rem;
+        color: white;
+        z-index: 1;
+    }
+
+    .homepage-bg-overley h3,
+    .homepage-bg-overley h4,
+    .homepage-bg-overley h5 {
+        font-size: 1rem;
+    }
+
+    .homepage-container {
+        flex-direction: column;
+    }
+
+    .homepage-box1,
+    .homepage-box2 {
+        max-width: 100%;
+        display: none;
+    }
 }
