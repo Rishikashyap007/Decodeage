@@ -3,66 +3,66 @@
     background-color:#eeecec;
 }
 
-.product-container {
+.autophagyproduct-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
 }
 
-.product-image {
+.autophagyproduct-image {
     width: 50%; /* Adjust the width as needed */
     height: 500px; /* Increase the height to make the image larger */
     overflow: hidden;
     margin-right: 20px;
 }
 
-.product-image img {
+.autophagyproduct-image img {
     width: 85%;
     height: 100%;
     object-fit: cover; /* This ensures the image covers the area without distortion */
 }
 
-.product-line{
+.autophagyproduct-line{
     color:gray;
     font-size: 15px;
     margin-top: 1px;
 }
 
-.product-info {
+.autophagyproduct-info {
     width: 45%;
 }
 
-.product-title {
+.autophagyproduct-title {
     font-size: 45px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.product-price {
+.autophagyproduct-price {
     margin-bottom: 8px;
     color:rgb(103, 103, 244);
     font-size: 30px;
 
 }
 
-.product-discount {
+.autophagyproduct-discount {
     margin-bottom: 7px;
     color: gray;
 }
 
-.product-description {
+.autophagyproduct-description {
     margin-bottom: 20px;
     margin-top: 30px;
 }
 
-.quantity-controls {
+.autophagyquantity-controls {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.quantity-controls button {
+.autophagyquantity-controls button {
     background-color: #007bff;
     color: white;
     border: none;
@@ -70,19 +70,19 @@
     cursor: pointer;
 }
 
-.quantity-controls input {
+.autophagyquantity-controls input {
     width: 50px;
     text-align: center;
     margin: 0 10px;
 }
 
-.product-actions {
+.autophagyproduct-actions {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.btn1 {
+.autophagybtn1 {
     background-color:  rgb(210, 210, 11);
     color:black;
     border: none;
@@ -93,7 +93,7 @@
 }
 
 
-.btn2 {
+.autophagybtn2 {
     background-color:black;
     color: white;
     border: none;
@@ -102,7 +102,7 @@
     cursor: pointer;
     width: 45%;
 }
-.product-bottomimg{
+.autophagyproduct-bottomimg{
     width:100%;
     height: 20%;
     margin-top: 25px;
@@ -114,7 +114,7 @@
 
 
 /* style.css */
-.toggle-container {
+.autophagytoggle-container {
     width: 95%;
     margin-top: 20px;
     border-top :1px solid #beb8b8;
@@ -123,23 +123,23 @@
     border-radius: 5px;
 }
 
-.toggle-heading {
+.autophagytoggle-heading {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.arrow {
+.autophagyarrow {
     transition: transform 0.3s ease-in-out;
 }
 
-.toggle-content {
+.autophagytoggle-content {
     margin-top: 10px;
 }
 
 
-.product-bottomimg img{
+.autophagyproduct-bottomimg img{
     width:100%;
     height: 80%;
     margin-top: 25px;
@@ -149,26 +149,26 @@
    
 }
 
-.research{
+.autophagyresearch{
     font-size: 30px;
     margin-left: 20%;
     margin-top: 30px;
     margin-bottom: 10px;
 }
-.header-container {
+.autophagyheader-container {
     display: flex;
     align-items: center; /* Aligns items vertically in the center */
     justify-content: space-between; /* Spaces out the h1 and h4 elements */
 }
 
-.toggle-heading {
+.autophagytoggle-heading {
     text-decoration: none;
     font-size: 20px; /* Adds an underline to the h4 element */
 }
 
 
 /* style.css */
-.container {
+.autophagycontainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -179,24 +179,24 @@
     background-color:rgb(189, 184, 184);
 }
 
-.image-section {
+.autophagyimage-section {
     position: relative;
     width: 97%;
     overflow: hidden;
     border-radius:18px 0 0 18px;
 }
 
-.image-section img {
+.autophagyimage-section img {
     width: 100%;
     height: auto;
     transition: transform 0.3s ease-in-out;
 }
 
-.image-section:hover img {
+.autophagyimage-section:hover img {
     transform: scale(1.1);
 }
 
-.date-section1 {
+.autophagydate-section1 {
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -204,11 +204,11 @@
     font-size: 21px;
 }
 
-.calendar-icon {
+.autophagycalendar-icon {
     margin-right: 5px;
 }
 
-.text-section {
+.autophagytext-section {
     width: 45%;
     padding-left: 50px;
     padding-right: 50px;
@@ -219,24 +219,24 @@
 }
 
 
-.text-section h2{
+.autophagytext-section h2{
     margin-top: 10px;
     font-size: 30px;
 
 }
 
-.text-section p{
+.autophagytext-section p{
     margin-top: 10px;
     font-size: 21px;
 }
-.date-section1 {
+.autophagydate-section1 {
     position: static;
     margin-top: auto;
     color: rgb(101, 98, 98);
     font-size: 17px;
     align-content: center;
 }
-.invisible-container {
+.autophagyinvisible-container {
      /* Makes the container invisible */
     display: flex;
     flex-direction: column;
@@ -244,7 +244,7 @@
     padding: 50px; /* Adds space around the container */
 }
 
-.star-rating {
+.autophagystar-rating {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -252,7 +252,7 @@
     padding: 0 20px; /* Adds space on the left and right of the stars and button */
 }
 
-.review-btn {
+.autophagyreview-btn {
     background-color: #f0f0f0;
     border: none;
     padding: 10px 20px;
@@ -262,36 +262,36 @@
     border-radius: 10px;
 }
 
-.review-btn:hover, .review-btn:active {
+.autophagyreview-btn:hover, .review-btn:active {
     background-color: #ddd;
 }
 
-.stars {
+.autophagystars {
     display: flex;
 }
 
-.star {
+.autophagystar {
     color: rgba(243, 156, 16, 0.885);
     font-size: 30px;
     margin-left: 5px;
 }
 
-.center-text {
+.autophagycenter-text {
     text-align: center;
     margin-top: 20px;
     font-size: 24px;
     
 }
-.center-text a {
+.autophagycenter-text a {
     text-decoration:underline;
     color:#000
 }
 /*card display*/
-.img-card h1{
+.autophagyimg-card h1{
     font-size: 50px;
     text-align: center;
 }
-.container1{
+.autophagycontainer1{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -299,7 +299,7 @@
     
 }
 
-.box1 {
+.autophagybox1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -310,12 +310,12 @@
 }
 
 
-.box1 img {
+.autophagybox1 img {
     width: 100%;
     height: auto;
    }
    
-.card__btn {
+.autophagycard__btn {
     background-color: #000; /* Black background */
     color: #fff; /* White text */
     padding: 0.5rem 1rem; /* Padding around the text */
@@ -326,12 +326,12 @@
     transition: background-color 0.3s ease,box-shadow 0.3s ease;; /* Smooth transition for hover */
 }
 
-.card__btn:hover {
+.autophagycard__btn:hover {
     background-color: #484a48; /* Color change on hover */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Adds a shadow effect */
 }
 
-.save-text {
+.autophagysave-text {
     background-color: #007BFF; 
     color: #fff; 
     padding: 5px 10px; 
@@ -339,7 +339,7 @@
     margin-bottom: 10px;
     margin-right: 58%;
 }
-.card1 {
+.autophagycard1 {
     display: flex;
     width:100%;
     justify-content: centre;/* Aligns items horizontally */
@@ -349,7 +349,7 @@
     padding: 5px; /* Adds some padding inside the card */
 }
    
-.text-container {
+.autophagytext-container {
     display: flex;
     flex-direction: column; /* Stacks text vertically */
     gap:0.2px;
@@ -359,200 +359,214 @@
 
 /* Mobile-first adjustments */
 @media only screen and (max-width: 600px) {
-    .product-container {
+    .autophagyproduct-container {
         flex-direction: column;
     }
 
     .body{
         width: 100%;
     }
-    .product-image {
+    .autophagyproduct-image {
         width: 100%;
     }
 
-    .product-image img {
+    .autophagyproduct-image img {
         width: 100%;
         height: auto;
         
     }
 
-    .product-info {
+    .autophagyproduct-info {
         width: 100%;
         margin-top: -90%;
     }
 
-    .product-title {
+    .autophagyproduct-title {
         font-size: 30px;
     }
 
-    .product-price {
+    .autophagyproduct-price {
         font-size: 20px;
     }
 
-    .quantity-controls button, .quantity-controls input {
+    .autophagyquantity-controls button, .autophagyquantity-controls input {
         padding: 5px;
     }
 
-    .btn1, .btn2 {
+    .autophagybtn1, .autophagybtn2 {
         width: 100%;
         padding: 10px 20px;
     }
 
-    .product-bottomimg {
+    .autophagyproduct-bottomimg {
         width: 100%;
         height: auto;
         margin-right: 0;
     }
 
-    .product-bottomimg img {
+    .autophagyproduct-bottomimg img {
         width: 100%;
         height: auto;
     }
 
-    .research {
+    .autophagyresearch {
         font-size: 20px;
         margin-left: 10%;
     }
 
-    .header-container {
+    .autophagyheader-container {
         flex-direction: column;
     }
 
-    .box1 h2{
+    .autophagybox1 h2{
         font-size: 130%;
     }
 
-    .header-container h1{
+    .autophagyheader-container h1{
         font-size: 100%;
         margin-right: 70%;
     }
 
     
 
-    .container {
+    .autophagycontainer {
         flex-direction: column;
         width: 100%;
         margin: 0%;
         
     }
 
-    .image-section img {
+    .autophagyimage-section img {
         width: 100%;
         height: 60%;
         border-radius: 5%;
     }
 
-    .text-section {
+    .autophagytext-section {
         width: 95%;
         margin-top: -80%;
         
     }
 
-    .text-section h2 {
+    .autophagytext-section h2 {
         font-size: 20px;
         padding-top: 20%;
         margin-top: 70%;
     }
 
-    .text-section p {
+    .autophagytext-section p {
         font-size: 16px;
         
     }
 
-    .date-section1 {
+    .autophagydate-section1 {
         margin-left: -60%;
         font-size: 14px;
     }
 
-    .img-card h1{
+    .autophagyimg-card h1{
         font-size: 200%;
     }
 
-    .card {
+    .autophagystars{
+        margin-left: -15%;
+    }
+
+    .autophagycard__btn{
+        margin-top: 10%;
+    }
+
+    .autophagycard {
         width: 100%;
         margin: 10px 0;
     }
 
-    .card__img {
+    .autophagycard__img {
         width: 100%;
         height: auto;
     }
 
-    .card__content {
+    .autophagycard__content {
         padding: 1rem;
     }
 
-    .card__header {
+    .autophagycard__header {
         font-size: 18px;
     }
 
-   .toggle-heading22{
+   .autophagytoggle-heading22{
     margin-top: -12%;
     margin-left: 50%;
    }
 
-    .save-text {
+    .autophagysave-text {
         margin-left: 90%;
         
         margin-bottom: -12%;
         width: 27%;
     }
     
-    .text-container{
+    .autophagytext-container{
         font-size: 90%;
         margin-top: 10%;
     }
 
-    .container1 {
+    .autophagycontainer1 {
         flex-direction: column;
     }
 
-    .box1 {
+    .autophagybox1 {
         width: 90%;
         margin: 0%;
     }
 
-    .buttons {
+    .autophagybuttons {
         justify-content: center;
         margin-left: 0;
     }
 
-    .star-rating{
+    .autophagystar-rating{
         margin-left: -20%;
     }
     
-        
+    .autophagyreview-btn{
+        margin-left: 20%;
+        font-size: 80%;
+    }    
     
 
-    #imageContainer {
+    #autophagyimageContainer {
         width: 100%;
         height: auto;
     }
 
-     .last h2, .last h6 {
+     .autophagylast h2, .autophagylast h6 {
         font-size: 14px;
     }
-    .last h3{
+    .autophagylast h3{
         font-size: 10px;
     }
 
-    .block-container {
+    .autophagyblock-container {
         flex-direction: column;
         width: 100%;
     }
 
-    .text{
+    .autophagytext{
         font-size: 100%;
         margin-top: -5%;
     }
 
-    .card__text2{
+    .autophagycard__text2{
         margin-top: -10%;
     }
 
-   
+   .autophagytoggle-heading123{
+        margin-top: -12%;
+        margin-left: 50%;
+   }
 
-    .search-box input {
+    .autophagysearch-box input {
         margin: 0%;
         width: 100%;
         
