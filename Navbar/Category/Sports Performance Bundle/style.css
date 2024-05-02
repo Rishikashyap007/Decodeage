@@ -1,27 +1,23 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 5;
+  text-align: left;
+  
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+
 
 
 <!-----------------Home----------------->
 
-.home .container {
+.sport-performance-bundle-home .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
-.bodybg{
+.sport-performance-bundle-bodybg{
   background-color: #e3e3e3;
 }
-.home-section {
+.sport-performance-bundle-home-section {
   display: flex; /* Make .home-section a flex container */
   justify-content: space-between; /* Distribute space evenly between items */
   align-items: flex-start; /* Align items to the start of the container */
@@ -32,44 +28,44 @@ body {
   margin: 40px;
 }
  
- .image-container, .text_new-container, .text-container {
+ .sport-performance-bundle-image-container, .sport-performance-bundle-text_new-container, .sport-performance-bundle-text-container {
   flex: 1; /* Each container takes up an equal amount of space */
   margin: 0 10px; /* Add horizontal margin to each container */
  }
  
-.image-container {
+.sport-performance-bundle-image-container {
   width: 400px; /* Set the width of the container */
   height: 300px; /* Set the height of the container */
   border: 0px solid #ddd; /* Optional: Add a border for visual clarity */
   overflow: hidden; /* Optional: Hide any content that overflows the container */
 }
 
-.image-container img {
+.sport-performance-bundle-image-container img {
   width: 100%; /* Make the image fill the container horizontally */
   height: 100%; /* Make the image fill the container vertically */
   object-fit: cover; /* Optional: Resize the image to cover the container */
 }
 
-.text-container {
+.sport-performance-bundle-text-container {
   max-width: 800px; /* Adjust as needed */
   
   padding: 20px;
   text-align: center;
 }
 
-.underlined-text {
+.sport-performance-bundle-underlined-text {
   position: relative;
   display: inline-block;
   padding-bottom: 5px;
 }
-.text_new-container {
+.sport-performance-bundle-text_new-container {
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
 }
 
 
-.underlined-text::after {
+.sport-performance-bundle-underlined-text::after {
   content: "";
   display: block;
   width: 100%;
@@ -80,14 +76,14 @@ body {
   left: 0;
 }
 
-.text_new-container p {
+.sport-performance-bundle-text_new-container p {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
 
-.underlined-text::after {
+.sport-performance-bundle-underlined-text::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -116,7 +112,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.text-container {
+.sport-performance-bundle-text-container {
     max-width: 500px; /* Set maximum width for better readability */
     margin: 0 auto; /* Center the container horizontally */
     padding: 2px; /* Add some padding around the content */
@@ -126,16 +122,16 @@ img {
 
 
 
-.text-container h1 {
+.sport-performance-bundle-text-container h1 {
     font-size: 32px; /* Set the font size for the heading */
     margin-bottom: 10px; /* Add some space below the heading */
 }
 
-.text-container p {
+.sport-performance-bundle-text-container p {
     font-size: 12px; /* Set the font size for the paragraph */
     line-height: 1.6; /* Set the line height for better readability */
 }
-.quantity-box {
+.sport-performance-bundle-quantity-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,7 +140,7 @@ img {
 }
 
 
-.quantity-button {
+.sport-performance-bundle-quantity-button {
   width: 30px;
   height: 30px;
   background-color: #f0f0f0;
@@ -152,27 +148,27 @@ img {
   cursor: pointer;
 }
 
-.quantity-input {
+.sport-performance-bundle-quantity-input {
   width: 50px;
   height: 30px;
   text-align: center;
   border: 1px solid #ccc;
   margin: 0 10px;
 }
-.add-to-cart-box {
+.sport-performance-bundle-add-to-cart-box {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.quantity-input {
+.sport-performance-bundle-quantity-input {
   width: 50px;
   height: 30px;
   text-align: center;
   border: 1px solid #ccc;
   border-radius: 5px 0 0 5px;
 }
-.add-to-cart-button {
+.sport-performance-bundle-add-to-cart-button {
   padding: 10px 20px;
   font-size: 16px;
   background-color: orange;
@@ -182,11 +178,11 @@ img {
   cursor: pointer;
 }
 
-.button-container {
+.sport-performance-bundle-button-container {
   display: flex;
 }
 
-.button {
+.sport-performance-bundle-button {
   padding: 10px 20px;
   margin-right: 10px; /* Adjust the margin as needed */
   font-size: 16px;
@@ -198,11 +194,11 @@ img {
 }
 
 /* Optional: To remove margin from the last button */
-.button:last-child {
+.sport-performance-bundle-button:last-child {
   margin-right: 0;
 }
 
-.toggle-container {
+.sport-performance-bundle-toggle-container {
   width: 50%;
   margin-top: 20px;
   border-top :1px solid #beb8b8;
@@ -212,23 +208,23 @@ img {
   border-radius: 5px;
 }
 
-.toggle-heading {
+.sport-performance-bundle-toggle-heading {
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.arrow {
+.sport-performance-bundle-arrow {
   transition: transform 0.3s ease-in-out;
 }
 
-.toggle-content {
+.sport-performance-bundle-toggle-content {
   margin-top: 10px;
 }
 
 
-.product-bottomimg img{
+.sport-performance-bundle-product-bottomimg img{
   width:100%;
   height: 80%;
   margin-top: 25px;
@@ -238,29 +234,29 @@ img {
  
 }
 
-.research{
+.sport-performance-bundle-research{
   font-size: 30px;
   margin-left: 20%;
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.header-container {
+.sport-performance-bundle-header-container {
   display: flex;
   align-items: center; /* Aligns items vertically in the center */
   justify-content: space-between; /* Spaces out the h1 and h4 elements */
 }
 
-.toggle-heading {
+.sport-performance-bundle-toggle-heading {
   text-decoration: none;
   font-size: 20px; /* Adds an underline to the h4 element */
 }
-.content-container {
+.sport-performance-bundle-content-container {
   display: flex;
   justify-content: space-around;
   font-size: 20px;
   
 }
-.content-box {
+.sport-performance-bundle-content-box {
   text-align: left;
   width: 350px;
   border: 0px solid #ccc;
@@ -269,34 +265,34 @@ img {
   border-top: 1px solid #ccc;
 }
 
-.content-box h3 {
+.sport-performance-bundle-content-box h3 {
   margin-top: 0;
 }
 
-.content-box p:first-child {
+.sport-performance-bundle-content-box p:first-child {
   font-weight: bold;
   margin-bottom: 5px;
 }
-.c1{
+.sport-performance-bundle-c1{
   color:gray;
 }
 
 
-.continer-Benefits{
+.sport-performance-bundle-continer-Benefits{
   text-align:left;
   margin-left: 1.5rem;
 }
-.continer-Benefits h1{
+.sport-performance-bundle-continer-Benefits h1{
   color:gray;
   font-size: 3rem;
 }
 
-.continer-Benefits h2{
+.sport-performance-bundle-continer-Benefits h2{
 font-size: 2rem;
 }
 
 
-.product-bottomimg img{
+.sport-performance-bundle-product-bottomimg img{
   width:100%;
   height: 80%;
   margin-top: 25px;
@@ -306,26 +302,26 @@ font-size: 2rem;
  
 }
 
-.research{
+.sport-performance-bundle-research{
   font-size: 30px;
   margin-left: 20%;
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.header-container {
+.sport-performance-bundle-header-container {
   display: flex;
   align-items: center; /* Aligns items vertically in the center */
   justify-content: space-between; /* Spaces out the h1 and h4 elements */
 }
 
-.toggle-heading {
+.sport-performance-bundle-toggle-heading {
   text-decoration: none;
   font-size: 20px; /* Adds an underline to the h4 element */
 }
 
 
 /* style.css */
-.container {
+.sport-performance-bundle-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -336,24 +332,24 @@ font-size: 2rem;
   background-color:rgb(189, 184, 184);
 }
 
-.image-section {
+.sport-performance-bundle-image-section {
   position: relative;
   width: 97%;
   overflow: hidden;
   border-radius:18px 0 0 18px;
 }
 
-.image-section img {
+.sport-performance-bundle-image-section img {
   width: 100%;
   height: auto;
   transition: transform 0.3s ease-in-out;
 }
 
-.image-section:hover img {
+.sport-performance-bundle-image-section:hover img {
   transform: scale(1.1);
 }
 
-.date-section1 {
+.sport-performance-bundle-date-section1 {
   position: absolute;
   bottom: 10px;
   left: 10px;
@@ -361,11 +357,11 @@ font-size: 2rem;
   font-size: 21px;
 }
 
-.calendar-icon {
+.sport-performance-bundle-calendar-icon {
   margin-right: 5px;
 }
 
-.text-section {
+.sport-performance-bundle-text-section {
   width: 45%;
   padding-left: 50px;
   padding-right: 50px;
@@ -376,24 +372,24 @@ font-size: 2rem;
 }
 
 
-.text-section h2{
+.sport-performance-bundle-text-section h2{
   margin-top: 10px;
   font-size: 30px;
 
 }
 
-.text-section p{
+.sport-performance-bundle-text-section p{
   margin-top: 10px;
   font-size: 21px;
 }
-.date-section1 {
+.sport-performance-bundle-date-section1 {
   position: static;
   margin-top: auto;
   color: rgb(101, 98, 98);
   font-size: 17px;
   align-content: center;
 }
-.invisible-container {
+.sport-performance-bundle-invisible-container {
    /* Makes the container invisible */
   display: flex;
   flex-direction: column;
@@ -401,7 +397,7 @@ font-size: 2rem;
   padding: 50px; /* Adds space around the container */
 }
 
-.star-rating {
+.sport-performance-bundle-star-rating {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -409,7 +405,7 @@ font-size: 2rem;
   padding: 0 20px; /* Adds space on the left and right of the stars and button */
 }
 
-.review-btn {
+.sport-performance-bundle-review-btn {
   background-color: #f0f0f0;
   border: none;
   padding: 10px 20px;
@@ -419,33 +415,33 @@ font-size: 2rem;
   border-radius: 10px;
 }
 
-.review-btn:hover, .review-btn:active {
+.sport-performance-bundle-review-btn:hover, .sport-performance-bundle-review-btn:active {
   background-color: #ddd;
 }
 
-.stars {
+.sport-performance-bundle-stars {
   display: flex;
 }
 
-.star {
+.sport-performance-bundle-star {
   color: rgba(243, 156, 16, 0.885);
   font-size: 30px;
   margin-left: 5px;
 }
 
-.center-text {
+.sport-performance-bundle-center-text {
   text-align: center;
   margin-top: 20px;
   font-size: 24px;
   
 }
-.center-text a {
+.sport-performance-bundle-center-text a {
   text-decoration:underline;
   color:#000
 }
 /*card display*/
 
-.card {
+.sport-performance-bundle-card {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -453,7 +449,7 @@ font-size: 2rem;
   background-color: rgb(226, 223, 223);
   margin-top: 10px;
 }
-.hover-image {
+.sport-performance-bundle-hover-image {
   width: 100%;
   height: 100%;
   position: absolute; /* Position the hover image */
@@ -463,10 +459,10 @@ font-size: 2rem;
   transition: opacity 0.3s; /* Add a smooth transition effect */
 }
 
-.image-container:hover .hover-image {
+.sport-performance-bundle-image-container:hover .hover-image {
   opacity: 1; /* Display the hover image when hovering over the container */
 }
-.card span {
+.sport-performance-bundle-card span {
   background-color: rgb(87, 87, 247);
   padding: 4px 5px 4px 5px;
   color: white;
@@ -475,17 +471,17 @@ font-size: 2rem;
   border-radius: 20px;
 }
 
-.h4-1 {
+.sport-performance-bundle-h4-1 {
   color: rgb(45, 45, 235);
   ;
 }
 
-.h4-2 {
+.sport-performance-bundle-h4-2 {
   color: rgb(138, 143, 143);
   text-decoration: line-through;
 }
 
-.card-box {
+.sport-performance-bundle-card-box {
   flex: 1 0 290px; /* Adjust the flex-basis to control the width of each card */
  border-radius: 4%;
  padding: 3%;
@@ -493,7 +489,7 @@ font-size: 2rem;
  background-color: white;
  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
 }
-.img-card h1{
+.sport-performance-bundle-img-card h1{
   font-size: 50px;
   text-align: center;
 }
@@ -501,26 +497,26 @@ font-size: 2rem;
   text-wrap: nowrap;
 }
 
-.card-box img {
+.sport-performance-bundle-card-box img {
   width: 100%;
   height: auto; /* Maintain aspect ratio */
   object-fit: cover;
 }
 
-.card-box img:hover {
+.sport-performance-bundle-card-box img:hover {
   opacity: 0.8; /* Reduce opacity on hover */
  cursor: pointer;
  transition: opacity 1s;
 }
 
-.card-price-buy {
+.sport-performance-bundle-card-price-buy {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 2%;
 }
 
-.card-price-buy h4 {
+.sport-performance-bundle-card-price-buy h4 {
   margin-bottom: 10px;
 }
 
@@ -542,46 +538,100 @@ button:hover {
 
 
 
-/* Base styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
- }
+
  
- .home .container {
+ .sport-performance-bundle-home .sport-performance-bundle-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
  }
  
  /* Responsive styles */
- @media (max-width: 768px) {
-  .home-section {
+ @media only screen and (max-width: 600px)  {
+
+  
+  .sport-performance-bundle-home-section {
      flex-direction: column; /* Stack items vertically on smaller screens */
+     width:100%;
+     margin-left:-0%;
   }
  
-  .image-container, .text_new-container, .text-container {
-     flex: 1 0 100%; /* Allow containers to take up full width */
-     margin: 0; /* Remove horizontal margin */
-  }
- 
-  .text-container {
-     padding: 10px; /* Reduce padding for smaller screens */
-  }
- 
-  /* Add more responsive styles as needed */
+   .sport-performance-bundle-image-container{
+    width:100%;
+    margin-left: 0%;
+   }
+
+   .sport-performance-bundle-underlined-text{
+    font-size:120%;
+   }
+
+   .sport-performance-bundle-text_new-container{
+    width:100%;
+    margin-left:-8%;
+    
+   }
+
+   .sport-performance-bundle-continer-Benefits{
+    flex-direction: column;
+   }
+
+   .sport-performance-bundle-stars{
+    margin-left: -20%;
+   }
+
+   .sport-performance-bundle-img-card h1{
+    font-size: 150%;
+   }
+
+   
+
+   .sport-performance-bundle-card-box{
+    margin-left: 0%;
+   }
+
+   .sport-performance-bundle-content-container{
+    flex-direction: column;
+    width:100%;
+    margin-left: -8%;
+   }
+
+   .sport-performance-bundle-content-box{
+    width: 95%;
+   }
+
+   .sport-performance-bundle-toggle-container{
+    width: 70%;
+   }
+
+   
+
+   .sport-performance-bundle-container{
+    flex-direction:column;
+    width: 100%;
+    margin-left: 0%;
+   }
+
+   .sport-performance-bundle-toggle-heading123{
+      margin-left:20%;
+   }
+
+   .sport-performance-bundle-header-container h1{
+    font-size: 100%;
+    margin-left: -20%; 
+   }
+
+   .sport-performance-bundle-text-section {
+    margin-left: -0%;
+    width:90%
+   }
+
+   .sport-performance-bundle-continer-Benefits h1{
+    font-size: 150%;
+   }
+
+   
+
+
  }
  
- @media (max-width: 600px) {
-  h1 {
-     font-size: 24px; /* Reduce font size for mobile phones */
-  }
- 
-  p {
-     font-size: 14px; /* Reduce font size for mobile phones */
-  }
- 
-  /* Add more responsive styles for mobile phones */
- }
  
