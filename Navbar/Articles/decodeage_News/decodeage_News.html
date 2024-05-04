@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>News</title>
+</head>
+<body>
+
+<style>
+    body {
+    --background: var(--background-primary);
+    --text-color: var(--text-primary);
+    background: rgb(var(--background));
+    color: rgb(var(--text-color));
+    font-family: Metropolis-Regular, sans-serif;
+    letter-spacing: var(--text-letter-spacing);
+    margin: 0;
+    position: relative;
+    text-align: center;
+}
+.styled-button {
+  background-color: black; 
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.bold-text {
+  font-weight: bold;
+}
+.styled-textbox {
+  width: auto;
+  padding: 10px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  border: 2px solid #ccc; /* Border style */
+  border-radius: 5px; /* Rounded corners */
+}
+.blog-post-card__figure {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.containerimage {
+  width:fit-content;
+    background-color: #eaeaea;
+    color: white; /* Text color */
+    padding: 20px; /* Adjust padding as needed */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    border-radius: 25px; /* Add rounded corners */
+    
+}
+.bg-secondary {
+    background: rgb(var(--text-color) / .05);
+}
+.blog-banner {
+    --banner-container-gap: var(--spacing-28);
+}
+.container img {
+  width: 1921; /* Adjust image width as needed */
+    height: auto;
+    border-radius: 25px;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.text {
+    
+}
+.blog-post-card--featured .blog-post-card__info {
+    padding: var(--spacing-5);
+}
+.h2{
+  color: black;
+}
+.skincare-product {
+            position: relative;
+            width: calc(34.33% - 10px); 
+            background-color: rgb(245, 245, 245);
+            padding: 15px;
+            text-align:left;
+  
+        }
+        .Img{
+            width: 450px;
+            height: auto;
+            border-radius: 40px; 
+        }
+        .container {
+          width:auto;
+          height: auto;
+          margin: 0 auto; /* Center the container */
+          padding: 20px;
+          border: 1px solid #ccc; /* Border properties */
+          border-radius: 10px; /* Rounded corners */
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .text-sm {
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    color: black;
+}
+.section-stack {
+  
+    gap: var(--section-stack-spacing-block, 0px) var(--section-stack-spacing-inline, 0px);
+    grid-auto-columns: minmax(0, 1fr);
+    display: grid;
+}
+.section-header {
+    justify-items: inherit;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    color: bla;
+}
+.section-header .prose {
+    text-align: center;
+}
+.floating-controls-container {
+    position: relative;
+}
+.containermissing {
+  width:auto;
+  height: auto;
+    background-color: #eaeaea;
+    color: white; /* Text color */
+    padding: 20px; /* Adjust padding as needed */
+    display: flex; /* Use flexbox for layout */
+    border-radius: 25px; /* Add rounded corners */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to the top */
+    
+}
+.missingheadline{
+  color: black;
+  text-align: justify;
+}
+.product {
+    position: relative; /* Set position relative for absolute positioning */
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    color: aqua;
+}
+
+.product-name {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1; /* Ensure text appears above the image */
+    color: black;
+    font: bold;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 10px;
+    position: relative;
+    left: 10px;      
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: bold;
+    border-radius: 40px; 
+}
+
+.buy-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: darkblue;
+}
+
+</style>
+<header class="blog-banner bg-secondary">
+    <div class="container">
+      <div class="blog-banner-content v-stack gap-10 text-center justify-items-center">
+        <div class="v-stack gap-5 sm:gap-8">
+          <h1 class="h0">News</h1><div class="prose"><p>Get access to our latest news by signing up for our newsletter.</p></div></div><form method="post" action="/contact#blog-newsletter" id="blog-newsletter" accept-charset="UTF-8" class="blog-banner__form form" onsubmit="window.Shopify.recaptchaV3.addToken(this, &quot;customer&quot;); return false;"><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="contact[tags]" value="newsletter">
+            <div class="fieldset-with-submit .styled-textbox "><div class="form-control"><input id="input-template--16207144091836__main--contactemail" class="input is-floating" type="email" dir="ltr" name="contact[email]" placeholder="Email" autocomplete="email" required="" fdprocessedid="dhwh6a"><label for="input-template--16207144091836__main--contactemail" class="floating-label"></label>
+<button type="submit" class="styled-button bold-text ">
+    <div><div class="text-with-icon justify-center"><svg role="presentation" fill="none" focusable="false" stroke-width="1.5" width="18" height="18" class="icon icon-email" viewBox="0 0 18 14">
+      <path clip-rule="evenodd" d="M1 2.5A1.5 1.5 0 0 1 2.5 1h13A1.5 1.5 0 0 1 17 2.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 1 11.5v-9Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="m16 2-5.61 4.506c-.82.659-1.96.659-2.78 0L2 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>Submit</div></div></div><span class="button__loader">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span></button></div></form></div></div>
+    <div>
+      <div class="containerimage">
+        <img src="https://decodeage.com/cdn/shop/articles/National_Science_Day_Blog.webp?v=1709103039&width=1200" alt="Image Description">
+        <div class="blog-post-card__info">
+          <div class="v-stack gap-5 sm:gap-6">
+            <div class="v-stack gap-3 sm:gap-5"><p class="h2"><h2><p class="h2">Scientists that are Spearheading Breakthroughs in Ageing Science</h2></p></a></p><p class="text-lg"><p class="h2">At Decode Age, we are excited to applaud the hard work of Indian scientists dedicated to understand the biological mechanisms of ageing. Check out this list for a quick peek at these scientists and ...</p></p></div><div class="blog-post-card__meta"><div class="text-with-icon link-faded"><svg role="presentation" fill="none" focusable="false" stroke-width="1.2" width="16" height="16" class="icon icon-blog-date" viewBox="0 0 16 16">
+              <path d="M5.372 1v2.877M10.455 1v2.877" stroke="currentColor" stroke-linecap="round"></path>
+              <path d="M14.338 7.632H1.497l.179-4.57 6.164-.448 6.497.448v4.57Z" fill="currentColor" fill-opacity=".12"></path>
+              <path d="M1.224 12.073c.183 1.631 1.508 2.925 3.147 3.004a73.18 73.18 0 0 0 3.546.083c1.256 0 2.413-.028 3.546-.083 1.639-.079 2.964-1.374 3.146-3.004.124-1.099.225-2.224.225-3.37 0-1.147-.102-2.273-.225-3.371-.182-1.631-1.507-2.925-3.146-3.004a73.22 73.22 0 0 0-3.546-.083 73.22 73.22 0 0 0-3.546.083c-1.639.079-2.964 1.374-3.147 3.004C1.101 6.43 1 7.556 1 8.703c0 1.146.102 2.272.224 3.37ZM1.331 7.202h13.24" stroke="currentColor"></path>
+            </svg><span class="text-sm">Feb 28, 2024</span>
+                  </div></div></div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="container">
+      <!-- First div -->
+      <div class="skincare-product">
+          <img src="https://decodeage.com/cdn/shop/articles/Untitled_design_23.webp?v=1708517947&width=500" class="Img" alt="Image 1">
+          <h2>Can NMN help in mitigating Post COVID-19 symptoms?</h2>
+          <p>A clinical trial suggests NMN supplemenatation may benefit COVID-19 patients, improving symptoms and recovery. NMN works at the cellular level by boosting NAD+ levels, crucial for various metaboli...</p>
+          <span class="text-sm">Feb 5, 2024</span>
+      </div>
+
+      <!-- Second div -->
+      <div class="skincare-product">
+          <img src="https://decodeage.com/cdn/shop/articles/NMN_Supplementation_Blog_4th_Dec.webp?v=1701767821&width=500" class="Img" alt="Image 1">
+          <h2>NMN Supplementation Batting Pneumonia Effectively</h2>
+          <p>NMN Supplementation: Battling Pneumonia Effectively! NMN supplementation shows promise in the fight against pneumonia. According to recent research, nictotinamide mononucleotide (NMN), an essential...</p>
+          <span class="text-sm">Dec 5, 2023</span>
+      </div>
+
+      <!-- Third div -->
+      <div class="skincare-product">
+          <img src="https://decodeage.com/cdn/shop/articles/COVID-19_Pandemic_Impact_on_Human_Microbiome.webp?v=1687758861&width=500" class="Img" alt="Image 1">
+          <h2>Exploring the Science Behind NMM and Its Impact on Individuals</h2>
+          <p>In 2020, COVID-19 claimed over 1.8 million lives worldwide which was startling and affected life expectancies. This assessment conceals the pandemic's varied effects on various nations plus populat...</p>
+          <span class="text-sm">Mar 1, 2023</span>
+      </div>
+  </div>
+  
+  <!-- <div class="section-stack containermissing missingheadline">
+    <section-header class="section-header"><div class="prose"><h1 class="h1 mainheading">Missing out on something!</h1></div>
+      <div class="product">
+        <a class="product-name">ResVit Powerful Antioxidant Blend, 30 Veg Tablets</a>
+        <img src="https://cdn.shopify.com/s/files/1/0605/3445/6508/files/capsule-resvit-powerful-antioxident-blend-of-trans-resveratrol-decode-age-decode-age-35676564979900.jpg?v=1708510995&width=400" alt="Product Image">
+        <p class="price">$19.99</p>
+        <span class="price">₹2,999.00 INR</span>
+        <button class="buy-button">Buy Now</button>
+    </div>
+  </div>
+</section-header> -->
+<section-header class="section-header missingheadline"><div class="prose"><h1 class="h1 mainheading">Missing out on something!</h1></div>
+<div class="section-stack containermissing missingheadline">
+ 
+    <div class="product">
+      <a class="product-name">ResVit Powerful Antioxidant Blend, 30 Veg Tablets</a>
+      <img src="https://cdn.shopify.com/s/files/1/0605/3445/6508/files/capsule-resvit-powerful-antioxident-blend-of-trans-resveratrol-decode-age-decode-age-35676564979900.jpg?v=1708510995&width=400" class="Img" alt="Image 1">
+      <p class="price">$19.99</p>
+        <span class="price">₹2,999.00 INR</span>
+        <button class="buy-button">Buy Now</button>
+</div>
+    <div class="product">
+      <a class="product-name">ResVit Powerful Antioxidant Blend, 30 Veg Tablets</a>
+      <img src="https://cdn.shopify.com/s/files/1/0605/3445/6508/files/capsule-resvit-powerful-antioxident-blend-of-trans-resveratrol-decode-age-decode-age-35676564979900.jpg?v=1708510995&width=400" class="Img" alt="Image 1">
+      <p class="price">$19.99</p>
+        <span class="price">₹2,999.00 INR</span>
+        <button class="buy-button">Buy Now</button>
+</div>
+<div class="product">
+  <a class="product-name">ResVit Powerful Antioxidant Blend, 30 Veg Tablets</a>
+  <img src="https://cdn.shopify.com/s/files/1/0605/3445/6508/files/capsule-resvit-powerful-antioxident-blend-of-trans-resveratrol-decode-age-decode-age-35676564979900.jpg?v=1708510995&width=400" class="Img" alt="Image 1">
+  <p class="price">$19.99</p>
+    <span class="price">₹2,999.00 INR</span>
+    <button class="buy-button">Buy Now</button>
+</div>
+  </section-header>
+    </div>
+  </header>
+  <div>   
+  </div>
+</body>

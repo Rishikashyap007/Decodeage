@@ -1,0 +1,510 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:#eeecec;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.product-image {
+    width: 50%; /* Adjust the width as needed */
+    height: 500px; /* Increase the height to make the image larger */
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.product-image img {
+    width: 85%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the area without distortion */
+}
+
+.product-line{
+    color:gray;
+    font-size: 15px;
+    margin-top: 1px;
+}
+
+.product-info {
+    width: 45%;
+}
+
+.product-title {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    margin-bottom: 8px;
+    color:rgb(103, 103, 244);
+    font-size: 30px;
+
+}
+
+.product-discount {
+    margin-bottom: 7px;
+    color: gray;
+}
+
+.product-description {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quantity-controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.quantity-controls input {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn1 {
+    background-color:  rgb(210, 210, 11);
+    color:black;
+    border: none;
+    border-radius: 30px;
+    padding: 20px 50px;
+    cursor: pointer;
+    width: 45%;
+}
+
+
+.btn2 {
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 20px 50px;
+    cursor: pointer;
+    width: 45%;
+}
+.product-bottomimg{
+    width:100%;
+    height: 20%;
+    margin-top: 25px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin-right: 50px;
+}
+
+
+/* style.css */
+.toggle-container {
+    width: 95%;
+    margin-top: 20px;
+    border-top :1px solid #beb8b8;
+    border-bottom:1px solid #beb8b8;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.toggle-heading {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    transition: transform 0.3s ease-in-out;
+}
+
+.toggle-content {
+    margin-top: 10px;
+}
+
+
+.product-bottomimg img{
+    width:100%;
+    height: 80%;
+    margin-top: 25px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+   
+}
+
+.research{
+    font-size: 30px;
+    margin-left: 20%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.header-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: space-between; /* Spaces out the h1 and h4 elements */
+}
+
+.toggle-heading {
+    text-decoration: none;
+    font-size: 20px; /* Adds an underline to the h4 element */
+}
+
+
+/* style.css */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 18px;
+    background-color:rgb(189, 184, 184);
+}
+
+.image-section {
+    position: relative;
+    width: 97%;
+    overflow: hidden;
+    border-radius:18px 0 0 18px;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-section:hover img {
+    transform: scale(1.1);
+}
+
+.date-section1 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #121111;
+    font-size: 21px;
+}
+
+.calendar-icon {
+    margin-right: 5px;
+}
+
+.text-section {
+    width: 45%;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.text-section h2{
+    margin-top: 10px;
+    font-size: 30px;
+
+}
+
+.text-section p{
+    margin-top: 10px;
+    font-size: 21px;
+}
+.date-section1 {
+    position: static;
+    margin-top: auto;
+    color: rgb(101, 98, 98);
+    font-size: 17px;
+    align-content: center;
+}
+.invisible-container {
+     /* Makes the container invisible */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px; /* Adds space around the container */
+}
+
+.star-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensures the stars and button take up the full width */
+    padding: 0 20px; /* Adds space on the left and right of the stars and button */
+}
+
+.review-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.review-btn:hover, .review-btn:active {
+    background-color: #ddd;
+}
+
+.stars {
+    display: flex;
+}
+
+.star {
+    color: rgba(243, 156, 16, 0.885);
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.center-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    
+}
+.center-text a {
+    text-decoration:underline;
+    color:#000
+}
+/*card display*/
+.img-card h1{
+    font-size: 50px;
+    text-align: center;
+}
+.container1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* This creates space between the boxes */
+    
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%; /* Adjust based on desired layout */
+    border: none; /* Adds a border */
+    padding: 10px; /* Adds some padding inside the box */
+    background-color:white;
+}
+
+
+.box1 img {
+    width: 100%;
+    height: auto;
+   }
+   
+.card__btn {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 0.5rem 1rem; /* Padding around the text */
+    width:50%;
+    height: 50%; /* No border */
+    border-radius: 50px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease,box-shadow 0.3s ease;; /* Smooth transition for hover */
+}
+
+.card__btn:hover {
+    background-color: #484a48; /* Color change on hover */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Adds a shadow effect */
+}
+
+.save-text {
+    background-color: #007BFF; 
+    color: #fff; 
+    padding: 5px 10px; 
+    border-radius: 50px; 
+    margin-bottom: 10px;
+    margin-right: 58%;
+}
+.card1 {
+    display: flex;
+    width:100%;
+    justify-content: centre;/* Aligns items horizontally */
+    align-items: center;
+    gap: 20px; /* Creates space between the text container and the button */
+    border:none; /* Adds a border around the card */
+    padding: 5px; /* Adds some padding inside the card */
+}
+   
+.text-container {
+    display: flex;
+    flex-direction: column; /* Stacks text vertically */
+    gap:0.2px;
+    font-size: 15px; /* Creates space between the texts */
+}
+/* Existing CSS remains unchanged */
+
+/* Mobile-first adjustments */
+@media only screen and (max-width: 600px) {
+    .product-container {
+        flex-direction: column;
+    }
+
+    .product-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-info {
+        width: 100%;
+    }
+
+    .product-title {
+        font-size: 30px;
+    }
+
+    .product-price {
+        font-size: 20px;
+    }
+
+    .quantity-controls button, .quantity-controls input {
+        padding: 5px;
+    }
+
+    .btn1, .btn2 {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .product-bottomimg {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .product-bottomimg img {
+        width: 100%;
+        height: auto;
+    }
+
+    .research {
+        font-size: 20px;
+        margin-left: 10%;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .image-section {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-section {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .text-section h2 {
+        font-size: 20px;
+    }
+
+    .text-section p {
+        font-size: 16px;
+    }
+
+    .date-section1 {
+        margin-top: 5%;
+        font-size: 14px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .card__img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card__content {
+        padding: 1rem;
+    }
+
+    .card__header {
+        font-size: 18px;
+    }
+
+    .card__btn {
+        padding: 0.5rem 1rem;
+    }
+
+    .save-text {
+        margin-right: 0;
+    }
+
+    .container1 {
+        flex-direction: column;
+    }
+
+    .box1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .year-btn {
+        padding: 10px 15px;
+    }
+
+    #imageContainer {
+        width: 100%;
+        height: auto;
+    }
+
+    .last h3, .last h2, .last h6 {
+        font-size: 14px;
+    }
+
+    .block-container {
+        flex-direction: column;
+    }
+
+    .search-box input {
+        width: 100%;
+        height: 30px;
+        padding-right: 50px;
+    }
+}

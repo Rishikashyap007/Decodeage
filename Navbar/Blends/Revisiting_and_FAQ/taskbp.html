@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare Website</title>
+    <style>
+      
+        .container {
+          width: 80%;
+          /* margin: 0 auto; Center the container */
+          padding: 20px;
+          border: 1px solid #ccc; /* Border properties */
+          border-radius: 10px; /* Rounded corners */
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        /* CSS for individual divs */
+        .skincare-product {
+            position: relative;
+            width: calc(34.33% - 10px); 
+            background-color: rgb(245, 245, 245);
+            padding: 20px;
+            text-align:left;
+  
+        }
+        .Img{
+            width: 390px;
+            height: auto;
+            border-radius: 40px; 
+        }
+        .tag {
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+    background-color: violet; 
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 40px; 
+}
+.view-all {
+    display: inline-block;
+    padding: 5px 10px;
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline from anchor */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+}
+
+.arrow {
+    margin-left: 5px; /* Adjust spacing between text and arrow */
+}
+/*.review {
+  
+  padding: 10px;
+  width: 300px;
+  margin: 20px;
+}*/
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.stars {
+  color: orange;
+  font-size: 24px;
+}
+
+.star {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.number-of-reviews {
+  margin-left: 10px;
+}
+
+.count {
+  font-size: 18px;
+}
+
+.down-arrow {
+  font-size: 18px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.graph-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+.graph {
+  margin-bottom: 20px;
+}
+
+.comments-section {
+    border: 1px solid #ccc;
+    box-sizing: unset;
+  margin-top: 20px;
+}
+
+.comment {
+  margin-bottom: 20px;
+  box-sizing:border-box;
+}
+
+.comment-content {
+  margin-bottom: 10px;
+}
+
+.comment-details {
+  font-size: 14px;
+}
+
+.comment-name {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.comment-date {
+  color: #999;
+}
+.header-btn, #loadMore {
+    border-radius: 8px;
+}
+.lx-btn {
+    border: 1px solid #E8E8E8;
+    
+}
+.header-btn {
+    font-size: 16px;
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+    height: 40px !important;
+    cursor: pointer;
+    color: #000000;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    
+}
+.lx-primary {
+    border-radius: 2px;
+    transition-property: background, color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+.lx-btn {
+    border: solid 1px #282828;
+    color: #282828;
+    background: transparent;
+    align-self: flex-end; 
+}
+.show-more-button {
+    
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    align-items: center;
+  }
+  .FAQ{
+    text-align: center;
+  }
+  .section {
+    padding-block-start: 3rem;
+    padding-block-end: 3rem;
+}
+.section {
+    padding-block-start: calc(var(--background-differs-from-previous)* var(--calculated-section-spacing-block-start));
+    padding-block-end: var(--calculated-section-spacing-block-end);
+}
+.section {
+    --context-section-spacing-block-start: var(--section-outer-spacing-block);
+    --context-section-spacing-block-end: var(--section-outer-spacing-block);
+    --context-section-spacing-inline: var(--container-gutter);
+    --calculated-section-spacing-block-start: var(--section-spacing-block-start, var(--section-spacing-block, var(--context-section-spacing-block-start)));
+    --calculated-section-spacing-block-end: var(--section-spacing-block-end, var(--section-spacing-block, var(--context-section-spacing-block-end)));
+    --calculated-section-spacing-inline: var(--section-spacing-inline, var(--context-section-spacing-inline));
+    --container-inner-width: min((100vw - var(--scrollbar-width, 0px)) - var(--calculated-section-spacing-inline, 0px)* 2, var(--container-max-width));
+    --container-outer-width: calc(((100vw - var(--scrollbar-width, 0px)) - var(--container-inner-width, 0px)) / 2);
+    --section-stack-spacing-inline: var(--section-inner-spacing-inline, 0px);
+    padding-inline-start: max(var(--calculated-section-spacing-inline), 50% - var(--container-max-width) / 2);
+    padding-inline-end: max(var(--calculated-section-spacing-inline), 50% - var(--container-max-width) / 2);
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0;
+    border-color: rgb(var(--text-color) / .12);
+}
+user agent stylesheet
+div {
+    display: block;
+}
+#shopify-section-template--16207153463484__5b453ed2-18bc-4dc1-9775-0151470ab7d7 {
+    --section-stack-intro: 60%;
+    --section-stack-main: 60%;
+}
+#shopify-section-template--16207153463484__5b453ed2-18bc-4dc1-9775-0151470ab7d7 {
+    --section-background-hash: 0;
+}
+#shopify-section-template--16207153463484__16868561902ef122ee + * {
+    --previous-section-background-hash: 0;
+}
+[role=main] .shopify-section {
+    --section-is-first: 0;
+    --hash-difference: calc(var(--section-background-hash) - var(--previous-section-background-hash, -1));
+    --hash-difference-abs: max(var(--hash-difference), -1* var(--hash-difference));
+    --background-differs-from-previous: max(0, min(var(--hash-difference-abs, 1), 1));
+    background: rgb(var(--background));
+    position: relative;
+}
+body {
+    --background: var(--background-primary);
+    --text-color: var(--text-primary);
+    background: rgb(var(--background));
+    color: rgb(var(--text-color));
+    font-family: Metropolis-Regular, sans-serif;
+    letter-spacing: var(--text-letter-spacing);
+    margin: 0;
+    position: relative;
+}
+style attribute {
+    --announcement-bar-height: 0px;
+    --header-height: 85px;
+    --scrollbar-width: 17px;
+    --recurpay_primary_color: #1125d0;
+    --recurpay_secondary_color: #000000;
+    --recurpay_button_text_color: #fcfcfc;
+    --recurpay_button_bg_color: #000000;
+    --recurpay_savings_bg_color: rgba(17, 37, 208, 0.1);
+}
+:root {
+    --lxs-rating-icon-color: #e3d434;
+}
+:root {
+    --PhoneInput-color--focus: #03b2cb;
+    --PhoneInputInternationalIconPhone-opacity: .8;
+    --PhoneInputInternationalIconGlobe-opacity: .65;
+    --PhoneInputCountrySelect-marginRight: .35em;
+    --PhoneInputCountrySelectArrow-width: .3em;
+    --PhoneInputCountrySelectArrow-marginLeft: var(--PhoneInputCountrySelect-marginRight);
+    --PhoneInputCountrySelectArrow-borderWidth: 1px;
+    --PhoneInputCountrySelectArrow-opacity: .45;
+    --PhoneInputCountrySelectArrow-color: currentColor;
+    --PhoneInputCountrySelectArrow-color--focus: var(--PhoneInput-color--focus);
+    --PhoneInputCountrySelectArrow-transform: rotate(45deg);
+    --PhoneInputCountryFlag-aspectRatio: 1.5;
+    --PhoneInputCountryFlag-height: 1em;
+    --PhoneInputCountryFlag-borderWidth: 1px;
+    --PhoneInputCountryFlag-borderColor: rgba(0, 0, 0, .5);
+    --PhoneInputCountryFlag-borderColor--focus: var(--PhoneInput-color--focus);
+    --PhoneInputCountryFlag-backgroundColor--loading: rgba(0, 0, 0, .1);
+}
+:root {
+    --color--black: #333333;
+    --color--white: #ba5757;
+    --recurpay_primary_color: #000000;
+    --recurpay_secondary_color: #000000;
+    --recurpay_button_text_color: #ffffff;
+    --recurpay_button_bg_color: #000000;
+    --recurpay_savings_bg_color: #ffffff00;
+    --recurpay_transparent_color: #ffffff00;
+}
+:root {
+    --sticky-header-enabled: 1;
+}
+:root {
+    --sticky-announcement-bar-enabled: 0;
+}
+:root {
+    --text-h0: 3.25rem;
+    --text-h1: 2.25rem;
+    --text-h1: 56px;
+    --text-h2: 1.75rem;
+    --text-h2: 32px;
+    --text-h3: 1.625rem;
+    --text-h4: 1.25rem;
+    --text-h5: 1.25rem;
+    --text-h6: 1.125rem;
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1.0rem;
+    --text-lg: 1.25rem;
+    --container-gutter: 2rem;
+    --section-outer-spacing-block: var(--spacing-16);
+    --section-inner-max-spacing-block: var(--spacing-12);
+    --section-inner-spacing-inline: var(--spacing-12);
+    --section-stack-spacing-block: var(--spacing-12);
+    --grid-gutter: var(--spacing-6);
+    --product-list-row-gap: var(--spacing-12);
+    --input-gap: 1rem;
+    --input-height: 3.125rem;
+    --input-padding-inline: var(--spacing-5);
+}
+:root {
+    --spacing-0-5: 0.125rem;
+    --spacing-1: 0.25rem;
+    --spacing-1-5: 0.375rem;
+    --spacing-2: 0.5rem;
+    --spacing-2-5: 0.625rem;
+    --spacing-3: 0.75rem;
+    --spacing-3-5: 0.875rem;
+    --spacing-4: 1rem;
+    --spacing-4-5: 1.125rem;
+    --spacing-5: 1.25rem;
+    --spacing-5-5: 1.375rem;
+    --spacing-6: 1.5rem;
+    --spacing-6-5: 1.625rem;
+    --spacing-7: 1.75rem;
+    --spacing-7-5: 1.875rem;
+    --spacing-8: 2rem;
+    --spacing-8-5: 2.125rem;
+    --spacing-9: 2.25rem;
+    --spacing-9-5: 2.375rem;
+    --spacing-10: 2.5rem;
+    --spacing-11: 2.75rem;
+    --spacing-12: 3rem;
+    --spacing-14: 3.5rem;
+    --spacing-16: 4rem;
+    --spacing-18: 4.5rem;
+    --spacing-20: 5rem;
+    --spacing-24: 6rem;
+    --spacing-28: 7rem;
+    --spacing-32: 8rem;
+    --spacing-36: 9rem;
+    --spacing-40: 10rem;
+    --spacing-44: 11rem;
+    --spacing-48: 12rem;
+    --spacing-52: 13rem;
+    --spacing-56: 14rem;
+    --spacing-60: 15rem;
+    --spacing-64: 16rem;
+    --spacing-72: 18rem;
+    --spacing-80: 20rem;
+    --spacing-96: 24rem;
+    --container-max-width: 1520px;
+    --container-narrow-max-width: 1270px;
+    --container-gutter: var(--spacing-5);
+    --section-outer-spacing-block: var(--spacing-12);
+    --section-inner-max-spacing-block: var(--spacing-10);
+    --section-inner-spacing-inline: var(--container-gutter);
+    --section-stack-spacing-block: var(--spacing-8);
+    --grid-gutter: var(--spacing-5);
+    --product-list-row-gap: var(--spacing-8);
+    --product-list-column-gap: var(--grid-gutter);
+}
+:root {
+    --swiper-navigation-size: 44px;
+    /* --swiper-navigation-color: var(--swiper-theme-color); */
+}
+:root {
+    --swiper-theme-color: #007aff;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    scroll-padding-block-start: calc(var(--sticky-area-height) + 20px);
+    line-height: 1.5;
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0;
+    border-color: rgb(var(--text-color) / .12);
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0;
+    border-color: rgb(var(--text-color) / .12);
+}
+.h2, .prose h2:not(.h0,.h1,.h2,.h3,.h4,.h5,.h6) {
+    font-size: var(--text-h2);
+    line-height: 1.1;
+}
+.heading, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .prose :is(h1,h2,h3,h4,h5,h6) {
+    font-family: var(--heading-font-family);
+    font-family: Metropolis-Regular, sans-serif;
+    font-weight: 700;
+    font-style: var(--heading-font-style);
+    letter-spacing: var(--heading-letter-spacing);
+    text-transform: var(--heading-text-transform);
+    overflow-wrap: anywhere;
+}
+
+.product-info__vendor, .product-info__title, .product-info__badge-list, .product-info__sku, .product-info__price, .product-info__rating, .product-info__payment-terms {
+    --product-info-block-spacing: var(--spacing-4);
+}
+.product-info__vendor, .product-info__title, .product-info__sku, .product-info__price, .product-info__rating, .product-info__payment-terms {
+    --product-info-block-spacing: var(--spacing-2);
+}
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+.product-info__accordion {
+    --product-info-block-spacing: 0;
+}
+.product-info>*+* {
+    margin-block-start: var(--product-info-block-spacing);
+    margin-block-end: var(--product-info-block-spacing);
+}
+.accordion {
+    --accordion-spacing: var(--spacing-5);
+    box-sizing: content-box;
+    border-block-start-width: 1px;
+    border-block-end-width: 1px;
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0;
+    border-color: rgb(var(--text-color) / .12);
+}
+user agent stylesheet
+details {
+    display: block;
+}
+.product-info {
+    --product-info-block-spacing: var(--spacing-6);
+}
+.sr-only {
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
+}
+.text-subdued {
+    color: rgb(var(--text-color) / .7);
+}
+.product-info__price, .product-info__rating, .product-info__payment-terms {
+    --product-info-block-spacing: var(--spacing-4);
+}
+.product-info__vendor, .product-info__title, .product-info__sku, .product-info__price, .product-info__rating, .product-info__payment-terms {
+    --product-info-block-spacing: var(--spacing-2);
+}
+.product-info {
+    --product-info-block-spacing: var(--spacing-6);
+}
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <!-- First div -->
+    <div class="">
+        <img src="https://decodeage.com/cdn/shop/files/tablet-resvit-powerful-antioxidant-blend-30-veg-tablets-decode-age-36863133515964.webp?v=1708343606&width=1000" class="Img" alt="Image 1">
+        <h2>Reverse Grey Hair with Spermidine</h2>
+        <p>Grey hair arises from genetics, stress, and environment. Spermidine supplements reverse greying by boosting melanin synthesis and fighting oxidative stress, offering hope for reversing grey hair.</p>
+        <h1 class="product-info__title h2">ResVit Powerful Antioxidant Blend, 30 Veg Tablets</h1>
+        <span class="money">₹2,999.00 INR</span>
+        <compare-at-price form="product-form-7362596634812-template--16207153463484__main" class="text-subdued line-through">
+          <span class="sr-only">Regular price</span><span class="money">₹3,000.00 INR</span></compare-at-price>
+    </div>
+  </div>
+  
+  <details class="product-info__accordion accordion  group" aria-expanded="false" is="accordion-disclosure">
+    <summary><div class="accordion__toggle bold"><span>Description</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+          <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+        </svg></span>
+      </div>
+    </summary>
+  
+    <div class="accordion__content"><div class="prose"><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;As we get older, the sources and accumulation of damage increase drastically as inflammation increases, the immune system declines, and Oxidation increases, making us vulnerable to various chronic diseases.\n\nAdd ResVit to your daily regimen to fight sources of metabolic damage, by supporting your immune system and reducing levels of inflammation. It is blended with Trans Resveratrol, Pterostilbene, N-Acetyl Cysteine and more.\n\nResVit contains Trans Resveratrol that can also help fight bad cholesterol, helps the protection of the heart, and counter various issues leading to cognitive decline and improper breathing. Pterostilbene works by being an antioxidant, reducing inflammation, and stopping tumor growth. This helps keep healthy cells working well and stops harmful cells from growing. NAC is a substance that helps increase the amount of glutathione in the body. Glutathione helps fight against harmful substances. NAC also works as a strong antioxidant by cleaning up free radicals, especially oxygen radicals.\n&quot;}" data-sheets-userformat="{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}" data-mce-fragment="1">As we get older, the sources and accumulation of damage increase drastically as inflammation increases, the immune system declines, and Oxidation increases, making us vulnerable to various chronic diseases.<br data-mce-fragment="1"><br data-mce-fragment="1">Add ResVit to your daily regimen to fight sources of metabolic damage, by supporting your immune system and reducing levels of inflammation. It is blended with Trans Resveratrol, Pterostilbene, N-Acetyl Cysteine and more.<br data-mce-fragment="1"><br data-mce-fragment="1">ResVit contains Trans Resveratrol that can also help fight bad cholesterol, helps the protection of the heart, and counter various issues leading to cognitive decline and improper breathing. Pterostilbene works by being an antioxidant, reducing inflammation, and stopping tumor growth. This helps keep healthy cells working well and stops harmful cells from growing. NAC is a substance that helps increase the amount of glutathione in the body. Glutathione helps fight against harmful substances. NAC also works as a strong antioxidant by cleaning up free radicals, especially oxygen radicals.<br data-mce-fragment="1"></span></div></div>
+  </details>
+    <p><h1>Blog posts</h1></p>>
+        <a href="#" class="view-all">View all <span class="arrow">&#8594;</span></a>
+    <!-- Container for the divs -->
+    <div class="container">
+        <!-- First div -->
+        <div class="skincare-product">
+            <img src="https://decodeage.com/cdn/shop/articles/Blog_Grey_Hair_3.webp?v=1710138568&width=600" class="Img" alt="Image 1">
+            <span class="tag">Spermidine</span>
+            <h2>Reverse Grey Hair with Spermidine</h2>
+            <p>Grey hair arises from genetics, stress, and environment. Spermidine supplements reverse greying by boosting melanin synthesis and fighting oxidative stress, offering hope for reversing grey hair.</p>
+        </div>
+
+        <!-- Second div -->
+        <div class="skincare-product">
+            <img src="https://decodeage.com/cdn/shop/articles/Niacin_vs_Nicotinamide_vs_Nicotinamide_riboside.webp?v=1694519248&width=600" class="Img" alt="Image 1">
+            <span class="tag">NMN</span>
+            <h2>Nicotinamide vs Niacin vs Nicotinamide Riboside vs NMN: What's the Difference?</h2>
+            <p>Navigating the world of vitamins and supplements can sometimes feel like deciphering a complex puzzle. Among the many options available, Nicotinamide, Niacin, Nicotinamide Riboside (NR), and Nicoti...</p>
+        </div>
+
+        <!-- Third div -->
+        <div class="skincare-product">
+            <img src="https://decodeage.com/cdn/shop/articles/Feature_Image.webp?v=1709288200&width=600" class="Img" alt="Image 1">
+            <span class="tag">NMN</span>
+            <h2>Exploring the Science Behind NMM and Its Impact on Individuals</h2>
+            <p>NMN supports NAD+ levels and cellular processes. Found in various foods, supplements like NMN enhance NAD+ production, offering potential benefits like anti-inflammatory effects and improved insuli...</p>
+        </div>
+    </div>
+    <div class="review">
+        
+        <div class="rating">
+          
+          <div class="stars" id="stars">
+            <span class="star" onclick="rate(1)">&#9733;</span>
+            <span class="star" onclick="rate(2)">&#9733;</span>
+            <span class="star" onclick="rate(3)">&#9733;</span>
+            <span class="star" onclick="rate(4)">&#9733;</span>
+            <span class="star half" onclick="rate(4.5)">&#9733;</span>
+          </div>
+
+          <div class="number-of-reviews">
+            <span class="count">4.5</span>
+            <span class="down-arrow" onclick="showGraph()">▼</span>
+          </div>
+S
+        </div>
+        <button id="write" class="btn lx-btn lx-primary header-btn">write a review</button>
+
+        <div class="comments-section">  
+          <div class="comment">
+            <span class="comment-name"><b> Saurabh</b></span>
+              <span class="comment-date"> 6/21/2023</span>
+            <p class="comment-content"> very bad delivery system</p>
+          </div>
+          <!-- Add more comments as needed -->
+          
+        </div>
+        <div class="comments-section">
+          <div class="comment">
+            <span class="comment-name"><b> Jaganath</b></span>
+              <span class="comment-date"> 1/24/2023</span>
+            <p class="comment-content"> Best supplement to improve Stamina<br>I am one of your more sceptical person who try different health stuff usually with mixed or very little or no results in a change. I have wasted hundreds of dollars on quite a bit of stuff that did not do a thing for me, besides relieve me of money.<br>Upon taling the first dosage, I did notice a slight difference the first day, however, on the third day of taking these gel caps my eergy and overall stamina has gone up. I am in early 60's, and this has work...</p>
+          </div>
+        </div>
+        <div class="comments-section">
+          <div class="comment">
+            <span class="comment-name"><b> Omkar</b></span>
+              <span class="comment-date"> 12/16/2022</span>
+            <p class="comment-content">It helped me Maintain My Youthful Energy.<br>Revisit provide a natural energy boost that helps me power throughmy day without feeling sluggish or tired.</p>
+          </div>
+        </div>
+        <div class="comments-section">
+          <div class="comment">
+            <span class="comment-name"><b> Omkar</b></span>
+              <span class="comment-date"> 6/21/2023</span>
+            <p class="comment-content">Maintain </p>
+          </div>
+        </div>
+        <div class="comments-section">
+          <div class="comment">
+            <span class="comment-name"><b> Saurabh</b></span>
+              <span class="comment-date"> 6/21/2023</span>
+            <p class="comment-content"> very bad delivery system</p>
+          </div>
+        </div>
+        <div class="comments-section">
+          <div class="comment">
+            <span class="comment-name"><b> Saurabh</b></span>
+              <span class="comment-date"> 6/21/2023</span>
+            <p class="comment-content"> very bad delivery system</p>
+          </div>
+        </div>
+        <div class="comments-section">
+          <div class="comment">
+            <span class="comment-name"><b> Saurabh</b></span>
+              <span class="comment-date"> 6/21/2023</span>
+            <p class="comment-content"> very bad delivery system</p>
+          </div>
+        </div>
+        <div class="comments-section">
+          <div class="comment">
+            <span class="comment-name"><b> Saurabh</b></span>
+              <span class="comment-date"> 6/21/2023</span>
+            <p class="comment-content"> very bad delivery system</p>
+          </div>
+        </div>
+        <div class="comments-section">
+          <div class="comment">
+            <span class="comment-name"><b> Saurabh</b></span>
+              <span class="comment-date"> 6/21/2023</span>
+            <p class="comment-content"> very bad delivery system</p>
+          </div>
+        </div>
+      </div>    
+      <div class="graph-popup" id="graphPopup">
+        <h2>Rating Distribution</h2>
+        <div class="graph">
+          <!-- Horizontal graph with number of reviews and stars -->
+        </div>
+        <div class="comments-section">
+          <!-- Multiple comments on review with date and name -->
+        </div>
+        
+      </div>
+      <button class="show-more-button" onclick="showMoreReviews()">Show More Reviews</button>
+      <div>
+        <div>
+          <h2 class="FAQ">FAQ</h2>
+          <div class="section   section-blends section-full">
+            <div class="section-stack section-stack--center "><div class="section-stack__intro">
+                  <div class="v-stack gap-10"><div class="prose text-center"><h2 class="h2">FAQ</h2></div></div>
+                </div><div class="section-stack__main">
+                  <div class="accordion-box rounded bg-secondary"><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>What is ResVit?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><h6>ResVit is a high-quality health supplement formulated with potent antioxidants and essential nutrients to support your overall health and vitality. It helps combat oxidative stress, support chronic disease management, and promotes longevity.</h6></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>How do I use ResVit?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><h6>The recommended dose of ResVit is one tablet after dinner with a glass of water. It's important to consult your healthcare provider for advice tailored to your specific health needs.</h6></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>What are the key ingredients in ResVit?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><h6>ResVit features a powerful blend of ingredients like Trans-Resveratrol, Pterostilbene, N-Acetyl Cystein, L-Carnitine, Bilberry Extract, Lycopene, Alpha Lipoic Acid, Glutathione, Melatonin, Vitamin E, Vitamin A, and Green Tea Extract.</h6></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>Who should take ResVit?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><h6>ResVit is designed for adults seeking to boost their overall health, manage chronic diseases, and support ageing gracefully. However, always consult with a healthcare provider before starting any new supplement regimen.</h6></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>Is ResVit safe to use?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><h6>Yes, ResVit is generally considered safe when taken as directed. But, always consult with your healthcare provider before starting ResVit, especially if you're pregnant, breastfeeding, have <strong>hypertension</strong>, are on specific medications, or have underlying medical conditions.</h6></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>How long does it take to see results from ResVit?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><h6>The benefits of ResVit can be experienced differently by each individual, based on their unique health status and lifestyle. Some might notice changes within a few weeks, while others may require a couple of months.</h6></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>Can I take ResVit alongside other supplements?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><h6>Yes, you can generally take ResVit alongside other supplements like NMN, LongeVit, or SeneVit, as they each have unique benefits and ingredients that work in synergy. ResVit is a potent blend of antioxidants designed to support your overall wellness and work in conjunction with other supplements for a holistic approach to health.</h6><h6>However, it's always important to consult with your healthcare provider before starting any new supplement regime. They can provide personalized advice based on your specific health needs and current medications.</h6></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>What are the benefits of combining ResVit with LongeVit or SeneVit?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><h6>Combining ResVit with LongeVit or SeneVit can help provide comprehensive health support. While ResVit's potent antioxidant blend aids in managing oxidative stress and supports overall cellular health, LongeVit and SeneVit have their unique benefits.</h6><h6>LongeVit, with its key ingredient NMN, supports cellular rejuvenation and vitality, while SeneVit focuses on eye health and vision support. This synergy provides a well-rounded approach to promoting overall wellness and healthy aging.</h6></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>Does ResVit contain any allergens?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><h6>ResVit is carefully formulated to be free from common allergens. However, if you have any specific allergies, it's crucial to consult your healthcare provider before starting ResVit and to check the label for full ingredient information.</h6></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>Is ResVit vegan-friendly?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><h6>Yes, ResVit is a vegan-friendly supplement. It does not contain any animal-derived ingredients.</h6></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>What makes ResVit unique compared to other antioxidant supplements?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><h6>ResVit stands out with its superior formulation, combining the most potent and powerful antioxidants. The blend is thoughtfully designed to synergize the effects of each ingredient, enhancing the overall health benefits. Additionally, ResVit prides itself on its commitment to purity, stability, and potency, ensuring you get the most out of your supplement.</h6></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>How should I store my ResVit tablets?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><p>For optimal freshness and efficacy, store your ResVit tablets in a cool, dry place away from direct sunlight. Always ensure the cap is tightly closed after use.</p></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>Can ResVit help improve my skin health?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><h6>Yes, ResVit contains potent antioxidants like Vitamin A and E, known to support skin health. However, remember that skin health also depends on various factors, including your overall health, diet, hydration, and sun protection habits.</h6></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>I missed a dose of ResVit. What should I do?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><h6>If you miss a dose, just continue with your regular schedule. Do not take double the dose to make up for the missed one. Consistency is key to experiencing the full benefits of ResVit.</h6></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>Can I take ResVit if I'm on medication?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><h6>If you're on medication, it's crucial to consult with your healthcare provider before starting ResVit to avoid any potential interactions. Your healthcare provider will be able to provide personalized advice based on your specific situation.</h6></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>Can ResVit help manage chronic diseases?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><h6>ResVit is a potent blend of antioxidants designed to support overall wellness and the body's natural defenses against oxidative stress, a significant contributor to many chronic diseases. However, it's important to note that ResVit is a supplement and not a cure or treatment for chronic diseases. It should be used in conjunction with a balanced diet, regular exercise, and under the guidance of your healthcare provider.</h6></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>How do the ingredients in ResVit support chronic disease management?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><h6>ResVit combines powerful antioxidants like Trans-Resveratrol, Pterostilbene, N-Acetyl Cysteine, L-Carnitine, and Glutathione. These compounds help combat oxidative stress, reduce inflammation, and support cellular health, which can aid in managing chronic diseases. However, ResVit should not replace prescribed medication or treatment plans for chronic diseases.</h6></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>I have diabetes. Can I take ResVit?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><h6>While ResVit contains ingredients that may support metabolic health, if you have diabetes or any other chronic condition, you should consult your healthcare provider before starting any new supplement. They can provide personalized advice based on your specific health needs and current medications.</h6></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>What role does Trans-Resveratrol play in ResVit?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><h6>Trans-Resveratrol is a potent antioxidant found in the skin of grapes and certain berries. It helps combat oxidative stress, supports cardiovascular health, and has anti-inflammatory properties. In ResVit, it plays a key role in protecting cells from damage and supporting overall health.</h6></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>Can ResVit help with heart disease?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><h6>ResVit contains several ingredients like Trans-Resveratrol, Pterostilbene, and L-Carnitine, known to support cardiovascular health. </h6></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>I'm currently undergoing cancer treatment. Can I take ResVit?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><h6>If you are undergoing treatment for cancer or any other serious health condition, it's crucial to consult your healthcare provider before starting any new supplement, including ResVit. They can provide personalized advice based on your specific health needs and treatment plan.</h6></div></div>
+          </details><details class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <summary><div class="accordion__toggle bold"><span>Why is ResVit better than regular Trans Resveratrol supplements?</span><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate"><svg role="presentation" focusable="false" width="8" height="6" class="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg></span>
+              </div>
+            </summary>
+          
+            <div class="accordion__content"><div class="prose"><p>ResVit stands out from regular Trans Resveratrol supplements due to its potent and comprehensive blend of antioxidants.</p><p>While Trans Resveratrol, a key ingredient in ResVit, is known for its significant health benefits such as supporting heart health and aiding in cell health, ResVit takes this a step further.</p><p>In addition to Trans Resveratrol, ResVit incorporates other powerful antioxidants like Pterostilbene, Glutathione, and Alpha Lipoic Acid, among others. These ingredients are known to enhance cellular health, combat oxidative stress, and provide overall wellness benefits.</p><p>Moreover, ResVit includes ingredients like Melatonin for sleep support and vitamins for added nutritional value.</p><h6>By combining these components into one powerful formula, ResVit offers a holistic approach to health support that transcends the capabilities of a standalone Trans Resveratrol supplement. This makes ResVit a potent, versatile, and comprehensive choice for those seeking to boost their overall wellness and manage the effects of ageing.</h6></div></div>
+          </details></div>
+                </div><div><div class="faq-availability"><div class="v-stack gap-4"><div class="v-stack">Our customer support is available Monday to Saturday: 10am-6pm.<span class="text-subdued">Call us at +91 9009003095</span></div></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        function rate(stars) {
+  // Perform rating logic here
+  console.log('Rated ' + stars + ' stars');
+}
+
+function showGraph() {
+  document.getElementById('graphPopup').style.display = 'block';
+}
+
+      </script>
+      
+</body>
+</html>
