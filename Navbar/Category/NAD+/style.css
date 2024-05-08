@@ -9,7 +9,7 @@ body {
     background-color: rgb(244, 244, 244);
 }
 
-.section1 {
+.NAD+-page-section1 {
     h1 {
         margin-left: 180px;
         font-size: 45px;
@@ -23,7 +23,7 @@ body {
         margin-top: 50px;
         text-align: center;
     }
-    .button1 {
+    .NAD+-page-button1 {
         text-align: center;
         button {
             color: blue;
@@ -39,20 +39,20 @@ body {
     }
 }
 
-.section2 {
+.NAD+-page-section2 {
     display: flex;
     margin-top: 100px;
     margin-left: 180px;
     margin-right: 180px;
     justify-content: center;
-    .img1 {
+    .NAD+-page-img1 {
         border-radius: 19px;
         img {
             border-radius: 15px;
             width: 89%;
         }
     }
-    .box1 {
+    .NAD+-page-box1 {
         border-radius: 19px;
         width: 550px;
         width: 40%;
@@ -71,13 +71,13 @@ body {
     }
 }
 
-.section3 {
+.NAD+-page-section3 {
     display: flex;
     margin-top: 100px;
     margin-left: 180px;
     margin-right: 180px;
     justify-content: center;
-    .box1 {
+    .NAD+-page-box1 {
         border-radius: 19px;
         width: 550px;
         width: 40%;
@@ -94,7 +94,7 @@ body {
             color: white;
         }
     }
-    .img1 {
+    .NAD+-page-img1 {
         border-radius: 19px;
         img {
             margin-left: 92px;
@@ -104,9 +104,9 @@ body {
     }
 }
 
-.section4 {
+.NAD+-page-section4 {
     text-align: center;
-    .mainbox {
+    .NAD+-page-mainbox {
         margin-top: 50px;
         margin-left: 180px;
         margin-right: 180px;
@@ -130,7 +130,7 @@ body {
     }
 }
 
-.section5 {
+.NAD+-page-section5 {
     margin-left: 180px;
     margin-right: 180px;
     h1 {
@@ -145,10 +145,10 @@ body {
         font-size: 20px;
         width: 50%;
     }
-    .forflex {
+    .NAD+-page-forflex {
         display: flex;
         justify-content: space-between;
-        .firstflex {
+        .NAD+-page-firstflex {
             h1 {
                 font-size: 23px;
                 width: 70%;
@@ -158,7 +158,7 @@ body {
                 width: 100%;
             }
         }
-        .secondflex {
+        .NAD+-page-secondflex {
             h1 {
                 font-size: 23px;
                 width: 70%;
@@ -168,7 +168,7 @@ body {
                 width: 90%;
             }
         }
-        .thirdflex {
+        .NAD+-page-thirdflex {
             h1 {
                 font-size: 23px;
                 width: 70%;
@@ -181,7 +181,7 @@ body {
     }
 }
 
-.section6 {
+.NAD+-page-section6 {
     h1 {
         font-size: 40px;
         color: rgb(193, 32, 193);
@@ -191,7 +191,7 @@ body {
     }
 }
 
-.section7 {
+.NAD+-page-section7 {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
@@ -199,7 +199,7 @@ body {
     padding: 20px;
 }
 
-.card {
+.NAD+-page-card {
     flex-basis: calc(33.33% - 20px);
     background-color: #fff;
     border-radius: 5px;
@@ -207,12 +207,12 @@ body {
     overflow: hidden;
 }
 
-.card img {
+.NAD+-page-card img {
     width: 100%;
     height: auto;
 }
 
-.card h2 {
+.NAD+-page-card h2 {
     font-size: 24px;
     padding: 20px;
     margin: 0;
@@ -220,15 +220,15 @@ body {
     color: #060303;
 }
 
-.card p {
+.NAD+-page-card p {
     font-size: 16px;
     padding: 20px;
     margin: 0;
 }
 
-.section8 {
+.NAD+-page-section8 {
     text-align: center;
-    .mainbox {
+    .NAD+-page-mainbox {
         margin-top: 50px;
         margin-left: 180px;
         margin-right: 180px;
@@ -257,8 +257,8 @@ body {
 }
 
 
-/* .section9 {
-            .mainbox {
+/* .NAD+-page-section9 {
+            .NAD+-page-mainbox {
                 margin-top: 50px;
                 margin-left: 180px;
                 margin-right: 180px;
@@ -278,7 +278,7 @@ body {
                     color: white;
                     width: 700px;
                 }
-                .forflex {
+                .NAD+-page-forflex {
                     display: flex;
                     text-align: center;
                     align-content: center;
@@ -287,7 +287,7 @@ body {
                     padding: 0px;
                     width: 500%;
                 }
-                .firstcard {
+                .NAD+-page-firstcard {
                     .img {
                         width: 500%;
                     }
@@ -298,7 +298,7 @@ body {
             }
         } */
 
-.section9 {
+.NAD+-page-section9 {
     width: 1500px;
     margin-left: 180px;
     margin-right: 180px;
@@ -308,7 +308,7 @@ body {
     background-color: black;
 }
 
-.heading2 {
+.NAD+-page-heading2 {
     h1 {
         color: white;
         font-size: 36px;
@@ -321,32 +321,32 @@ body {
     }
 }
 
-.image-container {
+.NAD+-page-image-container {
     display: flex;
     justify-content: space-between;
 }
 
-.image img {
+.NAD+-page-image img {
     width: 90%;
     border-radius: 10px;
 }
 
-.image h1 {
+.NAD+-page-image h1 {
     color: white;
 }
 
-.image p {
+.NAD+-page-image p {
     color: white;
     width: 300px;
     margin-top: 10px;
 }
 
-.section10 {
+.NAD+-page-section10 {
     margin-left: 180px;
     margin-right: 180px;
 }
 
-.heading3 {
+.NAD+-page-heading3 {
     h2 {
         width: 700px;
         font-size: 20px;
@@ -359,7 +359,7 @@ body {
 
 /* dropdown */
 
-.accordiond {
+.NAD+-page-accordiond {
     background-color: white;
     color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
@@ -375,16 +375,16 @@ body {
     font-weight: bold;
 }
 
-.accordiond i {
+.NAD+-page-accordiond i {
     font-size: 1rem;
 }
 
-.active,
-.accordiond:hover {
+.NAD+-page-active,
+.NAD+-page-accordiond:hover {
     background-color: #f1f7f5;
 }
 
-.pannel {
+.NAD+-page-pannel {
     padding: 0 2rem 2.5rem 2rem;
     background-color: white;
     overflow: hidden;
@@ -392,27 +392,27 @@ body {
     display: none;
 }
 
-.pannel p {
+.NAD+-page-pannel p {
     color: rgba(0, 0, 0, 0.7);
     font-size: 1 rem;
     line-height: 1.4;
 }
 
-.faq {
+.NAD+-page-faq {
     border: 1px solid rgba(0, 0, 0, 0.2);
     margin: 10px 0;
     width: 730px;
     margin-left: 950px;
 }
 
-.faq.active {
+.NAD+-page-faq.active {
     border: none;
 }
 
 
 /* section11 */
 
-.section12 {
+.NAD+-page-section12 {
     margin-left: 180px;
     margin-right: 180px;
     text-align: center;
@@ -434,7 +434,7 @@ body {
 
 /* dropdown */
 
-.accordion {
+.NAD+-page-accordion {
     background-color: white;
     color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
@@ -450,16 +450,16 @@ body {
     font-weight: bold;
 }
 
-.accordion i {
+.NAD+-page-accordion i {
     font-size: 1rem;
 }
 
-.active,
-.accordion:hover {
+.NAD+-page-active,
+.NAD+-page-accordion:hover {
     background-color: #f1f7f5;
 }
 
-.pannel1 {
+.NAD+-page-pannel1 {
     padding: 0 2rem 2.5rem 2rem;
     background-color: white;
     overflow: hidden;
@@ -467,26 +467,26 @@ body {
     display: none;
 }
 
-.pannel1 p {
+.NAD+-page-pannel1 p {
     color: rgba(0, 0, 0, 0.7);
     font-size: 1 rem;
     line-height: 1.4;
 }
 
-.faq1 {
+.NAD+-page-faq1 {
     border: 1px solid rgba(0, 0, 0, 0.2);
     margin: 10px 0;
     width: 730px;
     margin-left: 550px;
 }
 
-.faq1.active {
+.NAD+-page-faq1.active {
     border: none;
 }
 
 
 /* section13 */
 
-.section14 {
+.NAD+-page-section14 {
     text-align: center;
 }
